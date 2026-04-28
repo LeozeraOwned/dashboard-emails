@@ -1,20 +1,12 @@
 import streamlit as st
 import pandas as pd
-import os
 import plotly.express as px
 
 # ================= CONFIG =================
-PASTA_LOG = r"C:\Users\dasillx14\OneDrive - Abbott\Desktop\Python cods"
 st.set_page_config(layout="wide")
 
-# ================= LOAD =================
-arquivos = sorted(
-    [f for f in os.listdir(PASTA_LOG) if f.startswith("log_")],
-    reverse=True
-)
-
-arquivo = os.path.join(PASTA_LOG, arquivos[0])
-df = pd.read_csv(arquivo)
+# ✅ LER DO REPOSITÓRIO
+df = pd.read_csv("log_emails.csv")
 df["data"] = pd.to_datetime(df["data"], errors="coerce")
 
 # ================= SIDEBAR =================
@@ -62,7 +54,6 @@ elif pagina == "📈 Análises":
 
     col1, col2 = st.columns(2)
 
-    # Donut
     dist = df["analista"].value_counts().reset_index()
     dist.columns = ["Analista", "Qtd"]
 
@@ -75,7 +66,6 @@ elif pagina == "📈 Análises":
     )
     col1.plotly_chart(fig1, use_container_width=True)
 
-    # Motivos
     motivos = df["motivo"].value_counts().reset_index()
     motivos.columns = ["Motivo", "Qtd"]
 
@@ -91,7 +81,6 @@ elif pagina == "📈 Análises":
 
     st.divider()
 
-    # Timeline
     df["dia"] = df["data"].dt.date
     timeline = df.groupby("dia").size().reset_index(name="Qtd")
 
@@ -115,14 +104,10 @@ elif pagina == "📄 Dados":
         ["Todos"] + sorted(df["analista"].dropna().unique())
     )
 
-    if analista != "Todos":
-        df_final = df[df["analista"] == analista]
-    else:
-        df_final = df
+    df_final = df if analista == "Todos" else df[df["analista"] == analista]
 
     st.dataframe(df_final, use_container_width=True)
 
-    # botão tipo sistema
     if st.button("📥 Exportar CSV"):
         df_final.to_csv("export.csv", index=False)
         st.success("Arquivo exportado!")
