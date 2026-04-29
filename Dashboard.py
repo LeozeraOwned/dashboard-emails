@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 
 st.set_page_config(layout="wide")
 
-# ================= CSS ULTRA (ORIGINAL COMPLETO) =================
+# ================= CSS ULTRA (INALTERADO) =================
 st.markdown("""
 <style>
 
@@ -164,14 +164,20 @@ if pagina=="📊 Dashboard":
 
     dist = df_f.groupby("analista_exibicao").size().reset_index(name="Qtd")
 
+    # ✅ CORES DOS ANALISTAS RESTAURADAS
     fig = px.bar(
-        dist, x="analista_exibicao", y="Qtd",
-        text="Qtd", template="plotly_dark"
+        dist,
+        x="analista_exibicao",
+        y="Qtd",
+        color="analista_exibicao",
+        text="Qtd",
+        template="plotly_dark"
     )
+
     fig.update_layout(transition_duration=800)
     st.plotly_chart(fig, use_container_width=True)
 
-# ================= ANALISES (GRÁFICO BOM) =================
+# ================= ANÁLISES =================
 elif pagina=="📈 Análises":
     st.title("📈 Análises")
 
@@ -202,10 +208,33 @@ elif pagina=="📈 Análises":
 # ================= POR DIA =================
 elif pagina=="📅 Por Dia":
     st.title("📅 Por Dia")
-    st.dataframe(
-        df_f.groupby(["dia","status"]).size().reset_index(name="Qtd"),
-        use_container_width=True
+
+    st.subheader("📉 Evolução de erros por dia")
+
+    erros_por_dia = (
+        df_f[df_f["status"]=="Erro"]
+        .groupby("dia")
+        .size()
+        .reset_index(name="Qtd")
+        .sort_values("dia")
     )
+
+    fig = px.line(
+        erros_por_dia,
+        x="dia",
+        y="Qtd",
+        markers=True,
+        template="plotly_dark"
+    )
+
+    fig.update_traces(line=dict(width=3), marker=dict(size=8))
+    fig.update_layout(
+        transition_duration=800,
+        xaxis_title="Dia",
+        yaxis_title="Qtd de erros"
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
 
 # ================= DADOS =================
 elif pagina=="📄 Dados":
