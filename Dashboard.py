@@ -92,7 +92,7 @@ section[data-testid="stSidebar"] div[role="radiogroup"] > label:hover {
 """, unsafe_allow_html=True)
 
 # ================= LOAD =================
-df = pd.read_csv("log_emails.csv")
+df = pd.read_csv("log_emails.csv", sep=";")
 df["data"] = pd.to_datetime(df["data"], errors="coerce")
 
 # ✅ SOMENTE HOJE PRA FRENTE
@@ -197,7 +197,7 @@ elif pagina=="📈 Análises":
     st.title("📈 Análises")
 
     _,total_categ,certos,errados,_ = resumo(df_perf_f)
-    qualidade = (certos/total_categ*100) if total_categ>0 else 0
+    qualidade = (certos/total_categ*100) if total_categ > 0 else 0
 
     fig = go.Figure(
         data=[go.Pie(
@@ -255,6 +255,7 @@ elif pagina=="📅 Por Dia":
 elif pagina=="📄 Dados":
     st.title("📄 Logs")
     st.dataframe(df_f,use_container_width=True)
+
 
 
 
