@@ -1,10 +1,11 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 
 st.set_page_config(layout="wide")
 
-# ================= CSS ULTRA (ORIGINAL – ANIMAÇÕES RESTAURADAS) =================
+# ================= CSS ULTRA (ORIGINAL COMPLETO) =================
 st.markdown("""
 <style>
 
@@ -155,16 +156,36 @@ df["data"] = pd.to_datetime(df["data"], errors="coerce")
 hoje = pd.Timestamp.now().date()
 df = df[df["data"].dt.date >= hoje].copy()
 
+df["dia"] = df["data"].dt.date
+df["mes"] = df["data"].dt.month
+
 df["status"] = df["status"].fillna("").astype(str).str.strip()
 df["analista"] = df["analista"].fillna("").astype(str).str.strip()
+df["assunto"] = df["assunto"].fillna("").astype(str).str.strip()
+
 df["analista_exibicao"] = df["analista"].replace("", "Sem analista")
 
 # ================= SIDEBAR =================
 st.sidebar.title("📊 MENU")
+
 pagina = st.sidebar.radio(
     "Navegação",
-    ["📊 Dashboard", "📄 Dados"]
+    ["📊 Dashboard", "📈 Análises", "📅 Por Dia", "📄 Dados"]
 )
+
+# ================= FILTROS =================
+meses = sorted(df["mes"].dropna().unique())
+mes_sel = st.sidebar.selectbox("Mês", ["Todos"] + list(meses))
+
+dias_base = df if mes_sel == "Todos" else df[df["mes"] == mes_sel]
+dias = sorted(dias_base["dia"].dropna().unique())
+dia_sel = st.sidebar.selectbox("Dia", ["Todos"] + list(dias))
+
+df_f = df.copy()
+if mes_sel != "Todos":
+    df_f = df_f[df_f["mes"] == mes_sel]
+if dia_sel != "Todos":
+    df_f = df_f[df_f["dia"] == dia_sel]
 
 # ================= FUNÇÕES =================
 def card(icon, valor, label, extra="", animate=True):
@@ -192,7 +213,7 @@ if pagina == "📊 Dashboard":
 
     st.title("🚀 Painel Inteligente")
 
-    total, total_categ, certos, errados, sem_cat = resumo(df)
+    total, total_categ, certos, errados, sem_cat = resumo(df_f)
 
     c1, c2, c3, c4, c5 = st.columns(5)
 
@@ -205,11 +226,7 @@ if pagina == "📊 Dashboard":
     st.divider()
     st.subheader("📊 Volume por Analista")
 
-    dist = (
-        df.groupby("analista_exibicao")
-        .size()
-        .reset_index(name="Qtd")
-    )
+    dist = df_f.groupby("analista_exibicao").size().reset_index(name="Qtd")
 
     fig = px.bar(
         dist,
@@ -219,15 +236,47 @@ if pagina == "📊 Dashboard":
         template="plotly_dark"
     )
 
-    fig.update_traces(textposition="outside")
+    fig.update_traces(textposition="outside", cliponaxis=False)
     fig.update_layout(transition_duration=800)
+    st.plotly_chart(fig, use_container_width=True)
+
+# ================= ANÁLISES =================
+elif pagina == "📈 Análises":
+
+    st.title("📈 Análises")
+
+    total, total_categ, certos, errados, _ = resumo(df_f)
+
+    taxa_erro = (errados / total_categ * 100) if total_categ > 0 else 0
+
+    st.metric("Taxa de erro (%)", f"{taxa_erro:.2f}%")
+
+    por_status = df_f["status"].value_counts().reset_index()
+    por_status.columns = ["Status", "Qtd"]
+
+    fig = px.pie(
+        por_status,
+        names="Status",
+        values="Qtd",
+        template="plotly_dark"
+    )
 
     st.plotly_chart(fig, use_container_width=True)
 
+# ================= POR DIA =================
+elif pagina == "📅 Por Dia":
+
+    st.title("📅 Por Dia")
+
+    por_dia = df_f.groupby(["dia", "status"]).size().reset_index(name="Qtd")
+    st.dataframe(por_dia, use_container_width=True)
+
 # ================= DADOS =================
 elif pagina == "📄 Dados":
+
     st.title("📄 Logs")
-    st.dataframe(df, use_container_width=True)
+    st.dataframe(df_f, use_container_width=True)
+
 
 
 
