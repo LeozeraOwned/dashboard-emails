@@ -2,30 +2,77 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# ================= CONFIG =================
 st.set_page_config(layout="wide")
 
-# ================= CSS TOP =================
+# ================= CSS ULTRA =================
 st.markdown("""
 <style>
+
+body {
+    background-color: #0e1117;
+}
+
+/* CARD BASE */
 .card {
-    background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+    position: relative;
+    background: #1a1f2b;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0px 0px 20px rgba(0,255,200,0.2);
-    transition: 0.3s;
+    overflow: hidden;
 }
-.card:hover {
-    transform: scale(1.05);
+
+/* BORDA ANIMADA */
+.card::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(90deg, #00ffe0, #007cf0, #00ffe0);
+    animation: borderMove 4s linear infinite;
+    z-index: 0;
 }
+
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #1a1f2b;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+/* TEXTO */
+.content {
+    position: relative;
+    z-index: 2;
+}
+
 .big {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
 }
+
 .small {
     color: #aaa;
 }
+
+/* ANIMAÇÃO BORDA */
+@keyframes borderMove {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+/* TAXA PISCANDO */
+.pulse {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {opacity: 1;}
+    50% {opacity: 0.3;}
+    100% {opacity: 1;}
+}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -44,159 +91,85 @@ pagina = st.sidebar.radio(
     ["📊 Dashboard", "📈 Análises", "📅 Por Dia", "📄 Dados"]
 )
 
-# ================= FILTROS GLOBAIS =================
-st.sidebar.subheader("📅 Filtros")
-
+# ================= FILTROS =================
 meses = sorted(df["mes"].dropna().unique())
 mes_sel = st.sidebar.selectbox("Mês", ["Todos"] + list(meses))
 
 dias = sorted(df["dia"].dropna().unique())
 dia_sel = st.sidebar.selectbox("Dia", ["Todos"] + list(dias))
 
-df_filtro = df.copy()
+df_f = df.copy()
 
 if mes_sel != "Todos":
-    df_filtro = df_filtro[df_filtro["mes"] == mes_sel]
+    df_f = df_f[df_f["mes"] == mes_sel]
 
 if dia_sel != "Todos":
-    df_filtro = df_filtro[df_filtro["dia"] == dia_sel]
+    df_f = df_f[df_f["dia"] == dia_sel]
 
 # ================= DASHBOARD =================
 if pagina == "📊 Dashboard":
 
-    st.title("📊 Visão Geral")
+    st.title("🚀 Painel Inteligente")
 
-    total = len(df_filtro)
-    categ = len(df_filtro[df_filtro["status"] == "Categorizado"])
-    sem = len(df_filtro[df_filtro["status"] == "Sem categoria"])
+    total = len(df_f)
+    categ = len(df_f[df_f["status"] == "Categorizado"])
+    erros = len(df_f[df_f["status"] == "Erro"])
     taxa = (categ / total * 100) if total > 0 else 0
 
-    col1, col2, col3, col4, col5 = st.columns(5)
+    piscando = "pulse" if taxa < 80 else ""
 
-    col1.markdown(f'<div class="card"><div class="big">{total}</div><div class="small">Total</div></div>', unsafe_allow_html=True)
-    col2.markdown(f'<div class="card"><div class="big">{categ}</div><div class="small">Categorizados</div></div>', unsafe_allow_html=True)
-    col3.markdown(f'<div class="card"><div class="big">{sem}</div><div class="small">Sem categoria</div></div>', unsafe_allow_html=True)
-    col4.markdown(f'<div class="card"><div class="big">{df_filtro["analista"].nunique()}</div><div class="small">Analistas</div></div>', unsafe_allow_html=True)
-    col5.markdown(f'<div class="card"><div class="big">{taxa:.1f}%</div><div class="small">Taxa acerto</div></div>', unsafe_allow_html=True)
+    col1, col2, col3, col4 = st.columns(4)
+
+    col1.markdown(f"""
+    <div class="card">
+        <div class="content">
+            📩
+            <div class="big">{total}</div>
+            <div class="small">Total</div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    col2.markdown(f"""
+    <div class="card">
+        <div class="content">
+            ✅
+            <div class="big">{categ}</div>
+            <div class="small">Categorizados</div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    col3.markdown(f"""
+    <div class="card">
+        <div class="content">
+            ❌
+            <div class="big">{erros}</div>
+            <div class="small">Erros</div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    col4.markdown(f"""
+    <div class="card">
+        <div class="content {piscando}">
+            ⚡
+            <div class="big">{taxa:.1f}%</div>
+            <div class="small">Taxa</div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
 
     st.divider()
 
-    # 🔥 ALERTA INTELIGENTE
-    if taxa < 70:
-        st.error("⚠️ Baixa precisão! Muitos erros detectados")
-    elif taxa < 90:
-        st.warning("⚠️ Pode melhorar...")
-    else:
-        st.success("🔥 Performance alta!")
+    # 📊 DISTRIBUIÇÃO (VOLUME)
+    st.subheader("📊 Volume por Analista")
 
-    st.divider()
-
-    # 📊 DISTRIBUIÇÃO
-    st.subheader("📊 Distribuição por Analista")
-
-    dist = df_filtro["analista"].value_counts().reset_index()
-    dist.columns = ["Analista", "Quantidade"]
-
-    fig = px.bar(
-        dist,
-        x="Analista",
-        y="Quantidade",
-        color="Analista",
-        template="plotly_dark",
-        text="Quantidade"
-    )
-
-    st.plotly_chart(fig, use_container_width=True)
-
-    # 🏆 RANKING (CORRIGIDO)
-    st.subheader("🏆 Ranking de Analistas")
-
-    ranking = df_filtro["analista"].dropna().value_counts().reset_index()
-    ranking.columns = ["Analista", "Qtd"]
-
-    if not ranking.empty:
-        fig_rank = px.bar(
-            ranking,
-            x="Analista",
-            y="Qtd",
-            text="Qtd",
-            template="plotly_dark",
-            color="Analista"
-        )
-        st.plotly_chart(fig_rank, use_container_width=True)
-    else:
-        st.info("Sem dados para ranking")
-
-# ================= ANALISE =================
-elif pagina == "📈 Análises":
-
-    st.title("📈 Análises Detalhadas")
-
-    col1, col2 = st.columns(2)
-
-    dist = df_filtro["analista"].value_counts().reset_index()
+    dist = df_f["analista"].value_counts().reset_index()
     dist.columns = ["Analista", "Qtd"]
 
-    fig1 = px.pie(
+    fig1 = px.bar(
         dist,
-        names="Analista",
-        values="Qtd",
-        hole=0.5,
-        template="plotly_dark"
-    )
-    col1.plotly_chart(fig1, use_container_width=True)
-
-    motivos = df_filtro["motivo"].value_counts().reset_index()
-    motivos.columns = ["Motivo", "Qtd"]
-
-    fig2 = px.bar(
-        motivos,
-        x="Qtd",
-        y="Motivo",
-        orientation="h",
-        template="plotly_dark",
-        color="Qtd"
-    )
-    col2.plotly_chart(fig2, use_container_width=True)
-
-    st.divider()
-
-    timeline = df_filtro.groupby("dia").size().reset_index(name="Qtd")
-
-    fig3 = px.line(
-        timeline,
-        x="dia",
-        y="Qtd",
-        markers=True,
-        template="plotly_dark",
-        title="Volume de Emails por Dia"
-    )
-
-    st.plotly_chart(fig3, use_container_width=True)
-
-# ================= POR DIA =================
-elif pagina == "📅 Por Dia":
-
-    st.title("📅 Análise por Dia")
-
-    dias = sorted(df["dia"].dropna().unique())
-    dia_sel = st.selectbox("Selecione o dia", dias)
-
-    df_dia = df[df["dia"] == dia_sel]
-
-    col1, col2, col3 = st.columns(3)
-
-    col1.metric("Total", len(df_dia))
-    col2.metric("Categorizados", len(df_dia[df_dia["status"] == "Categorizado"]))
-    col3.metric("Sem categoria", len(df_dia[df_dia["status"] == "Sem categoria"]))
-
-    st.divider()
-
-    dist_dia = df_dia["analista"].value_counts().reset_index()
-    dist_dia.columns = ["Analista", "Qtd"]
-
-    fig_dia = px.bar(
-        dist_dia,
         x="Analista",
         y="Qtd",
         color="Analista",
@@ -204,22 +177,60 @@ elif pagina == "📅 Por Dia":
         text="Qtd"
     )
 
-    st.plotly_chart(fig_dia, use_container_width=True)
+    st.plotly_chart(fig1, use_container_width=True)
+
+    # 🧠 RANKING REAL (PERFORMANCE)
+    st.subheader("🏆 Ranking por Performance")
+
+    perf = df_f.groupby("analista")["status"].apply(
+        lambda x: (x == "Categorizado").sum() / len(x) * 100
+    ).reset_index()
+
+    perf.columns = ["Analista", "Performance"]
+
+    fig2 = px.bar(
+        perf.sort_values("Performance", ascending=False),
+        x="Analista",
+        y="Performance",
+        color="Performance",
+        template="plotly_dark",
+        text="Performance"
+    )
+
+    st.plotly_chart(fig2, use_container_width=True)
+
+# ================= ANALISE =================
+elif pagina == "📈 Análises":
+
+    st.title("📈 Análises")
+
+    timeline = df_f.groupby("dia").size().reset_index(name="Qtd")
+
+    fig = px.line(
+        timeline,
+        x="dia",
+        y="Qtd",
+        markers=True,
+        template="plotly_dark"
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
+
+# ================= POR DIA =================
+elif pagina == "📅 Por Dia":
+
+    st.title("📅 Detalhe por Dia")
+
+    dias = sorted(df["dia"].dropna().unique())
+    dia_sel = st.selectbox("Escolha o dia", dias)
+
+    df_dia = df[df["dia"] == dia_sel]
+
+    st.dataframe(df_dia)
 
 # ================= DADOS =================
 elif pagina == "📄 Dados":
 
-    st.title("📄 Logs Detalhados")
+    st.title("📄 Dados")
 
-    analista = st.selectbox(
-        "Filtrar por analista",
-        ["Todos"] + sorted(df["analista"].dropna().unique())
-    )
-
-    df_final = df if analista == "Todos" else df[df["analista"] == analista]
-
-    st.dataframe(df_final, use_container_width=True)
-
-    if st.button("📥 Exportar CSV"):
-        df_final.to_csv("export.csv", index=False)
-        st.success("Arquivo exportado!")
+    st.dataframe(df_f)
