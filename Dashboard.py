@@ -107,7 +107,7 @@ df["analista"] = df["analista"].fillna("").astype(str).str.strip()
 df["assunto"] = df["assunto"].fillna("").astype(str).str.strip()
 df["analista_exibicao"] = df["analista"].replace("", "Sem analista")
 
-# ================= DATAFRAME DE PERFORMANCE (REGRA CORRETA) =================
+# ================= DATAFRAME DE PERFORMANCE (INALTERADO) =================
 df_perf = df[
     ~(
         (df["status"] == "Sem categoria") &
@@ -178,7 +178,13 @@ if pagina=="📊 Dashboard":
     st.divider()
     st.subheader("📊 Volume por Analista")
 
-    dist = df_perf_f.groupby("analista_exibicao").size().reset_index(name="Qtd")
+    # ✅ CORREÇÃO CONCEITUAL: somente decisões do modelo
+    dist = (
+        df_perf_f[df_perf_f["tipo_evento"] == "modelo"]
+        .groupby("analista_exibicao")
+        .size()
+        .reset_index(name="Qtd")
+    )
 
     fig = px.bar(
         dist,
@@ -255,6 +261,7 @@ elif pagina=="📅 Por Dia":
 elif pagina=="📄 Dados":
     st.title("📄 Logs")
     st.dataframe(df_f,use_container_width=True)
+
 
 
 
