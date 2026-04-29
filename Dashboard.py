@@ -102,9 +102,18 @@ df = df[df["data"].dt.date >= hoje].copy()
 df["dia"] = df["data"].dt.date
 df["mes"] = df["data"].dt.month
 df["status"] = df["status"].fillna("").astype(str).str.strip()
+df["motivo"] = df["motivo"].fillna("").astype(str).str.strip()
 df["analista"] = df["analista"].fillna("").astype(str).str.strip()
 df["assunto"] = df["assunto"].fillna("").astype(str).str.strip()
 df["analista_exibicao"] = df["analista"].replace("", "Sem analista")
+
+# ================= DATAFRAME DE PERFORMANCE (REGRA CORRETA) =================
+df_perf = df[
+    ~(
+        (df["status"] == "Sem categoria") &
+        (df["motivo"].str.lower() == "aprendido: não categorizar")
+    )
+].copy()
 
 # ================= SIDEBAR =================
 st.sidebar.title("📊 MENU")
@@ -123,8 +132,15 @@ dias = sorted(dias_base["dia"].dropna().unique())
 dia_sel = st.sidebar.selectbox("Dia", ["Todos"] + list(dias))
 
 df_f = df.copy()
-if mes_sel != "Todos": df_f = df_f[df_f["mes"] == mes_sel]
-if dia_sel != "Todos": df_f = df_f[df_f["dia"] == dia_sel]
+df_perf_f = df_perf.copy()
+
+if mes_sel != "Todos":
+    df_f = df_f[df_f["mes"] == mes_sel]
+    df_perf_f = df_perf_f[df_perf_f["mes"] == mes_sel]
+
+if dia_sel != "Todos":
+    df_f = df_f[df_f["dia"] == dia_sel]
+    df_perf_f = df_perf_f[df_perf_f["dia"] == dia_sel]
 
 # ================= FUNÇÕES =================
 def card(icon, valor, label, extra=""):
@@ -150,7 +166,7 @@ def resumo(df):
 if pagina=="📊 Dashboard":
     st.title("🚀 Painel Inteligente")
 
-    total,total_categ,certos,errados,sem_cat = resumo(df_f)
+    total,total_categ,certos,errados,sem_cat = resumo(df_perf_f)
     c1,c2,c3,c4,c5 = st.columns(5)
 
     c1.markdown(card("📩",total,"Total"),unsafe_allow_html=True)
@@ -162,9 +178,8 @@ if pagina=="📊 Dashboard":
     st.divider()
     st.subheader("📊 Volume por Analista")
 
-    dist = df_f.groupby("analista_exibicao").size().reset_index(name="Qtd")
+    dist = df_perf_f.groupby("analista_exibicao").size().reset_index(name="Qtd")
 
-    # ✅ CORES DOS ANALISTAS RESTAURADAS
     fig = px.bar(
         dist,
         x="analista_exibicao",
@@ -181,7 +196,7 @@ if pagina=="📊 Dashboard":
 elif pagina=="📈 Análises":
     st.title("📈 Análises")
 
-    _,total_categ,certos,errados,_ = resumo(df_f)
+    _,total_categ,certos,errados,_ = resumo(df_perf_f)
     qualidade = (certos/total_categ*100) if total_categ>0 else 0
 
     fig = go.Figure(
@@ -212,7 +227,7 @@ elif pagina=="📅 Por Dia":
     st.subheader("📉 Evolução de erros por dia")
 
     erros_por_dia = (
-        df_f[df_f["status"]=="Erro"]
+        df_perf_f[df_perf_f["status"]=="Erro"]
         .groupby("dia")
         .size()
         .reset_index(name="Qtd")
@@ -240,7 +255,6 @@ elif pagina=="📅 Por Dia":
 elif pagina=="📄 Dados":
     st.title("📄 Logs")
     st.dataframe(df_f,use_container_width=True)
-
 
 
 
