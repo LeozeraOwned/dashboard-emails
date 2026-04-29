@@ -10,79 +10,34 @@ st.markdown("""
 <style>
 
 /* FUNDO */
-body {
-    background-color: #0e1117;
-}
+body { background-color: #0e1117; }
 
-/* SIDEBAR ANIMADA */
+/* SIDEBAR */
 section[data-testid="stSidebar"] {
     background: linear-gradient(180deg, #0e1117, #111827);
-    box-shadow: 0 0 20px rgba(0,255,224,0.35);
-    animation: glowMenu 2.4s infinite alternate;
+    box-shadow: 0 0 20px #00ffe0;
+    animation: glowMenu 2s infinite alternate;
 }
 
 @keyframes glowMenu {
-    from { box-shadow: 0 0 8px rgba(0,255,224,0.18); }
-    to { box-shadow: 0 0 24px rgba(0,255,224,0.35); }
+    from { box-shadow: 0 0 5px #00ffe0; }
+    to { box-shadow: 0 0 25px #00ffe0; }
 }
 
-/* ================= MENU ANIMADO ================= */
-section[data-testid="stSidebar"] div[role="radiogroup"] {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
+/* MENU */
 section[data-testid="stSidebar"] div[role="radiogroup"] > label {
     position: relative;
     padding: 10px 14px;
     border-radius: 14px;
-    background: rgba(255,255,255,0.02);
-    border: 1px solid rgba(255,255,255,0.05);
-    transition: all 0.35s ease;
-    overflow: hidden;
-    cursor: pointer;
-    animation: menuEnter 0.6s ease forwards;
-}
-
-@keyframes menuEnter {
-    from { opacity: 0; transform: translateX(-12px); }
-    to { opacity: 1; transform: translateX(0); }
-}
-
-section[data-testid="stSidebar"] div[role="radiogroup"] > label::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 15%;
-    width: 4px;
-    height: 70%;
-    background: linear-gradient(180deg, #00ffe0, #007cf0);
-    opacity: 0;
-    transition: all 0.3s ease;
+    transition: all .3s ease;
 }
 
 section[data-testid="stSidebar"] div[role="radiogroup"] > label:hover {
     transform: translateX(6px);
-    background: rgba(0,255,224,0.08);
+    background: rgba(0,255,224,.08);
 }
 
-section[data-testid="stSidebar"] div[role="radiogroup"] > label:hover::after {
-    opacity: 1;
-}
-
-section[data-testid="stSidebar"] div[role="radiogroup"] > label:has(input:checked)::after {
-    opacity: 1;
-    animation: activePulse 1.4s infinite;
-}
-
-@keyframes activePulse {
-    0% { box-shadow: 0 0 8px rgba(0,255,224,0.4); }
-    50% { box-shadow: 0 0 18px rgba(0,255,224,0.9); }
-    100% { box-shadow: 0 0 8px rgba(0,255,224,0.4); }
-}
-
-/* ================= CARDS ================= */
+/* CARD */
 .card {
     position: relative;
     background: #1a1f2b;
@@ -96,7 +51,7 @@ section[data-testid="stSidebar"] div[role="radiogroup"] > label:has(input:checke
     content: "";
     position: absolute;
     inset: -2px;
-    background: linear-gradient(90deg, #00ffe0, #007cf0, #00ffe0);
+    background: linear-gradient(90deg,#00ffe0,#007cf0,#00ffe0);
     animation: borderMove 4s linear infinite;
     z-index: 0;
 }
@@ -111,38 +66,26 @@ section[data-testid="stSidebar"] div[role="radiogroup"] > label:has(input:checke
 }
 
 @keyframes borderMove {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
 
-.content {
-    position: relative;
-    z-index: 2;
-}
+.content { position: relative; z-index: 2; }
+.big { font-size: 32px; font-weight: bold; }
+.small { color: #aaa; }
 
-.big {
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.small {
-    color: #aaa;
-}
-
-.animate-once {
-    animation: popOnce 0.8s ease-out 1;
-}
+.animate-once { animation: popOnce .8s ease-out 1; }
 
 @keyframes popOnce {
-    0% { opacity: 0; transform: translateY(12px) scale(0.96); }
-    100% { opacity: 1; transform: translateY(0) scale(1); }
+    from { opacity:0; transform: translateY(12px) scale(.96); }
+    to { opacity:1; transform:none; }
 }
 
-.pulse-green { color: #00ff9f; }
-.pulse-red { color: #ff4d4d; }
+.pulse-green { color:#00ff9f; }
+.pulse-red { color:#ff4d4d; }
 
 .plotly .bars path {
-    transition: all 0.8s ease-in-out !important;
+    transition: all .8s ease-in-out !important;
 }
 
 </style>
@@ -158,11 +101,9 @@ df = df[df["data"].dt.date >= hoje].copy()
 
 df["dia"] = df["data"].dt.date
 df["mes"] = df["data"].dt.month
-
 df["status"] = df["status"].fillna("").astype(str).str.strip()
 df["analista"] = df["analista"].fillna("").astype(str).str.strip()
 df["assunto"] = df["assunto"].fillna("").astype(str).str.strip()
-
 df["analista_exibicao"] = df["analista"].replace("", "Sem analista")
 
 # ================= SIDEBAR =================
@@ -182,19 +123,16 @@ dias = sorted(dias_base["dia"].dropna().unique())
 dia_sel = st.sidebar.selectbox("Dia", ["Todos"] + list(dias))
 
 df_f = df.copy()
-if mes_sel != "Todos":
-    df_f = df_f[df_f["mes"] == mes_sel]
-if dia_sel != "Todos":
-    df_f = df_f[df_f["dia"] == dia_sel]
+if mes_sel != "Todos": df_f = df_f[df_f["mes"] == mes_sel]
+if dia_sel != "Todos": df_f = df_f[df_f["dia"] == dia_sel]
 
 # ================= FUNÇÕES =================
-def card(icon, valor, label, extra="", animate=True):
-    anim = "animate-once" if animate else ""
+def card(icon, valor, label, extra=""):
     return f"""
     <div class="card">
         <div class="content">
             {icon}
-            <div class="big {extra} {anim}">{valor}</div>
+            <div class="big {extra} animate-once">{valor}</div>
             <div class="small">{label}</div>
         </div>
     </div>
@@ -202,26 +140,24 @@ def card(icon, valor, label, extra="", animate=True):
 
 def resumo(df):
     total = len(df)
-    total_categ = df["status"].isin(["Categorizado", "Erro", "Correto"]).sum()
-    errados = (df["status"] == "Erro").sum()
+    total_categ = df["status"].isin(["Categorizado","Erro","Correto"]).sum()
+    errados = (df["status"]=="Erro").sum()
     certos = total_categ - errados
-    sem_cat = (df["status"] == "Sem categoria").sum()
-    return total, total_categ, certos, errados, sem_cat
+    sem_cat = (df["status"]=="Sem categoria").sum()
+    return total,total_categ,certos,errados,sem_cat
 
 # ================= DASHBOARD =================
-if pagina == "📊 Dashboard":
-
+if pagina=="📊 Dashboard":
     st.title("🚀 Painel Inteligente")
 
-    total, total_categ, certos, errados, sem_cat = resumo(df_f)
+    total,total_categ,certos,errados,sem_cat = resumo(df_f)
+    c1,c2,c3,c4,c5 = st.columns(5)
 
-    c1, c2, c3, c4, c5 = st.columns(5)
-
-    c1.markdown(card("📩", total, "Total"), unsafe_allow_html=True)
-    c2.markdown(card("📌", total_categ, "Total categorizados"), unsafe_allow_html=True)
-    c3.markdown(card("✅", certos, "Categorizados certos", "pulse-green"), unsafe_allow_html=True)
-    c4.markdown(card("❌", errados, "Categorizados errados", "pulse-red"), unsafe_allow_html=True)
-    c5.markdown(card("🚫", sem_cat, "Sem categoria"), unsafe_allow_html=True)
+    c1.markdown(card("📩",total,"Total"),unsafe_allow_html=True)
+    c2.markdown(card("📌",total_categ,"Total categorizados"),unsafe_allow_html=True)
+    c3.markdown(card("✅",certos,"Categorizados certos","pulse-green"),unsafe_allow_html=True)
+    c4.markdown(card("❌",errados,"Categorizados errados","pulse-red"),unsafe_allow_html=True)
+    c5.markdown(card("🚫",sem_cat,"Sem categoria"),unsafe_allow_html=True)
 
     st.divider()
     st.subheader("📊 Volume por Analista")
@@ -229,53 +165,52 @@ if pagina == "📊 Dashboard":
     dist = df_f.groupby("analista_exibicao").size().reset_index(name="Qtd")
 
     fig = px.bar(
-        dist,
-        x="analista_exibicao",
-        y="Qtd",
-        text="Qtd",
-        template="plotly_dark"
+        dist, x="analista_exibicao", y="Qtd",
+        text="Qtd", template="plotly_dark"
     )
-
-    fig.update_traces(textposition="outside", cliponaxis=False)
     fig.update_layout(transition_duration=800)
     st.plotly_chart(fig, use_container_width=True)
 
-# ================= ANÁLISES =================
-elif pagina == "📈 Análises":
-
+# ================= ANALISES (GRÁFICO BOM) =================
+elif pagina=="📈 Análises":
     st.title("📈 Análises")
 
-    total, total_categ, certos, errados, _ = resumo(df_f)
+    _,total_categ,certos,errados,_ = resumo(df_f)
+    qualidade = (certos/total_categ*100) if total_categ>0 else 0
 
-    taxa_erro = (errados / total_categ * 100) if total_categ > 0 else 0
+    fig = go.Figure(
+        data=[go.Pie(
+            labels=["Categorizados certos","Categorizados errados"],
+            values=[certos,errados],
+            hole=.72,
+            marker=dict(colors=["#00ff9f","#ff4d4d"]),
+            textinfo="percent"
+        )]
+    )
 
-    st.metric("Taxa de erro (%)", f"{taxa_erro:.2f}%")
-
-    por_status = df_f["status"].value_counts().reset_index()
-    por_status.columns = ["Status", "Qtd"]
-
-    fig = px.pie(
-        por_status,
-        names="Status",
-        values="Qtd",
-        template="plotly_dark"
+    fig.update_layout(
+        template="plotly_dark",
+        annotations=[dict(
+            text=f"<b>{qualidade:.1f}%</b><br>Qualidade",
+            x=.5,y=.5,showarrow=False,font=dict(size=26)
+        )],
+        transition_duration=800
     )
 
     st.plotly_chart(fig, use_container_width=True)
 
 # ================= POR DIA =================
-elif pagina == "📅 Por Dia":
-
+elif pagina=="📅 Por Dia":
     st.title("📅 Por Dia")
-
-    por_dia = df_f.groupby(["dia", "status"]).size().reset_index(name="Qtd")
-    st.dataframe(por_dia, use_container_width=True)
+    st.dataframe(
+        df_f.groupby(["dia","status"]).size().reset_index(name="Qtd"),
+        use_container_width=True
+    )
 
 # ================= DADOS =================
-elif pagina == "📄 Dados":
-
+elif pagina=="📄 Dados":
     st.title("📄 Logs")
-    st.dataframe(df_f, use_container_width=True)
+    st.dataframe(df_f,use_container_width=True)
 
 
 
