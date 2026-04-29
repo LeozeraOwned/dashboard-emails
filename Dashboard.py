@@ -17,13 +17,157 @@ body {
 /* SIDEBAR ANIMADA */
 section[data-testid="stSidebar"] {
     background: linear-gradient(180deg, #0e1117, #111827);
-    box-shadow: 0 0 20px #00ffe0;
-    animation: glowMenu 2s infinite alternate;
+    box-shadow: 0 0 20px rgba(0,255,224,0.35);
+    animation: glowMenu 2.4s infinite alternate;
+    border-right: 1px solid rgba(0,255,224,0.12);
 }
 
 @keyframes glowMenu {
-    from { box-shadow: 0 0 5px #00ffe0; }
-    to { box-shadow: 0 0 25px #00ffe0; }
+    from { box-shadow: 0 0 8px rgba(0,255,224,0.18); }
+    to { box-shadow: 0 0 24px rgba(0,255,224,0.35); }
+}
+
+/* TÍTULO DO MENU */
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    animation: titlePulse 2.5s ease-in-out infinite;
+    letter-spacing: 0.5px;
+}
+
+@keyframes titlePulse {
+    0%   { text-shadow: 0 0 0px rgba(0,255,224,0.0); }
+    50%  { text-shadow: 0 0 12px rgba(0,255,224,0.35); }
+    100% { text-shadow: 0 0 0px rgba(0,255,224,0.0); }
+}
+
+/* ================= MENU ANIMADO ================= */
+
+/* grupo do radio */
+section[data-testid="stSidebar"] div[role="radiogroup"] {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* item do menu */
+section[data-testid="stSidebar"] div[role="radiogroup"] > label {
+    position: relative;
+    padding: 10px 14px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: all 0.35s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* animação de entrada */
+section[data-testid="stSidebar"] div[role="radiogroup"] > label {
+    animation: menuEnter 0.6s ease forwards;
+}
+
+@keyframes menuEnter {
+    from {
+        opacity: 0;
+        transform: translateX(-12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* brilho correndo */
+section[data-testid="stSidebar"] div[role="radiogroup"] > label::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(0,255,224,0.25),
+        transparent
+    );
+    transform: translateX(-120%);
+    transition: transform 0.6s ease;
+}
+
+/* barra lateral animada */
+section[data-testid="stSidebar"] div[role="radiogroup"] > label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15%;
+    width: 4px;
+    height: 70%;
+    background: linear-gradient(180deg, #00ffe0, #007cf0);
+    border-radius: 4px;
+    opacity: 0;
+    box-shadow: 0 0 12px rgba(0,255,224,0.6);
+    transition: all 0.3s ease;
+}
+
+/* hover */
+section[data-testid="stSidebar"] div[role="radiogroup"] > label:hover {
+    transform: translateX(6px);
+    background: rgba(0,255,224,0.08);
+    border-color: rgba(0,255,224,0.35);
+}
+
+section[data-testid="stSidebar"] div[role="radiogroup"] > label:hover::before {
+    transform: translateX(120%);
+}
+
+section[data-testid="stSidebar"] div[role="radiogroup"] > label:hover::after {
+    opacity: 1;
+}
+
+/* item ativo */
+section[data-testid="stSidebar"] div[role="radiogroup"] > label:has(input:checked) {
+    background: rgba(0,255,224,0.12);
+    border-color: rgba(0,255,224,0.5);
+    transform: translateX(6px);
+}
+
+section[data-testid="stSidebar"] div[role="radiogroup"] > label:has(input:checked)::after {
+    opacity: 1;
+    animation: activePulse 1.4s infinite;
+}
+
+@keyframes activePulse {
+    0%   { box-shadow: 0 0 8px rgba(0,255,224,0.4); }
+    50%  { box-shadow: 0 0 18px rgba(0,255,224,0.9); }
+    100% { box-shadow: 0 0 8px rgba(0,255,224,0.4); }
+}
+
+/* LABELS DOS FILTROS */
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] .stSelectbox label {
+    font-weight: 600;
+}
+
+/* SELECTBOX ANIMADO */
+section[data-testid="stSidebar"] div[data-baseweb="select"] > div {
+    background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(0,255,224,0.02)) !important;
+    border: 1px solid rgba(255,255,255,0.06) !important;
+    border-radius: 14px !important;
+    transition: all 0.28s ease !important;
+    box-shadow: none !important;
+}
+
+section[data-testid="stSidebar"] div[data-baseweb="select"] > div:hover {
+    transform: translateX(4px);
+    border-color: rgba(0,255,224,0.35) !important;
+    box-shadow: 0 0 14px rgba(0,255,224,0.12) !important;
+    background: linear-gradient(90deg, rgba(0,255,224,0.06), rgba(255,255,255,0.03)) !important;
+}
+
+section[data-testid="stSidebar"] div[data-baseweb="select"]:focus-within > div,
+section[data-testid="stSidebar"] div[data-baseweb="select"] > div:focus-within {
+    border-color: rgba(0,255,224,0.55) !important;
+    box-shadow: 0 0 0 1px rgba(0,255,224,0.35), 0 0 18px rgba(0,255,224,0.18) !important;
+    transform: translateX(4px);
 }
 
 /* CARD */
@@ -96,7 +240,7 @@ section[data-testid="stSidebar"] {
     100% {transform: rotate(360deg);}
 }
 
-/* TAXA */
+/* CORES DE STATUS */
 .pulse-green {
     color: #00ff9f;
 }
@@ -137,13 +281,24 @@ section[data-testid="stSidebar"] {
 # ================= LOAD =================
 df = pd.read_csv("log_emails.csv")
 
+# Normalização básica
+df.columns = [c.strip() for c in df.columns]
+
 df["data"] = pd.to_datetime(df["data"], errors="coerce")
 df["dia"] = df["data"].dt.date
 df["mes"] = df["data"].dt.month
 
-# ORDEM FIXA DOS ANALISTAS (IMPORTANTE PARA AS BARRAS NÃO "ANDAR" DE LADO)
-all_analistas = sorted(df["analista"].dropna().astype(str).unique().tolist())
-max_qtd_analista = int(df["analista"].value_counts().max()) if not df.empty else 1
+df["assunto"] = df["assunto"].fillna("").astype(str).str.strip()
+df["analista"] = df["analista"].fillna("").astype(str).str.strip()
+df["motivo"] = df["motivo"].fillna("").astype(str).str.strip()
+df["status"] = df["status"].fillna("").astype(str).str.strip()
+
+# Campo de exibição para evitar branco no gráfico
+df["analista_exibicao"] = df["analista"].replace("", "Sem analista")
+
+# ORDEM FIXA DOS ANALISTAS
+all_analistas = sorted(df["analista_exibicao"].dropna().astype(str).unique().tolist())
+max_qtd_analista = int(df["analista_exibicao"].value_counts().max()) if not df.empty else 1
 
 # ================= SIDEBAR =================
 st.sidebar.title("📊 MENU")
@@ -154,10 +309,14 @@ pagina = st.sidebar.radio(
 )
 
 # ================= FILTROS =================
-meses = sorted(df["mes"].dropna().unique())
+meses = sorted([int(m) for m in df["mes"].dropna().unique()])
 mes_sel = st.sidebar.selectbox("Mês", ["Todos"] + list(meses))
 
-dias = sorted(df["dia"].dropna().unique())
+dias_base = df.copy()
+if mes_sel != "Todos":
+    dias_base = dias_base[dias_base["mes"] == mes_sel]
+
+dias = sorted(dias_base["dia"].dropna().unique())
 dia_sel = st.sidebar.selectbox("Dia", ["Todos"] + list(dias))
 
 df_f = df.copy()
@@ -181,7 +340,7 @@ elif st.session_state["last_filter_key"] != filtro_key:
 else:
     st.session_state["animar_cards"] = False
 
-# ================= FUNÇÃO CARD =================
+# ================= FUNÇÕES =================
 def card(icon, valor, label, extra_class="", animate=False):
     anim_class = "animate-once" if animate else ""
     return f"""
@@ -194,37 +353,37 @@ def card(icon, valor, label, extra_class="", animate=False):
     </div>
     """
 
-# ================= FUNÇÃO DIST ANALISTA =================
 def get_dist_analista(dataframe):
-    contagem = dataframe["analista"].astype(str).value_counts().reindex(all_analistas, fill_value=0)
+    contagem = (
+        dataframe["analista_exibicao"]
+        .astype(str)
+        .value_counts()
+        .reindex(all_analistas, fill_value=0)
+    )
+
     dist = pd.DataFrame({
         "Analista": all_analistas,
         "Qtd": contagem.values
     })
     return dist
 
-# ================= FUNÇÃO PARA DESCOBRIR COLUNA "O QUE ESTÁ SENDO ANALISADO" =================
-def detectar_coluna_analise(dataframe):
-    mapa = {col.lower(): col for col in dataframe.columns}
+def calcular_resumo_categorizacao(dataframe):
+    status_norm = dataframe["status"].astype(str).str.strip().str.lower()
 
-    candidatos = [
-        "analise", "análise",
-        "assunto",
-        "categoria",
-        "objeto",
-        "descricao", "descrição",
-        "tipo",
-        "email",
-        "arquivo",
-        "processo",
-        "item"
-    ]
+    # Total categorizados = o que já teve validação final (Correto ou Erro)
+    total_categorizados = int(status_norm.isin(["correto", "erro"]).sum())
+    categorizados_certos = int((status_norm == "correto").sum())
+    categorizados_errados = int((status_norm == "erro").sum())
 
-    for c in candidatos:
-        if c in mapa:
-            return mapa[c]
+    return total_categorizados, categorizados_certos, categorizados_errados
 
-    return None
+def formatar_data_pt(valor):
+    if pd.isna(valor):
+        return ""
+    try:
+        return pd.to_datetime(valor).strftime("%d/%m/%Y %H:%M")
+    except:
+        return ""
 
 # ================= DASHBOARD =================
 if pagina == "📊 Dashboard":
@@ -232,24 +391,18 @@ if pagina == "📊 Dashboard":
     st.title("🚀 Painel Inteligente")
 
     total = len(df_f)
-    categ = len(df_f[df_f["status"] == "Categorizado"])
-    erros = len(df_f[df_f["status"] == "Erro"])
-    taxa = (categ / total * 100) if total > 0 else 0
-
-    classe_taxa = "pulse-green" if taxa >= 85 else "pulse-red"
+    total_categorizados, categorizados_certos, categorizados_errados = calcular_resumo_categorizacao(df_f)
 
     col1, col2, col3, col4 = st.columns(4)
-
     animar = st.session_state.get("animar_cards", False)
 
     col1.markdown(card("📩", total, "Total", animate=animar), unsafe_allow_html=True)
-    col2.markdown(card("✅", categ, "Categorizados", animate=animar), unsafe_allow_html=True)
-    col3.markdown(card("❌", erros, "Erros", animate=animar), unsafe_allow_html=True)
-    col4.markdown(card("⚡", f"{taxa:.1f}%", "Taxa", classe_taxa, animate=animar), unsafe_allow_html=True)
+    col2.markdown(card("📌", total_categorizados, "Total categorizados", animate=animar), unsafe_allow_html=True)
+    col3.markdown(card("✅", categorizados_certos, "Categorizados certos", "pulse-green", animate=animar), unsafe_allow_html=True)
+    col4.markdown(card("❌", categorizados_errados, "Categorizados errados", "pulse-red", animate=animar), unsafe_allow_html=True)
 
     st.divider()
 
-    # 📊 BARRA FIXA - NÃO ANDA PARA O LADO
     st.subheader("📊 Volume por Analista")
 
     dist = get_dist_analista(df_f)
@@ -276,30 +429,32 @@ if pagina == "📊 Dashboard":
 
     st.plotly_chart(fig, use_container_width=True)
 
-# ================= ANALISE =================
+# ================= ANÁLISES =================
 elif pagina == "📈 Análises":
 
     st.title("📈 Performance Geral")
 
-    total = len(df_f)
-    categ = len(df_f[df_f["status"] == "Categorizado"])
-    taxa = (categ / total * 100) if total > 0 else 0
+    total_categorizados, categorizados_certos, categorizados_errados = calcular_resumo_categorizacao(df_f)
 
-    # COR DO CARD CIRCULAR
-    if taxa >= 85:
+    qualidade_categorizacao = (
+        categorizados_certos / total_categorizados * 100
+        if total_categorizados > 0 else 0
+    )
+
+    if qualidade_categorizacao >= 85:
         cor_taxa = "#00e5ff"
-    elif taxa >= 50:
+    elif qualidade_categorizacao >= 50:
         cor_taxa = "#ffd54f"
     else:
         cor_taxa = "#ff4d4d"
 
-    restante = max(0, 100 - taxa)
+    restante = max(0, 100 - qualidade_categorizacao)
 
-    # 🔥 NOVO "VELOCÍMETRO" ESTILO CARD CIRCULAR
+    # Card circular / donut
     fig = go.Figure(
         data=[
             go.Pie(
-                values=[taxa, restante],
+                values=[qualidade_categorizacao, restante],
                 hole=0.78,
                 sort=False,
                 direction="clockwise",
@@ -321,14 +476,14 @@ elif pagina == "📈 Análises":
         showlegend=False,
         annotations=[
             dict(
-                text=f"<b>{taxa:.1f}%</b><br><span style='font-size:14px;color:#B8C1CC'>Perc. Meta</span>",
+                text=f"<b>{qualidade_categorizacao:.1f}%</b><br><span style='font-size:14px;color:#B8C1CC'>Categorizados certos</span>",
                 x=0.5,
                 y=0.5,
                 showarrow=False,
                 font=dict(size=30, color=cor_taxa)
             ),
             dict(
-                text="Taxa de Acerto",
+                text="Qualidade da Categorização",
                 x=0.5,
                 y=1.08,
                 showarrow=False,
@@ -339,57 +494,48 @@ elif pagina == "📈 Análises":
 
     st.plotly_chart(fig, use_container_width=True)
 
-    # 📊 TIMELINE COM DATA EM PORTUGUÊS
+    # Timeline com data em português
     timeline = df_f.groupby("dia").size().reset_index(name="Qtd")
-    timeline["Data"] = pd.to_datetime(timeline["dia"]).dt.strftime("%d/%m/%Y")
 
-    fig2 = px.line(
-        timeline,
-        x="Data",
-        y="Qtd",
-        markers=True,
-        template="plotly_dark"
-    )
+    if not timeline.empty:
+        timeline["Data"] = pd.to_datetime(timeline["dia"]).dt.strftime("%d/%m/%Y")
 
-    fig2.update_traces(
-        line=dict(color="#6C7BFF", width=3),
-        marker=dict(size=8, color="#6C7BFF")
-    )
-
-    fig2.update_layout(
-        transition_duration=800,
-        xaxis_title="Data",
-        yaxis_title="Qtd"
-    )
-
-    st.plotly_chart(fig2, use_container_width=True)
-
-    # 📋 TABELA COM O QUE ESTÁ SENDO ANALISADO
-    st.subheader("📋 Detalhamento")
-
-    col_analise = detectar_coluna_analise(df_f)
-
-    tabela_analises = df_f.copy()
-    tabela_analises["Data"] = tabela_analises["data"].dt.strftime("%d/%m/%Y %H:%M").fillna("")
-
-    if col_analise:
-        tabela_analises["O que está sendo analisado"] = tabela_analises[col_analise].astype(str)
-    else:
-        tabela_analises["O que está sendo analisado"] = (
-            "Status: " + tabela_analises["status"].astype(str) +
-            " | Analista: " + tabela_analises["analista"].astype(str)
+        fig2 = px.line(
+            timeline,
+            x="Data",
+            y="Qtd",
+            markers=True,
+            template="plotly_dark"
         )
 
-    colunas_exibir = ["Data", "O que está sendo analisado"]
+        fig2.update_traces(
+            line=dict(color="#6C7BFF", width=3),
+            marker=dict(size=8, color="#6C7BFF")
+        )
 
-    if "status" in tabela_analises.columns:
-        colunas_exibir.append("status")
-    if "analista" in tabela_analises.columns:
-        colunas_exibir.append("analista")
+        fig2.update_layout(
+            transition_duration=800,
+            xaxis_title="Data",
+            yaxis_title="Qtd"
+        )
 
-    tabela_final = tabela_analises[colunas_exibir].rename(columns={
-        "status": "Status",
-        "analista": "Analista"
+        st.plotly_chart(fig2, use_container_width=True)
+    else:
+        st.info("Sem dados para o período selecionado.")
+
+    # Tabela do que está sendo analisado
+    st.subheader("📋 O que está sendo analisado")
+
+    tabela_analises = df_f.copy()
+    tabela_analises["Data"] = tabela_analises["data"].apply(formatar_data_pt)
+
+    tabela_final = tabela_analises[
+        ["Data", "assunto", "analista_exibicao", "motivo", "status"]
+    ].rename(columns={
+        "assunto": "O que está sendo analisado",
+        "analista_exibicao": "Analista",
+        "motivo": "Motivo",
+        "status": "Status"
     })
 
     st.dataframe(tabela_final, use_container_width=True)
@@ -399,15 +545,13 @@ elif pagina == "📅 Por Dia":
 
     st.title("📅 Visão Detalhada")
 
-    col1, col2, col3 = st.columns(3)
-
     total = len(df_f)
-    categ = len(df_f[df_f["status"] == "Categorizado"])
-    erros = len(df_f[df_f["status"] == "Erro"])
+    total_categorizados, categorizados_certos, categorizados_errados = calcular_resumo_categorizacao(df_f)
 
+    col1, col2, col3 = st.columns(3)
     col1.metric("Total", total)
-    col2.metric("Categorizados", categ)
-    col3.metric("Erros", erros)
+    col2.metric("Categorizados certos", categorizados_certos)
+    col3.metric("Categorizados errados", categorizados_errados)
 
     st.divider()
 
@@ -423,8 +567,7 @@ elif pagina == "📅 Por Dia":
         category_orders={"Analista": all_analistas}
     )
 
-    # ESSA PARTE FIXA A POSIÇÃO DAS BARRAS PARA ELAS SUBIREM,
-    # EM VEZ DE "ESCORREGAREM" PARA A ESQUERDA
+    # Mantém barras fixas para subir de baixo pra cima
     fig.update_traces(textposition="outside", cliponaxis=False)
     fig.update_xaxes(categoryorder="array", categoryarray=all_analistas)
     fig.update_yaxes(range=[0, max_qtd_analista + 5])
@@ -442,5 +585,10 @@ elif pagina == "📄 Dados":
 
     st.title("📄 Logs")
 
-    st.dataframe(df_f, use_container_width=True)
+    dados_exibir = df_f.copy()
+    dados_exibir["data"] = dados_exibir["data"].apply(formatar_data_pt)
+    dados_exibir["analista"] = dados_exibir["analista"].replace("", "Sem analista")
+
+    st.dataframe(dados_exibir[["data", "assunto", "analista", "motivo", "status"]], use_container_width=True)
+
 
