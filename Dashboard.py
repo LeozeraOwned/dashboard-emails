@@ -8,11 +8,28 @@ st.set_page_config(layout="wide")
 st.markdown("""
 <style>
 
+/* FUNDO */
 body {
     background-color: #0e1117;
 }
 
-/* CARD BASE */
+/* SIDEBAR ANIMADA */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #0e1117, #111827);
+    box-shadow: 0 0 20px #00ffe0;
+}
+
+/* MENU GLOW */
+.css-1d391kg {
+    animation: glowMenu 2s infinite alternate;
+}
+
+@keyframes glowMenu {
+    from { box-shadow: 0 0 5px #00ffe0; }
+    to { box-shadow: 0 0 20px #00ffe0; }
+}
+
+/* CARD */
 .card {
     position: relative;
     background: #1a1f2b;
@@ -48,7 +65,7 @@ body {
 }
 
 .big {
-    font-size: 30px;
+    font-size: 32px;
     font-weight: bold;
 }
 
@@ -56,18 +73,31 @@ body {
     color: #aaa;
 }
 
-/* ANIMAÇÃO BORDA */
+/* BORDA GIRANDO */
 @keyframes borderMove {
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 }
 
-/* TAXA PISCANDO */
-.pulse {
-    animation: pulse 1s infinite;
+/* PULSE VERDE */
+.pulse-green {
+    animation: pulseGreen 1s infinite;
+    color: #00ff9f;
 }
 
-@keyframes pulse {
+@keyframes pulseGreen {
+    0% {opacity: 1;}
+    50% {opacity: 0.3;}
+    100% {opacity: 1;}
+}
+
+/* PULSE VERMELHO */
+.pulse-red {
+    animation: pulseRed 1s infinite;
+    color: #ff4d4d;
+}
+
+@keyframes pulseRed {
     0% {opacity: 1;}
     50% {opacity: 0.3;}
     100% {opacity: 1;}
@@ -116,71 +146,53 @@ if pagina == "📊 Dashboard":
     erros = len(df_f[df_f["status"] == "Erro"])
     taxa = (categ / total * 100) if total > 0 else 0
 
-    piscando = "pulse" if taxa < 80 else ""
+    # 🔥 DEFINE COR DINÂMICA
+    classe_taxa = "pulse-green" if taxa >= 85 else "pulse-red"
 
     col1, col2, col3, col4 = st.columns(4)
 
-    col1.markdown(f"""
-    <div class="card">
-        <div class="content">
-            📩
-            <div class="big">{total}</div>
-            <div class="small">Total</div>
+    def card(icon, valor, label, extra_class=""):
+        return f"""
+        <div class="card">
+            <div class="content {extra_class}">
+                {icon}
+                <div class="big">{valor}</div>
+                <div class="small">{label}</div>
+            </div>
         </div>
-    </div>
-    """, unsafe_allow_html=True)
+        """
 
-    col2.markdown(f"""
-    <div class="card">
-        <div class="content">
-            ✅
-            <div class="big">{categ}</div>
-            <div class="small">Categorizados</div>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
-    col3.markdown(f"""
-    <div class="card">
-        <div class="content">
-            ❌
-            <div class="big">{erros}</div>
-            <div class="small">Erros</div>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
-    col4.markdown(f"""
-    <div class="card">
-        <div class="content {piscando}">
-            ⚡
-            <div class="big">{taxa:.1f}%</div>
-            <div class="small">Taxa</div>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
+    col1.markdown(card("📩", total, "Total"), unsafe_allow_html=True)
+    col2.markdown(card("✅", categ, "Categorizados"), unsafe_allow_html=True)
+    col3.markdown(card("❌", erros, "Erros"), unsafe_allow_html=True)
+    col4.markdown(card("⚡", f"{taxa:.1f}%", "Taxa", classe_taxa), unsafe_allow_html=True)
 
     st.divider()
 
-    # 📊 DISTRIBUIÇÃO (VOLUME)
+    # 📊 DISTRIBUIÇÃO ANIMADA
     st.subheader("📊 Volume por Analista")
 
     dist = df_f["analista"].value_counts().reset_index()
     dist.columns = ["Analista", "Qtd"]
 
-    fig1 = px.bar(
+    fig = px.bar(
         dist,
         x="Analista",
         y="Qtd",
         color="Analista",
-        template="plotly_dark",
-        text="Qtd"
+        text="Qtd",
+        template="plotly_dark"
     )
 
-    st.plotly_chart(fig1, use_container_width=True)
+    # 🔥 ANIMAÇÃO SUAVE
+    fig.update_layout(
+        transition=dict(duration=800),
+    )
 
-    # 🧠 RANKING REAL (PERFORMANCE)
-    st.subheader("🏆 Ranking por Performance")
+    st.plotly_chart(fig, use_container_width=True)
+
+    # 🏆 PERFORMANCE
+    st.subheader("🏆 Ranking (Performance)")
 
     perf = df_f.groupby("analista")["status"].apply(
         lambda x: (x == "Categorizado").sum() / len(x) * 100
@@ -193,8 +205,12 @@ if pagina == "📊 Dashboard":
         x="Analista",
         y="Performance",
         color="Performance",
-        template="plotly_dark",
-        text="Performance"
+        text="Performance",
+        template="plotly_dark"
+    )
+
+    fig2.update_layout(
+        transition=dict(duration=800)
     )
 
     st.plotly_chart(fig2, use_container_width=True)
@@ -212,6 +228,10 @@ elif pagina == "📈 Análises":
         y="Qtd",
         markers=True,
         template="plotly_dark"
+    )
+
+    fig.update_layout(
+        transition=dict(duration=800)
     )
 
     st.plotly_chart(fig, use_container_width=True)
