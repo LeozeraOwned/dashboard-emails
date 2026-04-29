@@ -328,7 +328,6 @@ if dia_sel != "Todos":
     df_f = df_f[df_f["dia"] == dia_sel]
 
 # ================= CONTROLE DE ANIMAÇÃO =================
-# anima apenas na primeira carga ou quando filtro mudar
 filtro_key = f"{mes_sel}|{dia_sel}"
 
 if "last_filter_key" not in st.session_state:
@@ -369,13 +368,27 @@ def get_dist_analista(dataframe):
 
 def calcular_resumo_categorizacao(dataframe):
     status_norm = dataframe["status"].astype(str).str.strip().str.lower()
+    motivo_norm = dataframe["motivo"].astype(str).str.strip().str.lower()
 
-    # Total categorizados = o que já teve validação final (Correto ou Erro)
-    total_categorizados = int(status_norm.isin(["correto", "erro"]).sum())
-    categorizados_certos = int((status_norm == "correto").sum())
-    categorizados_errados = int((status_norm == "erro").sum())
+    # Total categorizados = tudo que entrou em fluxo de categorização
+    # inclui: Categorizado, Correto e Erro
+    total_categorizados = int(status_norm.isin(["categorizado", "correto", "erro"]).sum())
 
-    return total_categorizados, categorizados_certos, categorizados_errados
+    # Sua regra:
+    # CERTO = Correto OU "Humano removeu categoria"
+    categorizados_certos = int(
+        ((status_norm == "correto") | ((status_norm == "erro") & (motivo_norm == "humano removeu categoria"))).sum()
+    )
+
+    # ERRADO = Erro que NÃO seja "Humano removeu categoria"
+    categorizados_errados = int(
+        ((status_norm == "erro") & (motivo_norm != "humano removeu categoria")).sum()
+    )
+
+    # Pendentes = ainda ficaram só como Categorizado
+    pendentes_validacao = int((status_norm == "categorizado").sum())
+
+    return total_categorizados, categorizados_certos, categorizados_errados, pendentes_validacao
 
 def formatar_data_pt(valor):
     if pd.isna(valor):
@@ -391,7 +404,7 @@ if pagina == "📊 Dashboard":
     st.title("🚀 Painel Inteligente")
 
     total = len(df_f)
-    total_categorizados, categorizados_certos, categorizados_errados = calcular_resumo_categorizacao(df_f)
+    total_categorizados, categorizados_certos, categorizados_errados, pendentes_validacao = calcular_resumo_categorizacao(df_f)
 
     col1, col2, col3, col4 = st.columns(4)
     animar = st.session_state.get("animar_cards", False)
@@ -400,6 +413,8 @@ if pagina == "📊 Dashboard":
     col2.markdown(card("📌", total_categorizados, "Total categorizados", animate=animar), unsafe_allow_html=True)
     col3.markdown(card("✅", categorizados_certos, "Categorizados certos", "pulse-green", animate=animar), unsafe_allow_html=True)
     col4.markdown(card("❌", categorizados_errados, "Categorizados errados", "pulse-red", animate=animar), unsafe_allow_html=True)
+
+    st.caption(f"Pendentes de validação: {pendentes_validacao}")
 
     st.divider()
 
@@ -434,11 +449,13 @@ elif pagina == "📈 Análises":
 
     st.title("📈 Performance Geral")
 
-    total_categorizados, categorizados_certos, categorizados_errados = calcular_resumo_categorizacao(df_f)
+    total_categorizados, categorizados_certos, categorizados_errados, pendentes_validacao = calcular_resumo_categorizacao(df_f)
 
+    # Qualidade = certos sobre os revisados (certos + errados)
+    revisados = categorizados_certos + categorizados_errados
     qualidade_categorizacao = (
-        categorizados_certos / total_categorizados * 100
-        if total_categorizados > 0 else 0
+        categorizados_certos / revisados * 100
+        if revisados > 0 else 0
     )
 
     if qualidade_categorizacao >= 85:
@@ -450,7 +467,6 @@ elif pagina == "📈 Análises":
 
     restante = max(0, 100 - qualidade_categorizacao)
 
-    # Card circular / donut
     fig = go.Figure(
         data=[
             go.Pie(
@@ -494,7 +510,11 @@ elif pagina == "📈 Análises":
 
     st.plotly_chart(fig, use_container_width=True)
 
-    # Timeline com data em português
+    colm1, colm2, colm3 = st.columns(3)
+    colm1.metric("Total categorizados", total_categorizados)
+    colm2.metric("Revisados", revisados)
+    colm3.metric("Pendentes", pendentes_validacao)
+
     timeline = df_f.groupby("dia").size().reset_index(name="Qtd")
 
     if not timeline.empty:
@@ -523,7 +543,6 @@ elif pagina == "📈 Análises":
     else:
         st.info("Sem dados para o período selecionado.")
 
-    # Tabela do que está sendo analisado
     st.subheader("📋 O que está sendo analisado")
 
     tabela_analises = df_f.copy()
@@ -546,12 +565,15 @@ elif pagina == "📅 Por Dia":
     st.title("📅 Visão Detalhada")
 
     total = len(df_f)
-    total_categorizados, categorizados_certos, categorizados_errados = calcular_resumo_categorizacao(df_f)
+    total_categorizados, categorizados_certos, categorizados_errados, pendentes_validacao = calcular_resumo_categorizacao(df_f)
 
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns(4)
     col1.metric("Total", total)
-    col2.metric("Categorizados certos", categorizados_certos)
-    col3.metric("Categorizados errados", categorizados_errados)
+    col2.metric("Total categorizados", total_categorizados)
+    col3.metric("Categorizados certos", categorizados_certos)
+    col4.metric("Categorizados errados", categorizados_errados)
+
+    st.caption(f"Pendentes de validação: {pendentes_validacao}")
 
     st.divider()
 
@@ -567,7 +589,6 @@ elif pagina == "📅 Por Dia":
         category_orders={"Analista": all_analistas}
     )
 
-    # Mantém barras fixas para subir de baixo pra cima
     fig.update_traces(textposition="outside", cliponaxis=False)
     fig.update_xaxes(categoryorder="array", categoryarray=all_analistas)
     fig.update_yaxes(range=[0, max_qtd_analista + 5])
@@ -589,6 +610,10 @@ elif pagina == "📄 Dados":
     dados_exibir["data"] = dados_exibir["data"].apply(formatar_data_pt)
     dados_exibir["analista"] = dados_exibir["analista"].replace("", "Sem analista")
 
-    st.dataframe(dados_exibir[["data", "assunto", "analista", "motivo", "status"]], use_container_width=True)
+    st.dataframe(
+        dados_exibir[["data", "assunto", "analista", "motivo", "status"]],
+        use_container_width=True
+    )
+
 
 
