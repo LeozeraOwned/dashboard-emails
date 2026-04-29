@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 import plotly.graph_objects as go
+import plotly.express as px
 
 st.set_page_config(layout="wide")
 
@@ -14,10 +14,16 @@ body {
     background-color: #0e1117;
 }
 
-/* SIDEBAR */
+/* SIDEBAR ANIMADA */
 section[data-testid="stSidebar"] {
     background: linear-gradient(180deg, #0e1117, #111827);
-    box-shadow: 0 0 25px #00ffe0;
+    box-shadow: 0 0 20px #00ffe0;
+    animation: glowMenu 2s infinite alternate;
+}
+
+@keyframes glowMenu {
+    from { box-shadow: 0 0 5px #00ffe0; }
+    to { box-shadow: 0 0 25px #00ffe0; }
 }
 
 /* CARD */
@@ -28,11 +34,6 @@ section[data-testid="stSidebar"] {
     border-radius: 15px;
     text-align: center;
     overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px) scale(1.02);
 }
 
 /* BORDA ANIMADA */
@@ -45,7 +46,6 @@ section[data-testid="stSidebar"] {
     z-index: 0;
 }
 
-/* INTERIOR */
 .card::after {
     content: "";
     position: absolute;
@@ -70,13 +70,13 @@ section[data-testid="stSidebar"] {
     color: #aaa;
 }
 
-/* BORDA GIRANDO */
+/* ANIMAÇÃO BORDA */
 @keyframes borderMove {
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 }
 
-/* PULSE */
+/* TAXA */
 .pulse-green {
     animation: pulseGreen 1s infinite;
     color: #00ff9f;
@@ -99,6 +99,11 @@ section[data-testid="stSidebar"] {
     100% {opacity: 1;}
 }
 
+/* BARRA ANIMADA */
+.plotly .bars path {
+    transition: all 0.8s ease-in-out !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -108,7 +113,6 @@ df = pd.read_csv("log_emails.csv")
 df["data"] = pd.to_datetime(df["data"], errors="coerce")
 df["dia"] = df["data"].dt.date
 df["mes"] = df["data"].dt.month
-df["data_formatada"] = df["data"].dt.strftime("%d/%m/%Y %H:%M")
 
 # ================= SIDEBAR =================
 st.sidebar.title("📊 MENU")
@@ -118,8 +122,12 @@ pagina = st.sidebar.radio(
     ["📊 Dashboard", "📈 Análises", "📅 Por Dia", "📄 Dados"]
 )
 
-mes_sel = st.sidebar.selectbox("Mês", ["Todos"] + sorted(df["mes"].dropna().unique()))
-dia_sel = st.sidebar.selectbox("Dia", ["Todos"] + sorted(df["dia"].dropna().unique()))
+# ================= FILTROS =================
+meses = sorted(df["mes"].dropna().unique())
+mes_sel = st.sidebar.selectbox("Mês", ["Todos"] + list(meses))
+
+dias = sorted(df["dia"].dropna().unique())
+dia_sel = st.sidebar.selectbox("Dia", ["Todos"] + list(dias))
 
 df_f = df.copy()
 
@@ -128,6 +136,18 @@ if mes_sel != "Todos":
 
 if dia_sel != "Todos":
     df_f = df_f[df_f["dia"] == dia_sel]
+
+# ================= FUNÇÃO CARD =================
+def card(icon, valor, label, extra_class=""):
+    return f"""
+    <div class="card">
+        <div class="content {extra_class}">
+            {icon}
+            <div class="big">{valor}</div>
+            <div class="small">{label}</div>
+        </div>
+    </div>
+    """
 
 # ================= DASHBOARD =================
 if pagina == "📊 Dashboard":
@@ -143,17 +163,6 @@ if pagina == "📊 Dashboard":
 
     col1, col2, col3, col4 = st.columns(4)
 
-    def card(icon, valor, label, extra_class=""):
-        return f"""
-        <div class="card">
-            <div class="content {extra_class}">
-                {icon}
-                <div class="big">{valor}</div>
-                <div class="small">{label}</div>
-            </div>
-        </div>
-        """
-
     col1.markdown(card("📩", total, "Total"), unsafe_allow_html=True)
     col2.markdown(card("✅", categ, "Categorizados"), unsafe_allow_html=True)
     col3.markdown(card("❌", erros, "Erros"), unsafe_allow_html=True)
@@ -161,80 +170,101 @@ if pagina == "📊 Dashboard":
 
     st.divider()
 
+    # 📊 BARRA ANIMADA
+    st.subheader("📊 Volume por Analista")
+
     dist = df_f["analista"].value_counts().reset_index()
     dist.columns = ["Analista", "Qtd"]
 
-    fig = px.bar(dist, x="Analista", y="Qtd", color="Analista", text="Qtd")
-    fig.update_layout(template="plotly_dark", transition=dict(duration=1200))
+    fig = px.bar(
+        dist,
+        x="Analista",
+        y="Qtd",
+        color="Analista",
+        text="Qtd",
+        template="plotly_dark"
+    )
 
+    fig.update_layout(transition_duration=800)
     st.plotly_chart(fig, use_container_width=True)
 
 # ================= ANALISE =================
 elif pagina == "📈 Análises":
 
-    st.title("📈 Análises")
+    st.title("📈 Performance Geral")
 
     total = len(df_f)
     categ = len(df_f[df_f["status"] == "Categorizado"])
-    taxa = (categ / total * 100) if total else 0
+    taxa = (categ / total * 100) if total > 0 else 0
 
-    # 🚗 VELOCÍMETRO
-    gauge = go.Figure(go.Indicator(
+    # 🔥 VELOCÍMETRO
+    fig = go.Figure(go.Indicator(
         mode="gauge+number",
         value=taxa,
         title={'text': "Taxa de Acerto"},
         gauge={
             'axis': {'range': [0, 100]},
+            'bar': {'color': "cyan"},
             'steps': [
-                {'range': [0, 70], 'color': "red"},
-                {'range': [70, 85], 'color': "yellow"},
+                {'range': [0, 50], 'color': "red"},
+                {'range': [50, 85], 'color': "yellow"},
                 {'range': [85, 100], 'color': "green"}
-            ]
+            ],
         }
     ))
 
-    gauge.update_layout(template="plotly_dark")
-    st.plotly_chart(gauge, use_container_width=True)
+    fig.update_layout(template="plotly_dark")
+    st.plotly_chart(fig, use_container_width=True)
 
-    # 🥧 ROSCA
-    dist = df_f["analista"].value_counts().reset_index()
-    dist.columns = ["Analista", "Qtd"]
+    # 📊 TIMELINE
+    timeline = df_f.groupby("dia").size().reset_index(name="Qtd")
 
-    pie = px.pie(dist, names="Analista", values="Qtd", hole=0.6)
-    pie.update_layout(template="plotly_dark")
-    st.plotly_chart(pie, use_container_width=True)
+    fig2 = px.line(
+        timeline,
+        x="dia",
+        y="Qtd",
+        markers=True,
+        template="plotly_dark"
+    )
+
+    fig2.update_layout(transition_duration=800)
+    st.plotly_chart(fig2, use_container_width=True)
 
 # ================= POR DIA =================
 elif pagina == "📅 Por Dia":
 
-    st.title("📅 Detalhe por Dia")
+    st.title("📅 Visão Detalhada")
 
-    dias = sorted(df["dia"].dropna().unique())
-    dia_sel = st.selectbox("Escolha o dia", dias)
+    col1, col2, col3 = st.columns(3)
 
-    df_dia = df[df["dia"] == dia_sel]
+    total = len(df_f)
+    categ = len(df_f[df_f["status"] == "Categorizado"])
+    erros = len(df_f[df_f["status"] == "Erro"])
 
-    st.dataframe(df_dia)
+    col1.metric("Total", total)
+    col2.metric("Categorizados", categ)
+    col3.metric("Erros", erros)
 
-    dist = df_dia["analista"].value_counts().reset_index()
+    st.divider()
+
+    dist = df_f["analista"].value_counts().reset_index()
     dist.columns = ["Analista", "Qtd"]
 
-    fig = px.bar(dist, x="Analista", y="Qtd", color="Analista")
-    fig.update_layout(template="plotly_dark", transition=dict(duration=1000))
+    fig = px.bar(
+        dist,
+        x="Analista",
+        y="Qtd",
+        color="Analista",
+        text="Qtd",
+        template="plotly_dark"
+    )
 
+    fig.update_layout(transition_duration=800)
     st.plotly_chart(fig, use_container_width=True)
 
 # ================= DADOS =================
 elif pagina == "📄 Dados":
 
-    st.title("📄 Dados")
+    st.title("📄 Logs")
 
-    st.dataframe(df_f)
-
-    mini = df_f["analista"].value_counts().reset_index()
-    mini.columns = ["Analista", "Qtd"]
-
-    fig = px.bar(mini, x="Analista", y="Qtd", color="Analista")
-    fig.update_layout(template="plotly_dark")
-
-    st.plotly_chart(fig, use_container_width=True)
+    st.dataframe(df_f, use_container_width=True)
