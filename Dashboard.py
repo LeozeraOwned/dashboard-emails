@@ -1,108 +1,40 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 
 st.set_page_config(layout="wide")
 
-# ================= CSS ULTRA =================
+# ================= CSS =================
 st.markdown("""
 <style>
-
-/* FUNDO */
-body {
-    background-color: #0e1117;
-}
-
-/* SIDEBAR ANIMADA */
 section[data-testid="stSidebar"] {
     background: linear-gradient(180deg, #0e1117, #111827);
-    box-shadow: 0 0 20px #00ffe0;
+    box-shadow: 0 0 25px #00ffe0;
 }
 
-/* MENU GLOW */
-.css-1d391kg {
-    animation: glowMenu 2s infinite alternate;
-}
-
-@keyframes glowMenu {
-    from { box-shadow: 0 0 5px #00ffe0; }
-    to { box-shadow: 0 0 20px #00ffe0; }
-}
-
-/* CARD */
 .card {
-    position: relative;
     background: #1a1f2b;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-    overflow: hidden;
+    animation: float 3s ease-in-out infinite;
 }
 
-/* BORDA ANIMADA */
-.card::before {
-    content: "";
-    position: absolute;
-    inset: -2px;
-    background: linear-gradient(90deg, #00ffe0, #007cf0, #00ffe0);
-    animation: borderMove 4s linear infinite;
-    z-index: 0;
+@keyframes float {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-5px);}
+    100% {transform: translateY(0px);}
 }
 
-.card::after {
-    content: "";
-    position: absolute;
-    inset: 2px;
-    background: #1a1f2b;
-    border-radius: 15px;
-    z-index: 1;
-}
+.pulse-green {color:#00ff9f; animation:pulse 1s infinite;}
+.pulse-red {color:#ff4d4d; animation:pulse 1s infinite;}
 
-/* TEXTO */
-.content {
-    position: relative;
-    z-index: 2;
+@keyframes pulse {
+    0% {opacity:1;}
+    50% {opacity:0.3;}
+    100% {opacity:1;}
 }
-
-.big {
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.small {
-    color: #aaa;
-}
-
-/* BORDA GIRANDO */
-@keyframes borderMove {
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
-}
-
-/* PULSE VERDE */
-.pulse-green {
-    animation: pulseGreen 1s infinite;
-    color: #00ff9f;
-}
-
-@keyframes pulseGreen {
-    0% {opacity: 1;}
-    50% {opacity: 0.3;}
-    100% {opacity: 1;}
-}
-
-/* PULSE VERMELHO */
-.pulse-red {
-    animation: pulseRed 1s infinite;
-    color: #ff4d4d;
-}
-
-@keyframes pulseRed {
-    0% {opacity: 1;}
-    50% {opacity: 0.3;}
-    100% {opacity: 1;}
-}
-
 </style>
 """, unsafe_allow_html=True)
 
@@ -114,143 +46,139 @@ df["dia"] = df["data"].dt.date
 df["mes"] = df["data"].dt.month
 
 # ================= SIDEBAR =================
-st.sidebar.title("📊 MENU")
+st.sidebar.title("⚡ MENU INTERATIVO")
 
 pagina = st.sidebar.radio(
     "Navegação",
     ["📊 Dashboard", "📈 Análises", "📅 Por Dia", "📄 Dados"]
 )
 
-# ================= FILTROS =================
-meses = sorted(df["mes"].dropna().unique())
-mes_sel = st.sidebar.selectbox("Mês", ["Todos"] + list(meses))
-
-dias = sorted(df["dia"].dropna().unique())
-dia_sel = st.sidebar.selectbox("Dia", ["Todos"] + list(dias))
+mes = st.sidebar.selectbox("Mês", ["Todos"] + sorted(df["mes"].dropna().unique()))
+dia = st.sidebar.selectbox("Dia", ["Todos"] + sorted(df["dia"].dropna().unique()))
 
 df_f = df.copy()
 
-if mes_sel != "Todos":
-    df_f = df_f[df_f["mes"] == mes_sel]
+if mes != "Todos":
+    df_f = df_f[df_f["mes"] == mes]
 
-if dia_sel != "Todos":
-    df_f = df_f[df_f["dia"] == dia_sel]
+if dia != "Todos":
+    df_f = df_f[df_f["dia"] == dia]
 
 # ================= DASHBOARD =================
 if pagina == "📊 Dashboard":
 
-    st.title("🚀 Painel Inteligente")
-
     total = len(df_f)
     categ = len(df_f[df_f["status"] == "Categorizado"])
     erros = len(df_f[df_f["status"] == "Erro"])
-    taxa = (categ / total * 100) if total > 0 else 0
+    taxa = (categ / total * 100) if total else 0
 
-    # 🔥 DEFINE COR DINÂMICA
-    classe_taxa = "pulse-green" if taxa >= 85 else "pulse-red"
+    classe = "pulse-green" if taxa >= 85 else "pulse-red"
 
-    col1, col2, col3, col4 = st.columns(4)
+    c1, c2, c3, c4 = st.columns(4)
 
-    def card(icon, valor, label, extra_class=""):
-        return f"""
-        <div class="card">
-            <div class="content {extra_class}">
-                {icon}
-                <div class="big">{valor}</div>
-                <div class="small">{label}</div>
-            </div>
-        </div>
-        """
-
-    col1.markdown(card("📩", total, "Total"), unsafe_allow_html=True)
-    col2.markdown(card("✅", categ, "Categorizados"), unsafe_allow_html=True)
-    col3.markdown(card("❌", erros, "Erros"), unsafe_allow_html=True)
-    col4.markdown(card("⚡", f"{taxa:.1f}%", "Taxa", classe_taxa), unsafe_allow_html=True)
+    c1.markdown(f'<div class="card">📩<h2>{total}</h2>Total</div>', unsafe_allow_html=True)
+    c2.markdown(f'<div class="card">✅<h2>{categ}</h2>Categorizados</div>', unsafe_allow_html=True)
+    c3.markdown(f'<div class="card">❌<h2>{erros}</h2>Erros</div>', unsafe_allow_html=True)
+    c4.markdown(f'<div class="card {classe}">⚡<h2>{taxa:.1f}%</h2>Taxa</div>', unsafe_allow_html=True)
 
     st.divider()
-
-    # 📊 DISTRIBUIÇÃO ANIMADA
-    st.subheader("📊 Volume por Analista")
 
     dist = df_f["analista"].value_counts().reset_index()
     dist.columns = ["Analista", "Qtd"]
 
-    fig = px.bar(
-        dist,
-        x="Analista",
-        y="Qtd",
-        color="Analista",
-        text="Qtd",
-        template="plotly_dark"
-    )
+    fig = px.bar(dist, x="Analista", y="Qtd", color="Analista", text="Qtd")
 
-    # 🔥 ANIMAÇÃO SUAVE
     fig.update_layout(
-        transition=dict(duration=800),
+        template="plotly_dark",
+        transition=dict(duration=1200, easing="cubic-in-out")
     )
 
     st.plotly_chart(fig, use_container_width=True)
 
-    # 🏆 PERFORMANCE
-    st.subheader("🏆 Ranking (Performance)")
-
-    perf = df_f.groupby("analista")["status"].apply(
-        lambda x: (x == "Categorizado").sum() / len(x) * 100
-    ).reset_index()
-
-    perf.columns = ["Analista", "Performance"]
-
-    fig2 = px.bar(
-        perf.sort_values("Performance", ascending=False),
-        x="Analista",
-        y="Performance",
-        color="Performance",
-        text="Performance",
-        template="plotly_dark"
-    )
-
-    fig2.update_layout(
-        transition=dict(duration=800)
-    )
-
-    st.plotly_chart(fig2, use_container_width=True)
-
 # ================= ANALISE =================
 elif pagina == "📈 Análises":
 
-    st.title("📈 Análises")
+    st.title("🚀 Performance Geral")
 
-    timeline = df_f.groupby("dia").size().reset_index(name="Qtd")
+    total = len(df_f)
+    categ = len(df_f[df_f["status"] == "Categorizado"])
+    taxa = (categ / total * 100) if total else 0
 
-    fig = px.line(
-        timeline,
-        x="dia",
-        y="Qtd",
-        markers=True,
-        template="plotly_dark"
-    )
+    # 🔥 VELOCÍMETRO
+    fig = go.Figure(go.Indicator(
+        mode="gauge+number",
+        value=taxa,
+        title={'text': "Taxa de Acerto"},
+        gauge={
+            'axis': {'range': [0, 100]},
+            'bar': {'color': "white"},
+            'steps': [
+                {'range': [0, 70], 'color': "red"},
+                {'range': [70, 85], 'color': "yellow"},
+                {'range': [85, 100], 'color': "green"}
+            ]
+        }
+    ))
 
-    fig.update_layout(
-        transition=dict(duration=800)
-    )
-
+    fig.update_layout(template="plotly_dark")
     st.plotly_chart(fig, use_container_width=True)
 
 # ================= POR DIA =================
 elif pagina == "📅 Por Dia":
 
-    st.title("📅 Detalhe por Dia")
+    st.title("📅 Análise por Dia")
 
     dias = sorted(df["dia"].dropna().unique())
     dia_sel = st.selectbox("Escolha o dia", dias)
 
     df_dia = df[df["dia"] == dia_sel]
 
-    st.dataframe(df_dia)
+    # 📊 BARRA
+    dist = df_dia["analista"].value_counts().reset_index()
+    dist.columns = ["Analista", "Qtd"]
+
+    fig1 = px.bar(dist, x="Analista", y="Qtd", color="Analista", text="Qtd")
+    fig1.update_layout(template="plotly_dark", transition=dict(duration=1000))
+    st.plotly_chart(fig1, use_container_width=True)
+
+    # 🥧 ROSCA
+    fig2 = px.pie(dist, names="Analista", values="Qtd", hole=0.6)
+    fig2.update_layout(template="plotly_dark")
+    st.plotly_chart(fig2, use_container_width=True)
+
+    # 🚗 VELOCÍMETRO DO DIA
+    categ = len(df_dia[df_dia["status"] == "Categorizado"])
+    total = len(df_dia)
+    taxa = (categ / total * 100) if total else 0
+
+    fig3 = go.Figure(go.Indicator(
+        mode="gauge+number",
+        value=taxa,
+        title={'text': "Performance do Dia"},
+        gauge={'axis': {'range': [0, 100]}}
+    ))
+
+    fig3.update_layout(template="plotly_dark")
+    st.plotly_chart(fig3, use_container_width=True)
 
 # ================= DADOS =================
 elif pagina == "📄 Dados":
 
-    st.title("📄 Dados")
+    st.title("📄 Base de Dados Inteligente")
 
-    st.dataframe(df_f)
+    analista = st.selectbox(
+        "Filtrar",
+        ["Todos"] + sorted(df["analista"].dropna().unique())
+    )
+
+    df_final = df if analista == "Todos" else df[df["analista"] == analista]
+
+    st.dataframe(df_final, use_container_width=True)
+
+    # 📊 MINI GRÁFICO
+    mini = df_final["analista"].value_counts().reset_index()
+    mini.columns = ["Analista", "Qtd"]
+
+    fig = px.bar(mini, x="Analista", y="Qtd", color="Analista")
+    fig.update_layout(template="plotly_dark")
+    st.plotly_chart(fig, use_container_width=True)
