@@ -454,3 +454,6 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-04-30 13:27:53.196192;RE: Notas AG. D.U 29/04/2026;Edna;Score fraco 150;Categorizado;modelo
 2026-04-30 13:27:53.229818;Acompanhamento - Processos prioritarios -Bomi Itajaí - ATA;Elton;Aprendido por assunto;Categorizado;modelo
 2026-04-30 13:27:53.272218;RES: RES: RES: RES: RES: RES: ENTREGA DA NF 163585  - DIVERGENCIA    [ ref:!00D1U0Db5p.!500Pn0zSmmZ:ref ];Carolina;Score forte 150;Categorizado;modelo
+2026-04-30 13:28:59.022007;  CRA Devolução de Equipamento Abbott:  NF 53475;Shirley;Corrigido de Andreani para Shirley;Erro;correcao_humana
+2026-04-30 13:28:59.027079;RE: ENC: ocorrencia abbott levantamento1006 - CAJ_FALTA FORNECEDOR_04F064F_131 unidades_570185    [ ref:!00D1U0Db5p.!500Pn0wMEff:ref ];Carolina;Sem intervenção;Correto;modelo
+2026-04-30 13:28:59.041423;RES: RES: RES: RES: RES: RES: ENTREGA DA NF 163585  - DIVERGENCIA    [ ref:!00D1U0Db5p.!500Pn0zSmmZ:ref ];Carolina;Sem intervenção;Correto;modelo
