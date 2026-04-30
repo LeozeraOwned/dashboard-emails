@@ -505,3 +505,8 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-04-30 16:47:20.989922;RE: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Score forte 150;Categorizado;modelo
 2026-04-30 16:47:21.029274;GRUPO SC - ABATIMENTO NO ATO - ABBOTT - 30/04/2026;Edna;Score forte 120;Categorizado;modelo
 2026-04-30 16:47:21.067730;GRUPO SC - ABATIMENTO NO ATO - ABBOTT - 30/04/2026;Edna;Score forte 120;Categorizado;modelo
+2026-04-30 16:58:56.372286;RE: RES: RES: RES: RES: RES: ENTREGA DA NF 163585  - DIVERGENCIA    [ ref:!00D1U0Db5p.!500Pn0zSmmZ:ref ];Carolina;Score fraco 150;Categorizado;modelo
+2026-04-30 16:58:56.406680;DASHBOARD 30/04/2026;Elton;Score forte 200;Categorizado;modelo
+2026-04-30 16:58:56.456598;RES: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Score forte 150;Categorizado;modelo
+2026-04-30 16:58:56.506514;RES: RES: RES: RES: RES: RES: ENTREGA DA NF 163585  - DIVERGENCIA    [ ref:!00D1U0Db5p.!500Pn0zSmmZ:ref ];Carolina;Score fraco 150;Categorizado;modelo
+2026-04-30 16:58:56.556528;RES: ENC: Registro de Inconformidade;Carolina;Score fraco 150;Categorizado;modelo
