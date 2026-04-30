@@ -443,3 +443,4 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-04-30 11:00:54.477762;RES: [Ação Requerida] - Solicitação de upload de NFD;Carolina;Score forte 150;Categorizado;modelo
 2026-04-30 11:00:54.566577;RES: Deliveries VAS;Carolina;Corrigido de Elton para Carolina;Erro;correcao_humana
 2026-04-30 11:00:54.582088;RES: ENC: REEMBOLSO REF. DEVOLUÇÕES DE COMPRAS - UNI HOSPITALAR CEARÁ LTDA - ABBOTT [ ref:!00D1U0Db5p.!500Kk04MQvM:ref ];Edna;Corrigido de Elton para Edna;Erro;correcao_humana
+2026-04-30 11:18:11.267087;Nova solicitação no sharepoint;Andreani;Sem evidência;Categorizado;modelo
