@@ -457,3 +457,7 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-04-30 13:28:59.022007;  CRA Devolução de Equipamento Abbott:  NF 53475;Shirley;Corrigido de Andreani para Shirley;Erro;correcao_humana
 2026-04-30 13:28:59.027079;RE: ENC: ocorrencia abbott levantamento1006 - CAJ_FALTA FORNECEDOR_04F064F_131 unidades_570185    [ ref:!00D1U0Db5p.!500Pn0wMEff:ref ];Carolina;Sem intervenção;Correto;modelo
 2026-04-30 13:28:59.041423;RES: RES: RES: RES: RES: RES: ENTREGA DA NF 163585  - DIVERGENCIA    [ ref:!00D1U0Db5p.!500Pn0zSmmZ:ref ];Carolina;Sem intervenção;Correto;modelo
+2026-04-30 14:39:22.911247;Re: RES: Recebimento de CK com validade curta sem autorização [ ref:!00D1U0Db5p.!500Pn01OOEEr:ref ];Carolina;Score forte 150;Categorizado;modelo
+2026-04-30 14:39:22.946703;FW: Ajuda - NF 678706 remessa para conserto Airzap;Andreani;Sem evidência;Categorizado;modelo
+2026-04-30 14:39:22.990856;Férias Re: RES: RES: Recebimento de CK com validade curta sem autorização [ ref:!00D1U0Db5p.!500Pn01OOEEr:ref ];Andreani;Sem evidência;Categorizado;modelo
+2026-04-30 14:39:23.040322;RE: Ajuda - NF 678706 remessa para conserto Airzap;Andreani;Sem evidência;Categorizado;modelo
