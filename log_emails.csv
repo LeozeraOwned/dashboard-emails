@@ -510,3 +510,5 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-04-30 16:58:56.456598;RES: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Score forte 150;Categorizado;modelo
 2026-04-30 16:58:56.506514;RES: RES: RES: RES: RES: RES: ENTREGA DA NF 163585  - DIVERGENCIA    [ ref:!00D1U0Db5p.!500Pn0zSmmZ:ref ];Carolina;Score fraco 150;Categorizado;modelo
 2026-04-30 16:58:56.556528;RES: ENC: Registro de Inconformidade;Carolina;Score fraco 150;Categorizado;modelo
+2026-04-30 17:26:19.120854;RE: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Score forte 150;Categorizado;modelo
+2026-04-30 17:26:19.153485;RES: ANOMALIA ADC - PEDIDOS - 0531066297    [ ref:!00D1U0Db5p.!500Pn01Pw4Cn:ref ];Edna;Score forte 150;Categorizado;modelo
