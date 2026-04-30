@@ -469,3 +469,6 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-04-30 15:56:13.173531;RE: Transferência - Guilherme Luis;Carolina;Score forte 150;Categorizado;modelo
 2026-04-30 15:56:13.256691;RE: RES: RES: RES: RES: RES: ENTREGA DA NF 163585  - DIVERGENCIA    [ ref:!00D1U0Db5p.!500Pn0zSmmZ:ref ];Carolina;Score fraco 150;Categorizado;modelo
 2026-04-30 15:56:13.327927;ABBOTT: AVARIA - NAZARIA BAHIA - NFO: 580497;Andreani;Sem evidência;Categorizado;modelo
+2026-04-30 15:59:34.583462;RES: CRÉDITO DE DEVOLUÇÃO - ABBOTT;;Humano removeu categoria;Erro;correcao_humana
+2026-04-30 15:59:34.589595;RES: CRÉDITO DE DEVOLUÇÃO - ABBOTT LABORATORIOS DO BRASIL LTDA;;Humano removeu categoria;Erro;correcao_humana
+2026-04-30 15:59:34.610385;ABBOTT: AVARIA - NAZARIA BAHIA - NFO: 580497;;Humano removeu categoria;Erro;correcao_humana
