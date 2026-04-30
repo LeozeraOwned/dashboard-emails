@@ -445,3 +445,4 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-04-30 11:00:54.582088;RES: ENC: REEMBOLSO REF. DEVOLUÇÕES DE COMPRAS - UNI HOSPITALAR CEARÁ LTDA - ABBOTT [ ref:!00D1U0Db5p.!500Kk04MQvM:ref ];Edna;Corrigido de Elton para Edna;Erro;correcao_humana
 2026-04-30 11:18:11.267087;Nova solicitação no sharepoint;Andreani;Sem evidência;Categorizado;modelo
 2026-04-30 11:21:15.899719;RES: ABBOTT/ FALTA INTERNA;Carolina;Score fraco 150;Categorizado;modelo
+2026-04-30 11:38:17.579586;RES: Notas AG. D.U 29/04/2026;Edna;Score fraco 150;Categorizado;modelo
