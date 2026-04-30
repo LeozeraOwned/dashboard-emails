@@ -361,9 +361,9 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-04-29 16:22:05.148818;RES: OCORRÊNCIA  NF 190075-FUNDO MUNICIPAL DE SAUDE DE FLORIAN FLORIANOPOLIS - SC;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
 2026-04-29 16:22:05.168039;ENC: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE ;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
 2026-04-29 16:22:05.174999;DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE ;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
-2026-04-29 16:22:05.184020;RES: Fwd: Fw: RES: 56627065 - FUND MUNI DE SAUDE DE CASCAVEL;;Sem intervenção;Correto;modelo
-2026-04-29 16:22:05.190868;RE: Fwd: Fw: RES: 56627065 - FUND MUNI DE SAUDE DE CASCAVEL;;Sem intervenção;Correto;modelo
-2026-04-29 16:22:05.196478;RE: Fwd: Fw: RES: 56627065 - FUND MUNI DE SAUDE DE CASCAVEL;;Sem intervenção;Correto;modelo
+2026-04-29 16:22:05.184020;RES: Fwd: Fw: RES: 56627065 - FUND MUNI DE SAUDE DE CASCAVEL;Edna;Sem intervenção;Correto;modelo
+2026-04-29 16:22:05.190868;RE: Fwd: Fw: RES: 56627065 - FUND MUNI DE SAUDE DE CASCAVEL;Edna;Sem intervenção;Correto;modelo
+2026-04-29 16:22:05.196478;RE: Fwd: Fw: RES: 56627065 - FUND MUNI DE SAUDE DE CASCAVEL;Edna;Sem intervenção;Correto;modelo
 2026-04-29 16:22:05.206552;Re: RES: ENC: OC 555758/555494 ABBOTT - HPj - FATURAR EM ABRIL;;Humano removeu categoria;Erro;correcao_humana
 2026-04-29 16:23:57.977341;RE: Retirada PMRP;;Humano removeu categoria;Erro;correcao_humana
 2026-04-29 16:23:57.994046;RES: Pré-alerta Atualizado de Cargas Abbott - 29.04.2026 - Alterar bloqueio;Edna;Corrigido de Elton para Edna;Erro;correcao_humana
@@ -373,9 +373,9 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-04-29 16:23:58.044116;RES: OCORRÊNCIA  NF 190075-FUNDO MUNICIPAL DE SAUDE DE FLORIAN FLORIANOPOLIS - SC;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
 2026-04-29 16:23:58.053660;ENC: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE ;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
 2026-04-29 16:23:58.064658;DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE ;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
-2026-04-29 16:23:58.073359;RES: Fwd: Fw: RES: 56627065 - FUND MUNI DE SAUDE DE CASCAVEL;;Sem intervenção;Correto;modelo
-2026-04-29 16:23:58.083193;RE: Fwd: Fw: RES: 56627065 - FUND MUNI DE SAUDE DE CASCAVEL;;Sem intervenção;Correto;modelo
-2026-04-29 16:23:58.093218;RE: Fwd: Fw: RES: 56627065 - FUND MUNI DE SAUDE DE CASCAVEL;;Sem intervenção;Correto;modelo
+2026-04-29 16:23:58.073359;RES: Fwd: Fw: RES: 56627065 - FUND MUNI DE SAUDE DE CASCAVEL;Edna;Sem intervenção;Correto;modelo
+2026-04-29 16:23:58.083193;RE: Fwd: Fw: RES: 56627065 - FUND MUNI DE SAUDE DE CASCAVEL;Edna;Sem intervenção;Correto;modelo
+2026-04-29 16:23:58.093218;RE: Fwd: Fw: RES: 56627065 - FUND MUNI DE SAUDE DE CASCAVEL;Edna;Sem intervenção;Correto;modelo
 2026-04-29 17:32:14.428934;Nova solicitação no sharepoint;Andreani;Sem evidência;Categorizado;modelo
 2026-04-29 17:32:14.461899;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;Andreani;Sem evidência;Categorizado;modelo
 2026-04-29 17:32:14.513121;DASHBOARD 29/04/2026;Andreani;Score fraco 220;Categorizado;modelo
@@ -390,4 +390,9 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-04-29 17:47:14.846578;RE: CONSOLIDADO - AGENDAMENTO DE COLETA - ABBOTT VENCIDOS - 27.03.2026;Carolina;Score forte 270;Categorizado;modelo
 2026-04-29 18:09:56.790972;Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 29/ABRIL/2026.;Edna;Score forte 160;Categorizado;modelo
 2026-04-29 18:09:56.836513;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;Andreani;Sem evidência;Categorizado;modelo
-2026-04-29 19:52:38.742250,Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 29/ABRIL/2026.,Edna,Score forte 160,Categorizado,modelo
+2026-04-29 19:52:38.742250;Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 29/ABRIL/2026.,Edna,Score forte 160,Categorizado,modelo;;;;
+2026-04-29 20:49:51.450092;Fechamento do Mês -  Faturamento CN - Abr - 2026;Andreani;Sem evidência;Categorizado;modelo
+2026-04-29 20:49:51.490589;Job - Geração Automática Faturamento - Desabilitar schedule   Matriz e Filial  - Ticket Number INC4983788 - Abril -2026;Andreani;Sem evidência;Categorizado;modelo
+2026-04-29 22:18:14.280781;RE: Job - Geração Automática Faturamento - Desabilitar schedule   Matriz e Filial  - Ticket Number INC4983788 - Abril -2026;Andreani;Sem evidência;Categorizado;modelo
+2026-04-29 22:18:14.430312;Fechamento do Mês -  Faturamento CN - Abr - 2026;Andreani;Sem intervenção;Correto;modelo
+2026-04-29 22:18:14.475805;Job - Geração Automática Faturamento - Desabilitar schedule   Matriz e Filial  - Ticket Number INC4983788 - Abril -2026;Andreani;Sem intervenção;Correto;modelo
