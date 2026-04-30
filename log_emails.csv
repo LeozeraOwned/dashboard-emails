@@ -479,3 +479,10 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-04-30 16:32:17.170338;RES: CRÉDITO DE DEVOLUÇÃO - ABBOTT;;Humano removeu categoria;Erro;correcao_humana
 2026-04-30 16:32:17.184334;RES: CRÉDITO DE DEVOLUÇÃO - ABBOTT LABORATORIOS DO BRASIL LTDA;;Humano removeu categoria;Erro;correcao_humana
 2026-04-30 16:32:17.189418;ABBOTT: AVARIA - NAZARIA BAHIA - NFO: 580497;;Humano removeu categoria;Erro;correcao_humana
+2026-04-30 16:32:40.443443;RE: RES: RES: RES: RES: RES: ENTREGA DA NF 163585  - DIVERGENCIA    [ ref:!00D1U0Db5p.!500Pn0zSmmZ:ref ];Carolina;Sem intervenção;Correto;modelo
+2026-04-30 16:32:40.453093;RES: 6840 - FUNDACAO SAUDE DO EST. DO RIO DE JANEIRO - NF Série CPT612620 - PER-2025-0044096 - Overdue;Cleberson;Corrigido de Andreani para Cleberson;Erro;correcao_humana
+2026-04-30 16:32:40.469714;RE: RES: ENC: ocorrencia abbott levantamento1006 - CAJ_FALTA FORNECEDOR_04F064F_131 unidades_570185    [ ref:!00D1U0Db5p.!500Pn0wMEff:ref ];Carolina;Sem intervenção;Correto;modelo
+2026-04-30 16:32:40.484310;RES: RES: RES: RES: RES: RES: ENTREGA DA NF 163585  - DIVERGENCIA    [ ref:!00D1U0Db5p.!500Pn0zSmmZ:ref ];Carolina;Sem intervenção;Correto;modelo
+2026-04-30 16:32:40.498984;RES: CRÉDITO DE DEVOLUÇÃO - ABBOTT;;Humano removeu categoria;Erro;correcao_humana
+2026-04-30 16:32:40.510245;RES: CRÉDITO DE DEVOLUÇÃO - ABBOTT LABORATORIOS DO BRASIL LTDA;;Humano removeu categoria;Erro;correcao_humana
+2026-04-30 16:32:40.520778;ABBOTT: AVARIA - NAZARIA BAHIA - NFO: 580497;;Humano removeu categoria;Erro;correcao_humana
