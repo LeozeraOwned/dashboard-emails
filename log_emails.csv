@@ -438,3 +438,8 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-04-30 10:49:57.994535;RES: ENC: RES: [TICKET#1035517] Entrega de material errado Cinco Cirurgica;Edna;Corrigido de Carolina para Edna;Erro;correcao_humana
 2026-04-30 10:49:58.016136;RES: Pré-alerta Atualizado de Cargas Abbott - 29.04.2026 - Alterar bloqueio;Edna;Sem intervenção;Correto;modelo
 2026-04-30 10:49:58.038770;RES: Produtos Avariados - Devolução Abbott NF 577552 - URGENTE;Carolina;Sem intervenção;Correto;modelo
+2026-04-30 11:00:54.314747;Re: RES: ENC: RES: [TICKET#1035517] Entrega de material errado Cinco Cirurgica;Edna;Score forte 210;Categorizado;modelo
+2026-04-30 11:00:54.383993;RES: ERRO APRESENTADO NA DELIVERY 528710162;Shirley;Score forte 150;Categorizado;modelo
+2026-04-30 11:00:54.477762;RES: [Ação Requerida] - Solicitação de upload de NFD;Carolina;Score forte 150;Categorizado;modelo
+2026-04-30 11:00:54.566577;RES: Deliveries VAS;Carolina;Corrigido de Elton para Carolina;Erro;correcao_humana
+2026-04-30 11:00:54.582088;RES: ENC: REEMBOLSO REF. DEVOLUÇÕES DE COMPRAS - UNI HOSPITALAR CEARÁ LTDA - ABBOTT [ ref:!00D1U0Db5p.!500Kk04MQvM:ref ];Edna;Corrigido de Elton para Edna;Erro;correcao_humana
