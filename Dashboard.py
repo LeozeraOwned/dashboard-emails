@@ -95,10 +95,11 @@ section[data-testid="stSidebar"] div[role="radiogroup"] > label:hover {
 df = pd.read_csv("log_emails.csv", sep=";")
 df["data"] = pd.to_datetime(df["data"], errors="coerce")
 
-# ✅ SOMENTE HOJE PRA FRENTE (COM FALLBACK, SEM QUEBRAR NADA)
+# ✅ SOMENTE ONTEM PRA FRENTE (CORREÇÃO AQUI)
 hoje = pd.Timestamp.now().date()
+ontem = hoje - pd.Timedelta(days=1)
 
-df_hoje = df[df["data"].dt.date >= hoje].copy()
+df_hoje = df[df["data"].dt.date >= ontem].copy()
 
 if df_hoje.empty:
     ultimo_dia = df["data"].dt.date.max()
