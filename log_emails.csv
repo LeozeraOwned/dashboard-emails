@@ -519,3 +519,9 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-04-30 18:25:03.858983;RES: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Score forte 150;Categorizado;modelo
 2026-04-30 18:25:03.942426;RES: PENDENCIAS DE COLETA ATUALIZADAS TRAGETTA;Andreani;Sem evidência;Categorizado;modelo
 2026-04-30 18:25:04.042839;RES: Cobrança 48517932000132 20.04.2026 SANTA CASA DE MISERICORDIA DE GUARA_COB2_eRS88522;Edna;Score forte 150;Categorizado;modelo
+2026-04-30 18:25:54.490030;RES: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Sem intervenção;Correto;modelo
+2026-04-30 18:25:54.507411;RE: Correções NF [ ref:!00D1U0Db5p.!500Pn01IevOI:ref ];Edna;Sem intervenção;Correto;modelo
+2026-04-30 18:25:54.517956;RES: NF 178492 HEMOPA;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
+2026-04-30 18:25:54.526710;RES: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Sem intervenção;Correto;modelo
+2026-04-30 18:25:54.535956;RES: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Sem intervenção;Correto;modelo
+2026-04-30 18:25:54.545839;RES: Cobrança 48517932000132 20.04.2026 SANTA CASA DE MISERICORDIA DE GUARA_COB2_eRS88522;Edna;Sem intervenção;Correto;modelo
