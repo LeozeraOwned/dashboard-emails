@@ -95,10 +95,19 @@ section[data-testid="stSidebar"] div[role="radiogroup"] > label:hover {
 df = pd.read_csv("log_emails.csv", sep=";")
 df["data"] = pd.to_datetime(df["data"], errors="coerce")
 
-# ✅ SOMENTE HOJE PRA FRENTE
+# ✅ SOMENTE HOJE PRA FRENTE (COM FALLBACK, SEM QUEBRAR NADA)
 hoje = pd.Timestamp.now().date()
-df = df[df["data"].dt.date >= hoje].copy()
 
+df_hoje = df[df["data"].dt.date >= hoje].copy()
+
+if df_hoje.empty:
+    ultimo_dia = df["data"].dt.date.max()
+    df = df[df["data"].dt.date == ultimo_dia].copy()
+    st.warning(f"Sem dados hoje. Exibindo último dia disponível: {ultimo_dia}")
+else:
+    df = df_hoje
+
+# ================= NORMALIZAÇÃO =================
 df["dia"] = df["data"].dt.date
 df["mes"] = df["data"].dt.month
 df["status"] = df["status"].fillna("").astype(str).str.strip()
@@ -178,7 +187,6 @@ if pagina=="📊 Dashboard":
     st.divider()
     st.subheader("📊 Volume por Analista")
 
-    # ✅ CORREÇÃO CONCEITUAL: somente decisões do modelo
     dist = (
         df_perf_f[df_perf_f["tipo_evento"] == "modelo"]
         .groupby("analista_exibicao")
@@ -261,6 +269,7 @@ elif pagina=="📅 Por Dia":
 elif pagina=="📄 Dados":
     st.title("📄 Logs")
     st.dataframe(df_f,use_container_width=True)
+
 
 
 
