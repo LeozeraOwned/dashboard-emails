@@ -405,3 +405,14 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-04-30 09:08:09.067917;PANPHARMA – ABATIMENTO NO ATO – ABBOTT 30/04/2026;Edna;Score forte 120;Categorizado;modelo
 2026-04-30 09:16:46.169285;RE: [Ação Requerida] - Solicitação de upload de NFD;Carolina;Corrigido de Andreani para Carolina;Erro;correcao_humana
 2026-04-30 09:16:46.195448;Anomalia Pedido 0531066778/ NF 187553;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
+2026-04-30 10:44:17.327999;RES: : Acompanhamento - Processos prioritários -Bomi Itajaí - ATA/ ;Elton;Score fraco 150;Categorizado;modelo
+2026-04-30 10:44:17.381559;RES: Deliveries VAS;Elton;Score fraco 150;Categorizado;modelo
+2026-04-30 10:44:17.434789;RE: Processo troca em garantia Mouse  URGENTE ;Cleberson;Score forte 150;Categorizado;modelo
+2026-04-30 10:44:17.537946;: Acompanhamento - Processos prioritários -Bomi Itajaí - ATA/ ;Elton;Score fraco 150;Categorizado;modelo
+2026-04-30 10:44:17.583206;RES: Produtos Avariados - Devolução Abbott NF 577552 - URGENTE;Carolina;Score fraco 150;Categorizado;modelo
+2026-04-30 10:44:17.645284;RES: ENC: REEMBOLSO REF. DEVOLUÇÕES DE COMPRAS - UNI HOSPITALAR CEARÁ LTDA - ABBOTT [ ref:!00D1U0Db5p.!500Kk04MQvM:ref ];Elton;Score fraco 150;Categorizado;modelo
+2026-04-30 10:44:17.699402;RE: COBRANÇA DEVOLUÇÕES - ABBOTT LABORATORIOS DO BRASI_APDR_eEL22921;Edna;Score forte 150;Categorizado;modelo
+2026-04-30 10:44:17.740795;RES: Problema com o portal ABBOT;Andreani;Sem evidência;Categorizado;modelo
+2026-04-30 10:44:17.782481;RES: ENC: RES: [TICKET#1035517] Entrega de material errado Cinco Cirurgica;Carolina;Score fraco 150;Categorizado;modelo
+2026-04-30 10:44:17.819269;RES: Pré-alerta Atualizado de Cargas Abbott - 29.04.2026 - Alterar bloqueio;Edna;Aprendido por assunto;Categorizado;modelo
+2026-04-30 10:44:17.854240;RES: Produtos Avariados - Devolução Abbott NF 577552 - URGENTE;Carolina;Score fraco 150;Categorizado;modelo
