@@ -427,3 +427,14 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-04-30 10:48:46.291847;RES: ENC: RES: [TICKET#1035517] Entrega de material errado Cinco Cirurgica;Carolina;Sem intervenção;Correto;modelo
 2026-04-30 10:48:46.309776;RES: Pré-alerta Atualizado de Cargas Abbott - 29.04.2026 - Alterar bloqueio;Edna;Sem intervenção;Correto;modelo
 2026-04-30 10:48:46.331609;RES: Produtos Avariados - Devolução Abbott NF 577552 - URGENTE;Carolina;Sem intervenção;Correto;modelo
+2026-04-30 10:49:57.822811;RES: : Acompanhamento - Processos prioritários -Bomi Itajaí - ATA/ ;Elton;Sem intervenção;Correto;modelo
+2026-04-30 10:49:57.845011;RES: Deliveries VAS;Elton;Sem intervenção;Correto;modelo
+2026-04-30 10:49:57.869890;RE: Processo troca em garantia Mouse  URGENTE ;Cleberson;Sem intervenção;Correto;modelo
+2026-04-30 10:49:57.896528;: Acompanhamento - Processos prioritários -Bomi Itajaí - ATA/ ;Elton;Sem intervenção;Correto;modelo
+2026-04-30 10:49:57.916931;RES: Produtos Avariados - Devolução Abbott NF 577552 - URGENTE;Carolina;Sem intervenção;Correto;modelo
+2026-04-30 10:49:57.935013;RES: ENC: REEMBOLSO REF. DEVOLUÇÕES DE COMPRAS - UNI HOSPITALAR CEARÁ LTDA - ABBOTT [ ref:!00D1U0Db5p.!500Kk04MQvM:ref ];Elton;Sem intervenção;Correto;modelo
+2026-04-30 10:49:57.954097;RE: COBRANÇA DEVOLUÇÕES - ABBOTT LABORATORIOS DO BRASI_APDR_eEL22921;Edna;Sem intervenção;Correto;modelo
+2026-04-30 10:49:57.974179;RES: Problema com o portal ABBOT;Carolina;Corrigido de Andreani para Carolina;Erro;correcao_humana
+2026-04-30 10:49:57.994535;RES: ENC: RES: [TICKET#1035517] Entrega de material errado Cinco Cirurgica;Edna;Corrigido de Carolina para Edna;Erro;correcao_humana
+2026-04-30 10:49:58.016136;RES: Pré-alerta Atualizado de Cargas Abbott - 29.04.2026 - Alterar bloqueio;Edna;Sem intervenção;Correto;modelo
+2026-04-30 10:49:58.038770;RES: Produtos Avariados - Devolução Abbott NF 577552 - URGENTE;Carolina;Sem intervenção;Correto;modelo
