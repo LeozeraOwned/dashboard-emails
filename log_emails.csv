@@ -446,3 +446,11 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-04-30 11:18:11.267087;Nova solicitação no sharepoint;Andreani;Sem evidência;Categorizado;modelo
 2026-04-30 11:21:15.899719;RES: ABBOTT/ FALTA INTERNA;Carolina;Score fraco 150;Categorizado;modelo
 2026-04-30 11:38:17.579586;RES: Notas AG. D.U 29/04/2026;Edna;Score fraco 150;Categorizado;modelo
+2026-04-30 13:27:52.963290;  CRA Devolução de Equipamento Abbott:  NF 53475;Andreani;Sem evidência;Categorizado;modelo
+2026-04-30 13:27:53.024439;RE: ENC: ocorrencia abbott levantamento1006 - CAJ_FALTA FORNECEDOR_04F064F_131 unidades_570185    [ ref:!00D1U0Db5p.!500Pn0wMEff:ref ];Carolina;Score fraco 150;Categorizado;modelo
+2026-04-30 13:27:53.075429;Re: RES: RES: ENC: RES: [TICKET#1035517] Entrega de material errado Cinco Cirurgica;Edna;Score forte 210;Categorizado;modelo
+2026-04-30 13:27:53.113698;RES: RES: ENC: RES: [TICKET#1035517] Entrega de material errado Cinco Cirurgica;Edna;Score forte 210;Categorizado;modelo
+2026-04-30 13:27:53.157361;RES: RES: ENC: RES: [TICKET#1035517] Entrega de material errado Cinco Cirurgica;Edna;Score forte 210;Categorizado;modelo
+2026-04-30 13:27:53.196192;RE: Notas AG. D.U 29/04/2026;Edna;Score fraco 150;Categorizado;modelo
+2026-04-30 13:27:53.229818;Acompanhamento - Processos prioritarios -Bomi Itajaí - ATA;Elton;Aprendido por assunto;Categorizado;modelo
+2026-04-30 13:27:53.272218;RES: RES: RES: RES: RES: RES: ENTREGA DA NF 163585  - DIVERGENCIA    [ ref:!00D1U0Db5p.!500Pn0zSmmZ:ref ];Carolina;Score forte 150;Categorizado;modelo
