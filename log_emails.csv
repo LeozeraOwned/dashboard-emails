@@ -655,3 +655,9 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-04 16:32:51.603015;RES: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Sem intervenção;Correto;modelo
 2026-05-04 16:48:13.943155;RES: RES: NFs 571180 e 571181    [ ref:!00D1U0Db5p.!500Pn01Or1qt:ref ];Edna;Score forte 150;Categorizado;modelo
 2026-05-04 16:48:14.018657;RES: Pedido de Reversa   09D6103 Bomba de Esgoto   Formulário para troca de periféricos Ticket 021021RL2291485 Biomega   Londrina  SAP 57017408;Shirley;Score forte 150;Categorizado;modelo
+2026-05-04 17:10:37.035105;RES: INVERSÃO DE MERCADORIA -  Erro na entrega - NF 189269;Andreani;Score forte 200;Categorizado;modelo
+2026-05-04 17:10:37.123416;INVERSÃO DE MERCADORIA -  Erro na entrega - NF 189269;Andreani;Score forte 200;Categorizado;modelo
+2026-05-04 17:10:37.212528;RES:    Devolução-Mitraclip;Shirley;Score forte 210;Categorizado;modelo
+2026-05-04 17:10:37.318597;RE: RES: Problema com o portal ABBOT;Edna;Score forte 150;Categorizado;modelo
+2026-05-04 17:10:37.399821;RES: MALOTE ABBOTT 30/04/2026 - Liberar ordens planta 1524;Shirley;Score fraco 150;Categorizado;modelo
+2026-05-04 17:10:37.465737;DASHBOARD 04/05/2026;Elton;Score forte 200;Categorizado;modelo
