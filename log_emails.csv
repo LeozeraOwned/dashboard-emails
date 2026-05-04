@@ -548,3 +548,21 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-04 09:06:40.110619;RE: ABBOTT/ FALTA INTERNA;Carolina;Score fraco 150;Categorizado;modelo
 2026-05-04 09:06:40.219100;RES: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Score forte 150;Categorizado;modelo
 2026-05-04 09:06:40.300544;RES: RES: NFs 571180 e 571181    [ ref:!00D1U0Db5p.!500Pn01Or1qt:ref ];Edna;Score forte 150;Categorizado;modelo
+2026-05-04 09:16:54.953717;RE: Problema com o portal ABBOT;Carolina;Sem intervenção;Correto;modelo
+2026-05-04 09:16:54.972234;RE: [TICKET#1051468] ENC: NE 2025/006045 - PROCESSO Nº 2025/2824059 - FORNECEDOR: ENDOCENTER;Carolina;Sem intervenção;Correto;modelo
+2026-05-04 09:16:54.989963;RE: RES: Coleta PER-2026-0045437 (CS-224932);Cleberson;Corrigido de Andreani para Cleberson;Erro;correcao_humana
+2026-05-04 09:16:54.995037;RES: RES: RES: PEDIDO DE COMPRAS UNIMED - PC 141683    [ ref:!00D1U0Db5p.!500Pn01OPfrS:ref ];Edna;Sem intervenção;Correto;modelo
+2026-05-04 09:16:55.027029;Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 30/ABRIL/2026.;Edna;Sem intervenção;Correto;modelo
+2026-05-04 09:16:55.044068;RES: 6840 - FUNDACAO SAUDE DO EST. DO RIO DE JANEIRO - NF Série CPT612620 - PER-2025-0044096 - Overdue;Cleberson;Sem intervenção;Correto;modelo
+2026-05-04 09:16:55.059601;RE: RECU_eEL22335_DIVERG VL_<NFO_FARMACIA E DROGARIA NISSEI SA;Carolina;Sem intervenção;Correto;modelo
+2026-05-04 09:16:55.075741;RE: Notas Fiscais de Devolução com ressarcimento pendente - ABBOTT_APDR_eEL22927_;Edna;Sem intervenção;Correto;modelo
+2026-05-04 09:16:55.090272;Re: COMUNICADO DE ABATIMENTO - ABBOTT_APDR_eEL22697;Edna;Sem intervenção;Correto;modelo
+2026-05-04 09:16:55.105925;SANTA CRUZ – ABATIMENTO NO ATO – ABBOTT 03/05/2026;Edna;Sem intervenção;Correto;modelo
+2026-05-04 09:16:55.129986;PANPHARMA – ABATIMENTO NO ATO – ABBOTT 02/05/2026;Edna;Sem intervenção;Correto;modelo
+2026-05-04 09:16:55.146513;[ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Sem intervenção;Correto;modelo
+2026-05-04 09:16:55.161055;Re: [ABBOTT] DEVOLUÇÕES PENDENTE DE ASN 30/04/2026;Cleberson;Sem intervenção;Correto;modelo
+2026-05-04 09:16:55.170583;[ABBOTT] DEVOLUÇÕES PENDENTE DE ASN 30/04/2026;Cleberson;Corrigido de Andreani para Cleberson;Erro;correcao_humana
+2026-05-04 09:16:55.186245;RE: ENC: REEMBOLSO REF. DEVOLUÇÕES DE COMPRAS - UNI HOSPITALAR CEARÁ LTDA - ABBOTT [ ref:!00D1U0Db5p.!500Kk04MQvM:ref ];Edna;Sem intervenção;Correto;modelo
+2026-05-04 09:16:55.209743;RE: ABBOTT/ FALTA INTERNA;Carolina;Sem intervenção;Correto;modelo
+2026-05-04 09:16:55.226855;RES: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Sem intervenção;Correto;modelo
+2026-05-04 09:16:55.243072;RES: RES: NFs 571180 e 571181    [ ref:!00D1U0Db5p.!500Pn01Or1qt:ref ];Edna;Sem intervenção;Correto;modelo
