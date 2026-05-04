@@ -661,3 +661,7 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-04 17:10:37.318597;RE: RES: Problema com o portal ABBOT;Edna;Score forte 150;Categorizado;modelo
 2026-05-04 17:10:37.399821;RES: MALOTE ABBOTT 30/04/2026 - Liberar ordens planta 1524;Shirley;Score fraco 150;Categorizado;modelo
 2026-05-04 17:10:37.465737;DASHBOARD 04/05/2026;Elton;Score forte 200;Categorizado;modelo
+2026-05-04 17:31:54.216167;RES: MALOTE ABBOTT 30/04/2026 - Deliveries para ingresso;Andreani;Score forte 150;Categorizado;modelo
+2026-05-04 17:31:54.326891;FW: RES: INVERSÃO DE MERCADORIA -  Erro na entrega - NF 189269;Andreani;Score forte 200;Categorizado;modelo
+2026-05-04 17:31:54.408827;RES: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-04 17:31:54.472383;CRA RECUSA/DEVOLUÇÃO ADC NF:178954 - FALTAS.;Edna;Score fraco 100;Categorizado;modelo
