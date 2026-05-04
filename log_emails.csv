@@ -566,3 +566,14 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-04 09:16:55.209743;RE: ABBOTT/ FALTA INTERNA;Carolina;Sem intervenção;Correto;modelo
 2026-05-04 09:16:55.226855;RES: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Sem intervenção;Correto;modelo
 2026-05-04 09:16:55.243072;RES: RES: NFs 571180 e 571181    [ ref:!00D1U0Db5p.!500Pn01Or1qt:ref ];Edna;Sem intervenção;Correto;modelo
+2026-05-04 09:22:12.591888;RE: Problema com o portal ABBOT;Carolina;Sem intervenção;Correto;modelo
+2026-05-04 09:22:12.625261;RE: [TICKET#1051468] ENC: NE 2025/006045 - PROCESSO Nº 2025/2824059 - FORNECEDOR: ENDOCENTER;Carolina;Sem intervenção;Correto;modelo
+2026-05-04 09:22:12.643701;RE: RES: Coleta PER-2026-0045437 (CS-224932);Cleberson;Corrigido de Andreani para Cleberson;Erro;correcao_humana
+2026-05-04 09:22:12.660775;Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 30/ABRIL/2026.;Elton;Corrigido de Edna para Elton;Erro;correcao_humana
+2026-05-04 09:22:12.676354;RES: 6840 - FUNDACAO SAUDE DO EST. DO RIO DE JANEIRO - NF Série CPT612620 - PER-2025-0044096 - Overdue;Cleberson;Sem intervenção;Correto;modelo
+2026-05-04 09:22:12.693266;RE: RECU_eEL22335_DIVERG VL_<NFO_FARMACIA E DROGARIA NISSEI SA;Carolina;Sem intervenção;Correto;modelo
+2026-05-04 09:22:12.708647;[ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Sem intervenção;Correto;modelo
+2026-05-04 09:22:12.727778;Re: [ABBOTT] DEVOLUÇÕES PENDENTE DE ASN 30/04/2026;Cleberson;Sem intervenção;Correto;modelo
+2026-05-04 09:22:12.746342;[ABBOTT] DEVOLUÇÕES PENDENTE DE ASN 30/04/2026;Cleberson;Corrigido de Andreani para Cleberson;Erro;correcao_humana
+2026-05-04 09:22:12.822575;RE: ABBOTT/ FALTA INTERNA;Carolina;Sem intervenção;Correto;modelo
+2026-05-04 09:22:12.855274;RES: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Sem intervenção;Correto;modelo
