@@ -619,3 +619,20 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-04 14:48:23.253599;CRA Devolução/Recusa Abbott Vascular - NF: 678967/ 98564/ 98474/ 186245/ 186246/ 186247/ 184584/ 186624/ 186625/ 184430/ 186441/ 678078;Shirley;Corrigido de Edna para Shirley;Erro;correcao_humana
 2026-05-04 14:48:23.262137;Re: Abertura de PER- Não conformidade Carregador;Andreani;Sem intervenção;Correto;modelo
 2026-05-04 14:48:23.279160;ARQUIVO PEDIDO SUPPLY - PEDIDO AMPLIAÇÃO MIX/TRADE;Andreani;Sem intervenção;Correto;modelo
+2026-05-04 16:27:46.864689;RES: RES: ENC: OC 555758/555494 ABBOTT - HPj - FATURAR EM ABRIL;Andreani;Sem evidência;Categorizado;modelo
+2026-05-04 16:27:46.983075;Solicitação de coleta ANI 6368;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-04 16:27:47.117582;Operações reversa Itajaí - ATA;Elton;Score fraco 150;Categorizado;modelo
+2026-05-04 16:27:47.233140;RE: Problema com o portal ABBOT;Carolina;Score forte 210;Categorizado;modelo
+2026-05-04 16:27:47.351406;"Caso: 00485037 - ""RES: FALTA DE PRODUTO PENDENCIAS NUTRICLIN""";Andreani;Score forte 200;Categorizado;modelo
+2026-05-04 16:27:47.492946;[TICKET#1053585] Olá, Devolucao Adm seu chamado foi recebido e logo será atendido!;Andreani;Sem evidência;Categorizado;modelo
+2026-05-04 16:27:47.613162;Re: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-04 16:27:47.726470;RE: Solicitação de coleta ANI 6368;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-04 16:27:47.833874;RES: RES: NFs 571180 e 571181    [ ref:!00D1U0Db5p.!500Pn01Or1qt:ref ];Edna;Score forte 150;Categorizado;modelo
+2026-05-04 16:27:47.936273;CRA RECUSA ADD/AMD NF'S: NF 676478 677199;Edna;Score fraco 100;Categorizado;modelo
+2026-05-04 16:27:48.033220;"Caso: 00485029 - ""RES: Problema com o portal ABBOT""";Andreani;Score forte 200;Categorizado;modelo
+2026-05-04 16:27:48.193060;MALOTE ABBOTT 04/05/2026  Parte 2;Andreani;Score forte 150;Categorizado;modelo
+2026-05-04 16:27:48.332135;RES: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-04 16:27:48.434940;ENC: Retirada PMRP;Shirley;Score forte 150;Categorizado;modelo
+2026-05-04 16:27:48.559303;RES: RES: NFs 571180 e 571181    [ ref:!00D1U0Db5p.!500Pn01Or1qt:ref ];Edna;Score forte 150;Categorizado;modelo
+2026-05-04 16:27:48.651169;RES: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-04 16:27:48.759795;RES: Pedido de Reversa   09D6103 Bomba de Esgoto   Formulário para troca de periféricos Ticket 021021RL2291485 Biomega   Londrina  SAP 57017408;Shirley;Score forte 150;Categorizado;modelo
