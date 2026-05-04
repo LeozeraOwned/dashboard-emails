@@ -607,3 +607,15 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-04 14:43:35.603681;CRA Devolução/Recusa Abbott Vascular - NF: 678967/ 98564/ 98474/ 186245/ 186246/ 186247/ 184584/ 186624/ 186625/ 184430/ 186441/ 678078;Edna;Score fraco 100;Categorizado;modelo
 2026-05-04 14:43:35.636628;Re: Abertura de PER- Não conformidade Carregador;Andreani;Sem evidência;Categorizado;modelo
 2026-05-04 14:43:35.671937;ARQUIVO PEDIDO SUPPLY - PEDIDO AMPLIAÇÃO MIX/TRADE;Andreani;Sem evidência;Categorizado;modelo
+2026-05-04 14:48:23.168137;MALOTE ABBOTT 04/05/2026;Andreani;Sem intervenção;Correto;modelo
+2026-05-04 14:48:23.176308;RE: [Ação Requerida] - Solicitação de upload de NFD;Carolina;Sem intervenção;Correto;modelo
+2026-05-04 14:48:23.186431;RES:  Solicitação de devolução - ABBOTT 29/04 - Alterar bloqueio Planta 1524;Edna;Sem intervenção;Correto;modelo
+2026-05-04 14:48:23.198068;PREGÃO ELETRÔNICO EDITAL N° 0067/26 ID PUBLINEXO 36615 - FORNECIMENTO DE MATERIAIS DE ÓRTESE E PRÓTESE - CONJUNTO CATETERES DIVERSOS - RP.;Andreani;Sem intervenção;Correto;modelo
+2026-05-04 14:48:23.200807;RES: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Sem intervenção;Correto;modelo
+2026-05-04 14:48:23.216452;RES: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Sem intervenção;Correto;modelo
+2026-05-04 14:48:23.229168;RE: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Sem intervenção;Correto;modelo
+2026-05-04 14:48:23.230191;RES: Processo troca em garantia Mouse  URGENTE ;Cleberson;Sem intervenção;Correto;modelo
+2026-05-04 14:48:23.248139;RES: Processo troca em garantia Mouse  URGENTE ;Cleberson;Sem intervenção;Correto;modelo
+2026-05-04 14:48:23.253599;CRA Devolução/Recusa Abbott Vascular - NF: 678967/ 98564/ 98474/ 186245/ 186246/ 186247/ 184584/ 186624/ 186625/ 184430/ 186441/ 678078;Shirley;Corrigido de Edna para Shirley;Erro;correcao_humana
+2026-05-04 14:48:23.262137;Re: Abertura de PER- Não conformidade Carregador;Andreani;Sem intervenção;Correto;modelo
+2026-05-04 14:48:23.279160;ARQUIVO PEDIDO SUPPLY - PEDIDO AMPLIAÇÃO MIX/TRADE;Andreani;Sem intervenção;Correto;modelo
