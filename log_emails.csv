@@ -665,3 +665,10 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-04 17:31:54.326891;FW: RES: INVERSÃO DE MERCADORIA -  Erro na entrega - NF 189269;Andreani;Score forte 200;Categorizado;modelo
 2026-05-04 17:31:54.408827;RES: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Score forte 150;Categorizado;modelo
 2026-05-04 17:31:54.472383;CRA RECUSA/DEVOLUÇÃO ADC NF:178954 - FALTAS.;Edna;Score fraco 100;Categorizado;modelo
+2026-05-04 18:21:58.635601;RE: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-04 18:21:58.729683;Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 01/MAIO/2026.;Edna;Score fraco 100;Categorizado;modelo
+2026-05-04 18:21:58.834877;RE: Débitos em aberto - Abbott Nutrição_APDR_eEL22343_CANCA_eEL22343_;Edna;Score forte 150;Categorizado;modelo
+2026-05-04 18:21:58.951668;TRACKING  ABBOTT- COLETA REVERSA E DEVOLUÇÃO   04/05/2026;Cleberson;Score fraco 80;Categorizado;modelo
+2026-05-04 18:21:59.011530;RES: MALOTE ABBOTT 30/04/2026 - Deliveries para ingresso;Andreani;Sem intervenção;Correto;modelo
+2026-05-04 18:21:59.029643;FW: RES: INVERSÃO DE MERCADORIA -  Erro na entrega - NF 189269;Andreani;Sem intervenção;Correto;modelo
+2026-05-04 18:21:59.052769;CRA RECUSA/DEVOLUÇÃO ADC NF:178954 - FALTAS.;Edna;Sem intervenção;Correto;modelo
