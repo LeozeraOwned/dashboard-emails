@@ -525,3 +525,26 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-04-30 18:25:54.526710;RES: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Sem intervenção;Correto;modelo
 2026-04-30 18:25:54.535956;RES: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Sem intervenção;Correto;modelo
 2026-04-30 18:25:54.545839;RES: Cobrança 48517932000132 20.04.2026 SANTA CASA DE MISERICORDIA DE GUARA_COB2_eRS88522;Edna;Sem intervenção;Correto;modelo
+2026-05-04 09:06:38.330638;RE: Problema com o portal ABBOT;Carolina;Score fraco 60;Categorizado;modelo
+2026-05-04 09:06:38.386273;Informação de novo Recebimento;Andreani;Sem evidência;Categorizado;modelo
+2026-05-04 09:06:38.461130;RE: [TICKET#1051468] ENC: NE 2025/006045 - PROCESSO Nº 2025/2824059 - FORNECEDOR: ENDOCENTER;Carolina;Score forte 150;Categorizado;modelo
+2026-05-04 09:06:38.563501;RE: RES: Coleta PER-2026-0045437 (CS-224932);Andreani;Sem evidência;Categorizado;modelo
+2026-05-04 09:06:38.642156;Informação de novo Recebimento;Andreani;Sem evidência;Categorizado;modelo
+2026-05-04 09:06:38.735836;RES: RES: RES: PEDIDO DE COMPRAS UNIMED - PC 141683    [ ref:!00D1U0Db5p.!500Pn01OPfrS:ref ];Edna;Score forte 150;Categorizado;modelo
+2026-05-04 09:06:38.824037;Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 30/ABRIL/2026.;Edna;Score fraco 100;Categorizado;modelo
+2026-05-04 09:06:38.910757;RE: Job - Geração Automática Faturamento - Desabilitar schedule   Matriz e Filial  - Ticket Number INC4983788 - Abril -2026;Andreani;Sem evidência;Categorizado;modelo
+2026-05-04 09:06:38.990940;RES: 6840 - FUNDACAO SAUDE DO EST. DO RIO DE JANEIRO - NF Série CPT612620 - PER-2025-0044096 - Overdue;Cleberson;Aprendido por assunto;Categorizado;modelo
+2026-05-04 09:06:39.083018;RE: RECU_eEL22335_DIVERG VL_<NFO_FARMACIA E DROGARIA NISSEI SA;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-04 09:06:39.180767;RE: Notas Fiscais de Devolução com ressarcimento pendente - ABBOTT_APDR_eEL22927_;Edna;Score forte 150;Categorizado;modelo
+2026-05-04 09:06:39.280815;Re: COMUNICADO DE ABATIMENTO - ABBOTT_APDR_eEL22697;Edna;Score forte 150;Categorizado;modelo
+2026-05-04 09:06:39.380551;SANTA CRUZ – ABATIMENTO NO ATO – ABBOTT 03/05/2026;Edna;Score forte 120;Categorizado;modelo
+2026-05-04 09:06:39.460870;PANPHARMA – ABATIMENTO NO ATO – ABBOTT 02/05/2026;Edna;Score forte 120;Categorizado;modelo
+2026-05-04 09:06:39.557746;Extrato Semanal - Abbott Laboratórios do Brasil Ltda. (Nutricional);Andreani;Sem evidência;Categorizado;modelo
+2026-05-04 09:06:39.650703;Extrato Semanal - Abbott Laboratórios do Brasil Ltda. (Farma);Andreani;Sem evidência;Categorizado;modelo
+2026-05-04 09:06:39.736099;[ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-04 09:06:39.802731;Re: [ABBOTT] DEVOLUÇÕES PENDENTE DE ASN 30/04/2026;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-04 09:06:39.874156;[ABBOTT] DEVOLUÇÕES PENDENTE DE ASN 30/04/2026;Andreani;Sem evidência;Categorizado;modelo
+2026-05-04 09:06:40.012155;RE: ENC: REEMBOLSO REF. DEVOLUÇÕES DE COMPRAS - UNI HOSPITALAR CEARÁ LTDA - ABBOTT [ ref:!00D1U0Db5p.!500Kk04MQvM:ref ];Edna;Score forte 210;Categorizado;modelo
+2026-05-04 09:06:40.110619;RE: ABBOTT/ FALTA INTERNA;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-04 09:06:40.219100;RES: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Score forte 150;Categorizado;modelo
+2026-05-04 09:06:40.300544;RES: RES: NFs 571180 e 571181    [ ref:!00D1U0Db5p.!500Pn01Or1qt:ref ];Edna;Score forte 150;Categorizado;modelo
