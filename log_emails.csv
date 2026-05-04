@@ -636,3 +636,20 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-04 16:27:48.559303;RES: RES: NFs 571180 e 571181    [ ref:!00D1U0Db5p.!500Pn01Or1qt:ref ];Edna;Score forte 150;Categorizado;modelo
 2026-05-04 16:27:48.651169;RES: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Score forte 150;Categorizado;modelo
 2026-05-04 16:27:48.759795;RES: Pedido de Reversa   09D6103 Bomba de Esgoto   Formulário para troca de periféricos Ticket 021021RL2291485 Biomega   Londrina  SAP 57017408;Shirley;Score forte 150;Categorizado;modelo
+2026-05-04 16:32:50.995452;ENC: MALOTE ABBOTT 30/04/2026 - Liberar ordens planta 1524;Andreani;Score forte 150;Categorizado;modelo
+2026-05-04 16:32:51.062616;RES: RES: ENC: OC 555758/555494 ABBOTT - HPj - FATURAR EM ABRIL;Andreani;Sem intervenção;Correto;modelo
+2026-05-04 16:32:51.088532;Solicitação de coleta ANI 6368;Carolina;Sem intervenção;Correto;modelo
+2026-05-04 16:32:51.098800;RE: Problema com o portal ABBOT;Carolina;Sem intervenção;Correto;modelo
+2026-05-04 16:32:51.115870;"Caso: 00485037 - ""RES: FALTA DE PRODUTO PENDENCIAS NUTRICLIN""";Andreani;Sem intervenção;Correto;modelo
+2026-05-04 16:32:51.143935;[TICKET#1053585] Olá, Devolucao Adm seu chamado foi recebido e logo será atendido!;Andreani;Sem intervenção;Correto;modelo
+2026-05-04 16:32:51.163464;Re: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Sem intervenção;Correto;modelo
+2026-05-04 16:32:51.238940;RE: Solicitação de coleta ANI 6368;Carolina;Sem intervenção;Correto;modelo
+2026-05-04 16:32:51.256042;RES: RES: NFs 571180 e 571181    [ ref:!00D1U0Db5p.!500Pn01Or1qt:ref ];Edna;Sem intervenção;Correto;modelo
+2026-05-04 16:32:51.302283;CRA RECUSA ADD/AMD NF'S: NF 676478 677199;Shirley;Corrigido de Edna para Shirley;Erro;correcao_humana
+2026-05-04 16:32:51.352926;"Caso: 00485029 - ""RES: Problema com o portal ABBOT""";Andreani;Sem intervenção;Correto;modelo
+2026-05-04 16:32:51.389500;RES: Concluído_ Devolução de Equipamento - HNSG C460851;Shirley;Score fraco 150;Categorizado;modelo
+2026-05-04 16:32:51.431176;MALOTE ABBOTT 04/05/2026  Parte 2;Andreani;Sem intervenção;Correto;modelo
+2026-05-04 16:32:51.480043;RES: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Sem intervenção;Correto;modelo
+2026-05-04 16:32:51.515227;ENC: Concluído_ Devolução de Equipamento - HNSG C460851;Leonardo;Score forte 150;Categorizado;modelo
+2026-05-04 16:32:51.580274;RES: RES: NFs 571180 e 571181    [ ref:!00D1U0Db5p.!500Pn01Or1qt:ref ];Edna;Sem intervenção;Correto;modelo
+2026-05-04 16:32:51.603015;RES: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Sem intervenção;Correto;modelo
