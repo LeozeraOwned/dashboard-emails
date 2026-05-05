@@ -690,3 +690,8 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-05 10:49:49.486142;RES: Débitos em aberto - Abbott Nutrição_APDR_eEL22343_CANCA_eEL22343_;Edna;Score forte 150;Categorizado;modelo
 2026-05-05 10:49:49.517095;RE: Pedido de Reversa   09D6103 Bomba de Esgoto   Formulário para troca de periféricos Ticket 021021RL2291485 Biomega   Londrina  SAP 57017408;Shirley;Score forte 150;Categorizado;modelo
 2026-05-05 10:49:49.547670;Re: RES: INVERSÃO DE MERCADORIA - Erro na entrega - NF 189269;Andreani;Score forte 200;Categorizado;modelo
+2026-05-05 12:02:24.049756; Operações reversa Itajaí - ATA;Elton;Score fraco 150;Categorizado;modelo
+2026-05-05 12:02:24.103285;RE: MALOTE ABBOTT 30/04/2026 - Deliveries para ingresso;Andreani;Score forte 150;Categorizado;modelo
+2026-05-05 12:02:24.152222;RES: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-05 12:02:24.197285;RES: Urgente Araujo 566222;Edna;Score forte 150;Categorizado;modelo
+2026-05-05 12:02:24.245553;RES: Urgente Araujo 566222;Edna;Score fraco 150;Categorizado;modelo
