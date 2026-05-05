@@ -677,3 +677,16 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-05 07:58:43.575651;RE: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Score forte 150;Categorizado;modelo
 2026-05-05 07:58:43.596745;RES: RES: INVERSÃO DE MERCADORIA -  Erro na entrega - NF 189269;Andreani;Score forte 200;Categorizado;modelo
 2026-05-05 07:59:17.576347;RES: RES: INVERSÃO DE MERCADORIA -  Erro na entrega - NF 189269;Carolina;Corrigido de Andreani para Carolina;Erro;correcao_humana
+2026-05-05 10:49:49.061171;RES: Urgente Araujo 566222;Edna;Score forte 150;Categorizado;modelo
+2026-05-05 10:49:49.094615;RES: Pedido de Reversa   09D6103 Bomba de Esgoto   Formulário para troca de periféricos Ticket 021021RL2291485 Biomega   Londrina  SAP 57017408;Shirley;Score forte 150;Categorizado;modelo
+2026-05-05 10:49:49.133738;RE: Urgente Araujo 566222;Edna;Score forte 150;Categorizado;modelo
+2026-05-05 10:49:49.163629;RE: MALOTE ABBOTT 04/05/2026 - Deliveries ajuste de inventário;Andreani;Score forte 150;Categorizado;modelo
+2026-05-05 10:49:49.204498;RES: MALOTE ABBOTT 04/05/2026 - Deliveries ajuste de inventário;Andreani;Score forte 150;Categorizado;modelo
+2026-05-05 10:49:49.238493;RES: MALOTE ABBOTT 30/04/2026 - Deliveries para ingresso;Andreani;Score forte 150;Categorizado;modelo
+2026-05-05 10:49:49.276830;RE: Correções NF [ ref:!00D1U0Db5p.!500Pn01IevOI:ref ];Edna;Score forte 150;Categorizado;modelo
+2026-05-05 10:49:49.367563;RE: MALOTE ABBOTT 30/04/2026 - Deliveries para ingresso;Andreani;Score forte 150;Categorizado;modelo
+2026-05-05 10:49:49.393491;RE: DASHBOARD 04/05/2026;Elton;Score forte 200;Categorizado;modelo
+2026-05-05 10:49:49.431574;RE: DASHBOARD 04/05/2026;Elton;Score forte 200;Categorizado;modelo
+2026-05-05 10:49:49.486142;RES: Débitos em aberto - Abbott Nutrição_APDR_eEL22343_CANCA_eEL22343_;Edna;Score forte 150;Categorizado;modelo
+2026-05-05 10:49:49.517095;RE: Pedido de Reversa   09D6103 Bomba de Esgoto   Formulário para troca de periféricos Ticket 021021RL2291485 Biomega   Londrina  SAP 57017408;Shirley;Score forte 150;Categorizado;modelo
+2026-05-05 10:49:49.547670;Re: RES: INVERSÃO DE MERCADORIA - Erro na entrega - NF 189269;Andreani;Score forte 200;Categorizado;modelo
