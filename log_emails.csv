@@ -672,3 +672,7 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-04 18:21:59.011530;RES: MALOTE ABBOTT 30/04/2026 - Deliveries para ingresso;Andreani;Sem intervenção;Correto;modelo
 2026-05-04 18:21:59.029643;FW: RES: INVERSÃO DE MERCADORIA -  Erro na entrega - NF 189269;Andreani;Sem intervenção;Correto;modelo
 2026-05-04 18:21:59.052769;CRA RECUSA/DEVOLUÇÃO ADC NF:178954 - FALTAS.;Edna;Sem intervenção;Correto;modelo
+2026-05-05 07:58:43.490930;RES: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-05 07:58:43.540473;RES: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-05 07:58:43.575651;RE: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-05 07:58:43.596745;RES: RES: INVERSÃO DE MERCADORIA -  Erro na entrega - NF 189269;Andreani;Score forte 200;Categorizado;modelo
