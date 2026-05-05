@@ -695,3 +695,7 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-05 12:02:24.152222;RES: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Score forte 150;Categorizado;modelo
 2026-05-05 12:02:24.197285;RES: Urgente Araujo 566222;Edna;Score forte 150;Categorizado;modelo
 2026-05-05 12:02:24.245553;RES: Urgente Araujo 566222;Edna;Score fraco 150;Categorizado;modelo
+2026-05-05 13:34:01.967328;RES: RES: INVERSÃO DE MERCADORIA - Erro na entrega - NF 189269;Andreani;Score forte 200;Categorizado;modelo
+2026-05-05 13:34:02.010485;CRA Devolução/Recusa Abbott Vascular - NF: 186904 MITRACLIP -  PRIORIDADE;Edna;Score fraco 100;Categorizado;modelo
+2026-05-05 13:34:02.047521;DEVOLUÇÃO ABBOTT 02.05.26 NFD 295092 295093;Andreani;Sem evidência;Categorizado;modelo
+2026-05-05 13:34:02.110453;ENC: MALOTE ABBOTT 04/05/2026 - Liberar ordens Planta 1524;Shirley;Score fraco 150;Categorizado;modelo
