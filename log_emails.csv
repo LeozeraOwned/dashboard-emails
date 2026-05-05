@@ -676,3 +676,4 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-05 07:58:43.540473;RES: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Score forte 150;Categorizado;modelo
 2026-05-05 07:58:43.575651;RE: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Score forte 150;Categorizado;modelo
 2026-05-05 07:58:43.596745;RES: RES: INVERSÃO DE MERCADORIA -  Erro na entrega - NF 189269;Andreani;Score forte 200;Categorizado;modelo
+2026-05-05 07:59:17.576347;RES: RES: INVERSÃO DE MERCADORIA -  Erro na entrega - NF 189269;Carolina;Corrigido de Andreani para Carolina;Erro;correcao_humana
