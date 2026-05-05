@@ -704,3 +704,16 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-05 13:34:36.962918;DEVOLUÇÃO ABBOTT 02.05.26 NFD 295092 295093;Andreani;Sem intervenção;Correto;modelo
 2026-05-05 13:35:37.102463;RES: RES: INVERSÃO DE MERCADORIA - Erro na entrega - NF 189269;Andreani;Sem intervenção;Correto;modelo
 2026-05-05 13:35:37.113464;DEVOLUÇÃO ABBOTT 02.05.26 NFD 295092 295093;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
+2026-05-05 16:20:12.273172;RE: MALOTE ABBOTT 04/05/2026  Parte 2;Andreani;Score forte 150;Categorizado;modelo
+2026-05-05 16:20:12.344138;Estorno Fatura 0801317713;Shirley;Score forte 150;Categorizado;modelo
+2026-05-05 16:20:12.431478;RES: MALOTE ABBOTT 30/04/2026 - Gerar Fatura Planta 1524;Shirley;Score fraco 150;Categorizado;modelo
+2026-05-05 16:20:12.494597;RES: MATERIAL ENTREGUE INCORRETAMENTE - NF 51694 - ASSOCIACAO EDUCACIONAL CARITATIVA ;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-05 16:20:12.576937;RE: MATERIAL ENTREGUE INCORRETAMENTE - NF 51694 - ASSOCIACAO EDUCACIONAL CARITATIVA ;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-05 16:20:12.661178;ENC: MALOTE ABBOTT 30/04/2026 - Gerar Fatura Planta 1524;Shirley;Score fraco 150;Categorizado;modelo
+2026-05-05 16:20:12.771473;RES: NF 173708 - Atualizar Status NF  182975;Shirley;Score forte 150;Categorizado;modelo
+2026-05-05 16:20:12.835480;RES: MALOTE ABBOTT 04/05/2026  Parte 2 - Ajuste de inventário;Andreani;Score forte 150;Categorizado;modelo
+2026-05-05 16:20:12.906610;RES: MALOTE ABBOTT 04/05/2026  Parte 2;Andreani;Score forte 150;Categorizado;modelo
+2026-05-05 16:20:12.993183;RES: Urgente Araujo 566222;Edna;Score fraco 150;Categorizado;modelo
+2026-05-05 16:20:13.078600;RES: Urgente Araujo 566222;Edna;Score forte 150;Categorizado;modelo
+2026-05-05 16:20:13.141412;RES: Solicitação de devolução - ABBOTT 04/05 - Agendamento;Edna;Score forte 150;Categorizado;modelo
+2026-05-05 16:20:13.181071;RES: RES: INVERSÃO DE MERCADORIA - Erro na entrega - NF 189269;Andreani;Sem intervenção;Correto;modelo
