@@ -855,3 +855,31 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-06 11:30:19.320338;RES: ANI - NF 577760 - RAIA DROGASIL S A - AVARIA;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
 2026-05-06 11:30:19.336300;RES: CRA Devolução/Recusa Abbott Vascular - NF: 186440/ 186443;Shirley;Corrigido de Edna para Shirley;Erro;correcao_humana
 2026-05-06 11:30:50.429659;RES: NF 918827 - Devolução de compra e não Retorno de Demonstração !;Carolina;Corrigido de Edna para Carolina;Erro;correcao_humana
+2026-05-06 15:57:28.926586;[TICKET#1054350] Olá, Devolucao Adm seu chamado foi recebido e logo será atendido!;Andreani;Sem evidência;Categorizado;modelo
+2026-05-06 15:57:28.994616;RES: MATERIAL ENTREGUE INCORRETAMENTE - NF 51694 - ASSOCIACAO EDUCACIONAL CARITATIVA ;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-06 15:57:29.088198;ENC: AVARIA NF 580954;Andreani;Sem evidência;Categorizado;modelo
+2026-05-06 15:57:29.159184;ENC: MALOTE ABBOTT 06/05/2026  - Liberar ordens planta 1524;Andreani;Score forte 150;Categorizado;modelo
+2026-05-06 15:57:29.245413;RES: Agenda Abbott - deliverys processadas.;Elton;Score forte 150;Categorizado;modelo
+2026-05-06 15:57:29.313972;RE: MALOTE ABBOTT 04/05/2026  Parte 2 - Retorno de interface pendente;Andreani;Score forte 150;Categorizado;modelo
+2026-05-06 15:57:29.387675;RES: Solicitação de devolução - ABBOTT 04/05 - Alterar bloqueio planta 1524;Edna;Score fraco 150;Categorizado;modelo
+2026-05-06 15:57:29.453881;RES: INSERIR NFs no SHAREPOINT;Shirley;Score forte 150;Categorizado;modelo
+2026-05-06 15:57:29.545277;MALOTE ABBOTT 06/05/2026  ;Andreani;Score forte 150;Categorizado;modelo
+2026-05-06 15:57:29.623172;ENC: CRA Devolução/Recusa Abbott Vascular - NF: 186905;Edna;Score forte 250;Categorizado;modelo
+2026-05-06 15:57:29.688657;RES: INSERIR NFs no SHAREPOINT;Shirley;Score forte 150;Categorizado;modelo
+2026-05-06 15:57:29.765385;RES: INSERIR NF 676478 NO sharepoint;Shirley;Score forte 150;Categorizado;modelo
+2026-05-06 15:57:29.842530;INSERIR NFs no SHAREPOINT;Shirley;Score forte 150;Categorizado;modelo
+2026-05-06 15:57:29.907309;INSERIR NF 676478 NO sharepoint;Shirley;Score forte 150;Categorizado;modelo
+2026-05-06 15:57:30.034653;RE: TNF 188123 - HC AMD;Edna;Score forte 150;Categorizado;modelo
+2026-05-06 15:57:30.109000;RES: URGENTE - NFD 201779;Edna;Score forte 150;Categorizado;modelo
+2026-05-06 15:57:30.186426;RES: MALOTE ABBOTT 04/05/2026  Parte 2 - Retorno de interface pendente;Andreani;Score forte 150;Categorizado;modelo
+2026-05-06 15:57:30.276117;RE: Agenda Abbott - deliverys processadas.;Elton;Score forte 150;Categorizado;modelo
+2026-05-06 15:57:30.393512;RE: BIOMEGA  GLP - Itens em estoque para ajuste 182480;Shirley;Score fraco 150;Categorizado;modelo
+2026-05-06 15:57:30.509662;RES: BIOMEGA  GLP - Itens em estoque para ajuste 182480;Shirley;Score fraco 150;Categorizado;modelo
+2026-05-06 15:57:30.621020;RE: Reversa ADC na planta 1524;Elton;Score fraco 150;Categorizado;modelo
+2026-05-06 15:57:30.695212;Devolução Nota Fiscal Referente a Nota 295229;Andreani;Sem evidência;Categorizado;modelo
+2026-05-06 15:57:30.755772;Devolução Nota Fiscal Referente a Nota 295228;Andreani;Sem evidência;Categorizado;modelo
+2026-05-06 15:57:30.831536;RES: RES: RES: RES: ENCAMINHAMENTO DE AF - 149 - SES MG - VALIDADE MEDICAMENTO MALEATO DE FLUVOXAMINA 50MG COMP 30 UNID -;Carolina;Score forte 150;Categorizado;modelo
+2026-05-06 15:57:30.893232;RE: Reversa ADC na planta 1524;Elton;Score fraco 150;Categorizado;modelo
+2026-05-06 15:57:30.973323;RE: Solicitação de devolução - ABBOTT 04/05 - Agendamento;Edna;Score fraco 150;Categorizado;modelo
+2026-05-06 15:57:31.041213;RES: MATERIAL ENTREGUE INCORRETAMENTE - NF 51694 - ASSOCIACAO EDUCACIONAL CARITATIVA ;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-06 15:57:31.097711; Operações reversa Itajaí - ATA;Elton;Score fraco 150;Categorizado;modelo
