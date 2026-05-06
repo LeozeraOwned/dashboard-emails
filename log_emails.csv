@@ -733,3 +733,21 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-05 17:08:46.050696;RES: RES: NFs 571180 e 571181    [ ref:!00D1U0Db5p.!500Pn01Or1qt:ref ];Edna;Score forte 150;Categorizado;modelo
 2026-05-05 17:08:46.084865;RES: RES: INVERSÃO DE MERCADORIA - Erro na entrega - NF 189269;Carolina;Corrigido de Andreani para Carolina;Erro;correcao_humana
 2026-05-05 17:13:58.193135;RE: Experiência de Produto - Albert Einstein Goiania;Leonardo;Score forte 150;Categorizado;modelo
+2026-05-06 08:00:03.867573;RE: NOTAS DE DEVOLUÇÃO PENDENTES DE COLETA - ABBOTT - DIAGNOCEL 09/04;Carolina;Score forte 150;Categorizado;modelo
+2026-05-06 08:00:03.926814;SANTA CRUZ – ABATIMENTO NO ATO – ABBOTT 06/05/2026;Edna;Score forte 120;Categorizado;modelo
+2026-05-06 08:00:03.982566;PANPHARMA – ABATIMENTO NO ATO – ABBOTT 06/05/2026;Edna;Score forte 120;Categorizado;modelo
+2026-05-06 08:00:04.034128;QUEIXA TECNICA ABBOTT;Andreani;Sem evidência;Categorizado;modelo
+2026-05-06 08:00:04.084430;RES: Fwd: Empenho 2025NE000833 HU-HUMAP/UFMS [ ref:!00D1U0Db5p.!500Pn01MT6GF:ref ];;Aprendido: não categorizar;Sem categoria;aprendizado
+2026-05-06 08:00:04.102788;RE: Deliveries VAS;Carolina;Score forte 210;Categorizado;modelo
+2026-05-06 08:00:04.152277;Devolução Nota Fiscal Referente a Nota 24130;Andreani;Sem evidência;Categorizado;modelo
+2026-05-06 08:00:04.207848;Re: Experiência de Produto - Albert Einstein Goiania;Leonardo;Score forte 150;Categorizado;modelo
+2026-05-06 08:00:04.255170;CRA Devolução/Recusa Abbott Vascular - NF: 186440/ 186443;Edna;Score fraco 100;Categorizado;modelo
+2026-05-06 08:00:04.300637;RES: ERRO APRESENTADO NA DELIVERY 528710162;Shirley;Score forte 150;Categorizado;modelo
+2026-05-06 08:00:04.355185;RES: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-06 08:00:04.402157;RES: Revisão Procedimento + IT | Medical ;Leonardo;Score fraco 150;Categorizado;modelo
+2026-05-06 08:00:04.455455;ENC: Cobrança 75055772003064 29.04.2026 UNIMED CURITIBA SOC COOP DE MEDICOS_COB1_eRS88923;Edna;Score forte 150;Categorizado;modelo
+2026-05-06 08:00:04.512759;RE: Agenda Abbott - deliverys processadas.;Elton;Score forte 150;Categorizado;modelo
+2026-05-06 08:00:04.570633;RE: CRA Devolução/Recusa Abbott Vascular - NF: 186904 MITRACLIP -  PRIORIDADE;Edna;Score forte 250;Categorizado;modelo
+2026-05-06 08:00:04.629833; TRACKING  ABBOTT- COLETA REVERSA E DEVOLUÇÃO   05/05/2026;Cleberson;Score fraco 80;Categorizado;modelo
+2026-05-06 08:00:04.703968;RES: NF 173708 - Atualizar Status NF  182975;Shirley;Score forte 150;Categorizado;modelo
+2026-05-06 08:00:04.763187;ARQUIVO PEDIDO SUPPLY;Andreani;Sem evidência;Categorizado;modelo
