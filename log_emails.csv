@@ -805,3 +805,18 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-06 09:36:52.029488;RES: Agenda Abbott - deliverys processadas.;Elton;Score forte 150;Categorizado;modelo
 2026-05-06 09:36:52.138024;Fw: Aplicação Crédito  01206820000440   APDR_eRS88567 22/04/2026 PANPHARMA DISTRIB DE MEDICAMENTOS L_RECU_eEL23014;Andreani;Sem evidência;Categorizado;modelo
 2026-05-06 09:41:37.889284;Fw: Aplicação Crédito  01206820000440   APDR_eRS88567 22/04/2026 PANPHARMA DISTRIB DE MEDICAMENTOS L_RECU_eEL23014;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
+2026-05-06 11:26:52.256715;RE: Reversa ADC na planta 1524;Elton;Score forte 150;Categorizado;modelo
+2026-05-06 11:26:52.304443;RE: CRA Devolução/Recusa Abbott Vascular - NF: 186905;Edna;Score forte 250;Categorizado;modelo
+2026-05-06 11:26:52.339751;RES: Reversa ADC na planta 1524;Elton;Score forte 150;Categorizado;modelo
+2026-05-06 11:26:52.371838;RES: CRA Devolução/Recusa Abbott Vascular - NF: 186905;Edna;Score forte 250;Categorizado;modelo
+2026-05-06 11:26:52.403927;RE: MALOTE ABBOTT 04/05/2026  Parte 2 - Retorno de interface pendente;Andreani;Score forte 150;Categorizado;modelo
+2026-05-06 11:26:52.437714;CRA Devolução/Recusa Abbott Vascular - NF: 186905;Edna;Score fraco 100;Categorizado;modelo
+2026-05-06 11:26:52.468712;RES: NF 918827 - Devolução de compra e não Retorno de Demonstração !;Edna;Score forte 150;Categorizado;modelo
+2026-05-06 11:26:52.519858;RE: NF 173708 - Atualizar Status NF  182975;Shirley;Score forte 150;Categorizado;modelo
+2026-05-06 11:26:52.557947;RE: CRA Devolução/Recusa Abbott Vascular - NF: 186440/ 186443;Edna;Score forte 250;Categorizado;modelo
+2026-05-06 11:26:52.591300;Reversa ADC na planta 1524;Elton;Score forte 150;Categorizado;modelo
+2026-05-06 11:26:52.622238;RE: [Ação Requerida] - Solicitação de upload de NFD;Carolina;Aprendido por assunto;Categorizado;modelo
+2026-05-06 11:26:52.653608;RES: MALOTE ABBOTT 04/05/2026  Parte 2 - Retorno de interface pendente;Andreani;Score forte 150;Categorizado;modelo
+2026-05-06 11:26:52.684281;RES: ANI - NF 577760 - RAIA DROGASIL S A - AVARIA;Andreani;Sem evidência;Categorizado;modelo
+2026-05-06 11:26:52.720712;RES: Deliveries VAS (Retificando);Elton;Score fraco 150;Categorizado;modelo
+2026-05-06 11:26:52.751953;RES: CRA Devolução/Recusa Abbott Vascular - NF: 186440/ 186443;Edna;Score forte 250;Categorizado;modelo
