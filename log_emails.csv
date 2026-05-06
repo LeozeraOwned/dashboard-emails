@@ -833,3 +833,16 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-06 11:27:54.879238;RES: ANI - NF 577760 - RAIA DROGASIL S A - AVARIA;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
 2026-05-06 11:27:54.892254;RES: Deliveries VAS (Retificando);Elton;Sem intervenção;Correto;modelo
 2026-05-06 11:27:54.900729;RES: CRA Devolução/Recusa Abbott Vascular - NF: 186440/ 186443;Edna;Sem intervenção;Correto;modelo
+2026-05-06 11:29:35.270122;CRA RECUSA ADD/AMD NF'S: NF 679270 679220 679221;Edna;Score fraco 100;Categorizado;modelo
+2026-05-06 11:29:35.306846;RE: Reversa ADC na planta 1524;Elton;Sem intervenção;Correto;modelo
+2026-05-06 11:29:35.314487;RE: CRA Devolução/Recusa Abbott Vascular - NF: 186905;Edna;Sem intervenção;Correto;modelo
+2026-05-06 11:29:35.338239;RES: Reversa ADC na planta 1524;Elton;Sem intervenção;Correto;modelo
+2026-05-06 11:29:35.348758;RES: CRA Devolução/Recusa Abbott Vascular - NF: 186905;Edna;Sem intervenção;Correto;modelo
+2026-05-06 11:29:35.355580;CRA Devolução/Recusa Abbott Vascular - NF: 186905;Edna;Sem intervenção;Correto;modelo
+2026-05-06 11:29:35.372925;RES: NF 918827 - Devolução de compra e não Retorno de Demonstração !;Edna;Sem intervenção;Correto;modelo
+2026-05-06 11:29:35.386373;RE: NF 173708 - Atualizar Status NF  182975;Shirley;Sem intervenção;Correto;modelo
+2026-05-06 11:29:35.401374;RE: CRA Devolução/Recusa Abbott Vascular - NF: 186440/ 186443;Edna;Sem intervenção;Correto;modelo
+2026-05-06 11:29:35.406510;Reversa ADC na planta 1524;Elton;Sem intervenção;Correto;modelo
+2026-05-06 11:29:35.421511;RES: ANI - NF 577760 - RAIA DROGASIL S A - AVARIA;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
+2026-05-06 11:29:35.435698;RES: Deliveries VAS (Retificando);Carolina;Corrigido de Elton para Carolina;Erro;correcao_humana
+2026-05-06 11:29:35.446180;RES: CRA Devolução/Recusa Abbott Vascular - NF: 186440/ 186443;Edna;Sem intervenção;Correto;modelo
