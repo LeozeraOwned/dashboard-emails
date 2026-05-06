@@ -883,3 +883,16 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-06 15:57:30.973323;RE: Solicitação de devolução - ABBOTT 04/05 - Agendamento;Edna;Score fraco 150;Categorizado;modelo
 2026-05-06 15:57:31.041213;RES: MATERIAL ENTREGUE INCORRETAMENTE - NF 51694 - ASSOCIACAO EDUCACIONAL CARITATIVA ;Cleberson;Score forte 150;Categorizado;modelo
 2026-05-06 15:57:31.097711; Operações reversa Itajaí - ATA;Elton;Score fraco 150;Categorizado;modelo
+2026-05-06 15:59:09.592609;[TICKET#1054350] Olá, Devolucao Adm seu chamado foi recebido e logo será atendido!;Andreani;Sem intervenção;Correto;modelo
+2026-05-06 15:59:09.605697;ENC: AVARIA NF 580954;Andreani;Sem intervenção;Correto;modelo
+2026-05-06 15:59:09.614413;ENC: MALOTE ABBOTT 06/05/2026  - Liberar ordens planta 1524;Andreani;Sem intervenção;Correto;modelo
+2026-05-06 15:59:09.634798;RE: MALOTE ABBOTT 04/05/2026  Parte 2 - Retorno de interface pendente;Andreani;Sem intervenção;Correto;modelo
+2026-05-06 15:59:09.645530;RES: Solicitação de devolução - ABBOTT 04/05 - Alterar bloqueio planta 1524;Edna;Sem intervenção;Correto;modelo
+2026-05-06 15:59:09.666017;MALOTE ABBOTT 06/05/2026  ;Andreani;Sem intervenção;Correto;modelo
+2026-05-06 15:59:09.677754;ENC: CRA Devolução/Recusa Abbott Vascular - NF: 186905;Shirley;Corrigido de Edna para Shirley;Erro;correcao_humana
+2026-05-06 15:59:09.689617;RE: TNF 188123 - HC AMD;Edna;Sem intervenção;Correto;modelo
+2026-05-06 15:59:09.704889;RES: URGENTE - NFD 201779;Edna;Sem intervenção;Correto;modelo
+2026-05-06 15:59:09.720495;RES: MALOTE ABBOTT 04/05/2026  Parte 2 - Retorno de interface pendente;Andreani;Sem intervenção;Correto;modelo
+2026-05-06 15:59:09.757629;Devolução Nota Fiscal Referente a Nota 295229;Andreani;Sem intervenção;Correto;modelo
+2026-05-06 15:59:09.771001;Devolução Nota Fiscal Referente a Nota 295228;Andreani;Sem intervenção;Correto;modelo
+2026-05-06 15:59:09.779102;RE: Solicitação de devolução - ABBOTT 04/05 - Agendamento;Edna;Sem intervenção;Correto;modelo
