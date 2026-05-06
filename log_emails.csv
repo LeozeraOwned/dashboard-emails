@@ -799,3 +799,8 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-06 08:56:45.391187;RE: MALOTE ABBOTT 04/05/2026  Parte 2;Andreani;Sem intervenção;Correto;modelo
 2026-05-06 08:56:45.400000;RE: MALOTE ABBOTT 04/05/2026  Parte 2 - Ajuste de inventário;Andreani;Sem intervenção;Correto;modelo
 2026-05-06 08:56:45.409306;RES: Fwd: Empenho 2025NE000833 HU-HUMAP/UFMS [ ref:!00D1U0Db5p.!500Pn01MT6GF:ref ];;Sem intervenção;Correto;modelo
+2026-05-06 09:36:51.705384;RES: Estorno Fatura 0801317713;Shirley;Score forte 150;Categorizado;modelo
+2026-05-06 09:36:51.807959;Recusa s/ lançamento no Sharepoint;Elton;Score forte 150;Categorizado;modelo
+2026-05-06 09:36:51.923552;RE: Agenda Abbott - deliverys processadas.;Elton;Score forte 150;Categorizado;modelo
+2026-05-06 09:36:52.029488;RES: Agenda Abbott - deliverys processadas.;Elton;Score forte 150;Categorizado;modelo
+2026-05-06 09:36:52.138024;Fw: Aplicação Crédito  01206820000440   APDR_eRS88567 22/04/2026 PANPHARMA DISTRIB DE MEDICAMENTOS L_RECU_eEL23014;Andreani;Sem evidência;Categorizado;modelo
