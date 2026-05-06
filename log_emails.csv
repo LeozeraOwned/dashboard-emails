@@ -772,3 +772,22 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-06 08:23:21.557811; TRACKING  ABBOTT- COLETA REVERSA E DEVOLUÇÃO   05/05/2026;Cleberson;Sem intervenção;Correto;modelo
 2026-05-06 08:23:21.572903;RES: NF 173708 - Atualizar Status NF  182975;Shirley;Sem intervenção;Correto;modelo
 2026-05-06 08:23:21.572903;ARQUIVO PEDIDO SUPPLY;Andreani;Sem intervenção;Correto;modelo
+2026-05-06 08:24:51.466479;Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 05/MAIO/2026.;Elton;Corrigido de Edna para Elton;Erro;correcao_humana
+2026-05-06 08:24:51.497723;RES: RES: RES: PEDIDO DE COMPRAS UNIMED - PC 141683    [ ref:!00D1U0Db5p.!500Pn01OPfrS:ref ];Edna;Score forte 150;Categorizado;modelo
+2026-05-06 08:24:51.560346;RES: MALOTE ABBOTT 04/05/2026  Parte 2 - Ajuste de inventário;Andreani;Sem intervenção;Correto;modelo
+2026-05-06 08:24:51.568907;RES: MALOTE ABBOTT 04/05/2026  Parte 2;Andreani;Sem intervenção;Correto;modelo
+2026-05-06 08:24:51.580434;RE: NOTAS DE DEVOLUÇÃO PENDENTES DE COLETA - ABBOTT - DIAGNOCEL 09/04;Carolina;Sem intervenção;Correto;modelo
+2026-05-06 08:24:51.587734;SANTA CRUZ – ABATIMENTO NO ATO – ABBOTT 06/05/2026;Edna;Sem intervenção;Correto;modelo
+2026-05-06 08:24:51.599334;PANPHARMA – ABATIMENTO NO ATO – ABBOTT 06/05/2026;Edna;Sem intervenção;Correto;modelo
+2026-05-06 08:24:51.606333;QUEIXA TECNICA ABBOTT;Andreani;Sem intervenção;Correto;modelo
+2026-05-06 08:24:51.614875;RES: Fwd: Empenho 2025NE000833 HU-HUMAP/UFMS [ ref:!00D1U0Db5p.!500Pn01MT6GF:ref ];;Humano removeu categoria;Erro;correcao_humana
+2026-05-06 08:24:51.626145;RE: Deliveries VAS;Carolina;Sem intervenção;Correto;modelo
+2026-05-06 08:24:51.637740;Devolução Nota Fiscal Referente a Nota 24130;Andreani;Sem intervenção;Correto;modelo
+2026-05-06 08:24:51.649370;Re: Experiência de Produto - Albert Einstein Goiania;Cleberson;Corrigido de Leonardo para Cleberson;Erro;correcao_humana
+2026-05-06 08:24:51.661504;CRA Devolução/Recusa Abbott Vascular - NF: 186440/ 186443;Shirley;Corrigido de Edna para Shirley;Erro;correcao_humana
+2026-05-06 08:24:51.667514;RES: [ABBOTT] DEVOLUÇÕES - NOTAS:522704 E 244987;Cleberson;Sem intervenção;Correto;modelo
+2026-05-06 08:24:51.687569;RES: Revisão Procedimento + IT | Medical ;Cleberson;Corrigido de Leonardo para Cleberson;Erro;correcao_humana
+2026-05-06 08:24:51.692345;ENC: Cobrança 75055772003064 29.04.2026 UNIMED CURITIBA SOC COOP DE MEDICOS_COB1_eRS88923;Edna;Sem intervenção;Correto;modelo
+2026-05-06 08:24:51.702833;RE: CRA Devolução/Recusa Abbott Vascular - NF: 186904 MITRACLIP -  PRIORIDADE;Shirley;Corrigido de Edna para Shirley;Erro;correcao_humana
+2026-05-06 08:24:51.708968; TRACKING  ABBOTT- COLETA REVERSA E DEVOLUÇÃO   05/05/2026;Cleberson;Sem intervenção;Correto;modelo
+2026-05-06 08:24:51.720754;ARQUIVO PEDIDO SUPPLY;Andreani;Sem intervenção;Correto;modelo
