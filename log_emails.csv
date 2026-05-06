@@ -791,3 +791,7 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-06 08:24:51.702833;RE: CRA Devolução/Recusa Abbott Vascular - NF: 186904 MITRACLIP -  PRIORIDADE;Shirley;Corrigido de Edna para Shirley;Erro;correcao_humana
 2026-05-06 08:24:51.708968; TRACKING  ABBOTT- COLETA REVERSA E DEVOLUÇÃO   05/05/2026;Cleberson;Sem intervenção;Correto;modelo
 2026-05-06 08:24:51.720754;ARQUIVO PEDIDO SUPPLY;Andreani;Sem intervenção;Correto;modelo
+2026-05-06 08:53:39.689217;RE: Estorno Fatura 0801317713;Shirley;Score forte 150;Categorizado;modelo
+2026-05-06 08:53:39.721267;RE: MALOTE ABBOTT 04/05/2026  Parte 2;Andreani;Score forte 150;Categorizado;modelo
+2026-05-06 08:53:39.765587;RE: MALOTE ABBOTT 04/05/2026  Parte 2 - Ajuste de inventário;Andreani;Score forte 150;Categorizado;modelo
+2026-05-06 08:53:39.791032;RES: Fwd: Empenho 2025NE000833 HU-HUMAP/UFMS [ ref:!00D1U0Db5p.!500Pn01MT6GF:ref ];;Humano removeu categoria;Erro;correcao_humana
