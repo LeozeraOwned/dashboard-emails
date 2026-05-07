@@ -1011,3 +1011,31 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-07 11:24:40.624623;ENC: AVARIA NF 580954;Andreani;Sem evidência;Categorizado;modelo
 2026-05-07 11:24:40.676379;ENC: OCORRÊNCIA AVARIA  NF: 579991/579990  TRANSP : TRAGETTA ;Andreani;Sem evidência;Categorizado;modelo
 2026-05-07 11:24:40.710356;Devolução - Avaria / Abbott 579946;;Aprendido: não categorizar;Sem categoria;aprendizado
+2026-05-07 11:26:53.201950;Sua opinião é importante Devolucao Adm! Avalie nosso atendimento!;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.227562;Re: Devoluções de Crédito - ABBOTT LABORATORIOS DO BRASIL Total;Edna;Corrigido de Carolina para Edna;Erro;correcao_humana
+2026-05-07 11:26:53.239364;Resposta automática: CRÉDITO DE DEVOLUÇÃO - ABBOTT;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.242938;Re: COBRANÇA DEVOLUÇÕES - ABBOTT LABORATORIOS DO BRASI_APDR_eEL22921;Edna;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.258915;RES: TNF 188123 - HC AMD;Carolina;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.269931;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.276716;RES: CRA Devolução/Recusa Abbott Vascular - NF: 678967/ 98564/ 98474/ 186245/ 186246/ 186247/ 184584/ 186624/ 186625/ 184430/ 186441/ 678078;Shirley;Corrigido de Edna para Shirley;Erro;correcao_humana
+2026-05-07 11:26:53.288193;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.291922;RE: CRA Devolução/Recusa Abbott Vascular - NF: 678967/ 98564/ 98474/ 186245/ 186246/ 186247/ 184584/ 186624/ 186625/ 184430/ 186441/ 678078;Shirley;Corrigido de Edna para Shirley;Erro;correcao_humana
+2026-05-07 11:26:53.310612;RE: Devoluções de Crédito - ABBOTT LABORATORIOS DO BRASIL Total;Edna;Corrigido de Carolina para Edna;Erro;correcao_humana
+2026-05-07 11:26:53.319824;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.327893;"Caso: 00486587 - ""RE: PORTAL ABBOTT""";Andreani;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.337488;RE: PORTAL ABBOTT;Carolina;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.344680;RES: [Simbolico - NF Retorno] [Osasco]  Falha de geração de Retorno - Chave NF: 35260553725560000170550010000988831917149663;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.355706;Resposta automática: Solicitação de devolução - ABBOTT 04/05 - Alterar bloqueio planta 1524;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.367825;RE: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.375707;SH: Devoluções pendentes;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.387464;RE: RES: OC891660 - Previsão de entrega;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.395759;RES: ENC: TIRAS FREESTYLE - NF 184445 ABBOTT    [ ref:!00D1U0Db5p.!500Pn01NMt54:ref ];Edna;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.408061;Devolução DPSP - Maio 2026 - ABBOTT TRD;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.423691;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.425289;Concluído: Formulário Devolução - Unimed Jaraguá do Sul - AlinIQ;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.437658;RE: ENC: TIRAS FREESTYLE - NF 184445 ABBOTT    [ ref:!00D1U0Db5p.!500Pn01NMt54:ref ];Edna;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.437658;RE: TNF 188123 - HC AMD;Carolina;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.454812;RE: MALOTE ABBOTT 06/05/2026  - Deliveries para ingresso;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.454812;ENC: AVARIA NF 580954;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.470806;ENC: OCORRÊNCIA AVARIA  NF: 579991/579990  TRANSP : TRAGETTA ;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 11:26:53.470806;Devolução - Avaria / Abbott 579946;;Humano removeu categoria;Erro;correcao_humana
