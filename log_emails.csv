@@ -1229,3 +1229,15 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-07 18:10:33.748780;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
 2026-05-07 18:10:33.757444;ENC: AVARIA NF 580954;Edna;Sem intervenção;Correto;modelo
 2026-05-07 18:10:33.765811;Devolução - Avaria / Abbott 579946;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 18:14:17.632451;ENC: MALOTE ABBOTT 07/05/2026  - Liberar ordens Planta 1524;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 18:14:17.656352;RES: Pedido não disponível DPSP NF- 186232 ;Edna;Score forte 150;Categorizado;modelo
+2026-05-07 18:14:17.699994;DEVOLUÇÃO ABBOTT 05.05.26 NFD 295228 295229;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
+2026-05-07 18:14:17.716358;Comunicado de Devolução;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:14:17.722925;RES: Comunicado de Devolução;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:14:17.736801;RES: MALOTE ABBOTT 04/05/2026  Parte 2 - Retorno de interface pendente;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:14:17.750240;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 18:14:17.757608;ENC: Comunicado de Devolução;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:14:17.770415;RE: MALOTE ABBOTT 04/05/2026  Parte 2 - Retorno de interface pendente;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:14:17.783950;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 18:14:17.790124;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 18:14:17.803579;Devolução - Avaria / Abbott 579946;;Humano removeu categoria;Erro;correcao_humana
