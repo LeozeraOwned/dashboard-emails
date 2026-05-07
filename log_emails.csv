@@ -1065,3 +1065,47 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-07 11:49:52.194674;Operações reversa Itajaí - ATA;Elton;Sem intervenção;Correto;modelo
 2026-05-07 11:49:52.194674;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
 2026-05-07 11:49:52.226825;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 16:57:10.356382;DASHBOARD 07/05/2026;Elton;Score forte 200;Categorizado;modelo
+2026-05-07 16:57:10.375590;Sua opinião é importante Devolucao Adm! Avalie nosso atendimento!;Andreani;Sem evidência;Categorizado;modelo
+2026-05-07 16:57:10.407359;Sua opinião é importante Devolucao Adm! Avalie nosso atendimento!;Andreani;Sem evidência;Categorizado;modelo
+2026-05-07 16:57:10.438653;RE: Devoluções de Crédito - ABBOTT LABORATORIOS DO BRASIL Total;Edna;Aprendido por assunto;Categorizado;modelo
+2026-05-07 16:57:10.459944;ENC: Defeito de fabrica - ABBOTT ;Andreani;Sem evidência;Categorizado;modelo
+2026-05-07 16:57:10.510345;RES: MALOTE ABBOTT 04/05/2026  Parte 2 - Gerar fatura Planta 1524;Edna;Score fraco 150;Categorizado;modelo
+2026-05-07 16:57:10.543554;RES: MALOTE ABBOTT 04/05/2026  Parte 2 - Gerar fatura Planta 1524;Edna;Score fraco 150;Categorizado;modelo
+2026-05-07 16:57:10.576377;Informação de novo Recebimento;Andreani;Sem evidência;Categorizado;modelo
+2026-05-07 16:57:10.608367;FW: RE: RES: ABBOTT AF 8821 - SES SC -;Edna;Score forte 150;Categorizado;modelo
+2026-05-07 16:57:10.627432;Informação de novo Recebimento;Andreani;Sem evidência;Categorizado;modelo
+2026-05-07 16:57:10.660931;Informação de novo Recebimento;Andreani;Sem evidência;Categorizado;modelo
+2026-05-07 16:57:10.691990;RES: URGENTE ACTION REQUIRED : RE: Reversa ADC na planta 1524;Elton;Score fraco 150;Categorizado;modelo
+2026-05-07 16:57:10.726942;RES: MALOTE ABBOTT 04/05/2026  Parte 2 - Retorno de interface pendente;Andreani;Score forte 150;Categorizado;modelo
+2026-05-07 16:57:10.760240;RE: RES: RECU_eEL20345_CLINICA DR. JOSE BENTO DE SOUZA LTD    [ ref:!00D1U0Db5p.!500Pn019GgDh:ref ];Edna;Score forte 150;Categorizado;modelo
+2026-05-07 16:57:10.789611;Informação de novo Recebimento;Andreani;Sem evidência;Categorizado;modelo
+2026-05-07 16:57:10.809482;MALOTE ABBOTT 07/05/2026  ;Andreani;Score forte 150;Categorizado;modelo
+2026-05-07 16:57:10.841749;RES: URGENTE ACTION REQUIRED : RE: Reversa ADC na planta 1524;Elton;Score fraco 150;Categorizado;modelo
+2026-05-07 16:57:10.868937;Concluído_ Devolução LABO - Impressora;Andreani;Sem evidência;Categorizado;modelo
+2026-05-07 16:57:10.890389;RE: RES: RES: RES: NFs 571180 e 571181    [ ref:!00D1U0Db5p.!500Pn01Or1qt:ref ];Edna;Score forte 150;Categorizado;modelo
+2026-05-07 16:57:10.923040;RES: Recolhimento e-sales;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-07 16:57:10.955153;ENC: MALOTE ABBOTT 06/05/2026  - Gerar fatura Planta 1524;Edna;Score fraco 150;Categorizado;modelo
+2026-05-07 16:57:10.977038;DEVOLUÇÃO ABBOTT 05.05.26 NFD 295228 295229;Andreani;Sem evidência;Categorizado;modelo
+2026-05-07 16:57:11.006277;Devolução Nota Fiscal Referente a Nota 57744;Andreani;Sem evidência;Categorizado;modelo
+2026-05-07 16:57:11.039354;RES: RES: RES: NFs 571180 e 571181    [ ref:!00D1U0Db5p.!500Pn01Or1qt:ref ];Edna;Score forte 150;Categorizado;modelo
+2026-05-07 16:57:11.061247;Comunicado de Devolução;Andreani;Sem evidência;Categorizado;modelo
+2026-05-07 16:57:11.093033;RE: ANOMALIA ADC - PEDIDOS - 0531066297    [ ref:!00D1U0Db5p.!500Pn01Pw4Cn:ref ];Edna;Score forte 150;Categorizado;modelo
+2026-05-07 16:57:11.123815;RE: RES: RES: NFs 571180 e 571181    [ ref:!00D1U0Db5p.!500Pn01Or1qt:ref ];Edna;Score forte 150;Categorizado;modelo
+2026-05-07 16:57:11.152287;RES: Comunicado de Devolução;Andreani;Sem evidência;Categorizado;modelo
+2026-05-07 16:57:11.173524;URGENTE ACTION REQUIRED : RE: Reversa ADC na planta 1524;Elton;Score fraco 150;Categorizado;modelo
+2026-05-07 16:57:11.207832;RES: MALOTE ABBOTT 04/05/2026  Parte 2 - Retorno de interface pendente;Andreani;Score forte 150;Categorizado;modelo
+2026-05-07 16:57:11.238794;RES: Recusa da transportadora em assinar NFD 5633;Edna;Score forte 250;Categorizado;modelo
+2026-05-07 16:57:11.260075;RES: ANI - NF 577760 - RAIA DROGASIL S A - AVARIA;Edna;Aprendido por assunto;Categorizado;modelo
+2026-05-07 16:57:11.290143;RE: CRA RECUSA ADD/AMD NF'S: NF 676478 677199;Edna;Score forte 250;Categorizado;modelo
+2026-05-07 16:57:11.311503;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Aprendido: não categorizar;Sem categoria;aprendizado
+2026-05-07 16:57:11.329609;RES: CRA RECUSA ADD/AMD NF'S: NF 676478 677199;Edna;Score forte 250;Categorizado;modelo
+2026-05-07 16:57:11.356698;ENC: Comunicado de Devolução;Andreani;Sem evidência;Categorizado;modelo
+2026-05-07 16:57:11.393728;RE: MALOTE ABBOTT 04/05/2026  Parte 2 - Retorno de interface pendente;Andreani;Score forte 150;Categorizado;modelo
+2026-05-07 16:57:11.418982;Nova solicitação no sharepoint;Andreani;Sem evidência;Categorizado;modelo
+2026-05-07 16:57:11.443607;"Caso: 00486747 - ""RE: Cobrança 48517932000132 20.04.2026 SANTA CASA DE MISERICORDIA DE GUARA_COB2_eRS88522""";Andreani;Score forte 200;Categorizado;modelo
+2026-05-07 16:57:11.478398;RES: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Score forte 150;Categorizado;modelo
+2026-05-07 16:57:11.505212;RES: Agenda Abbott - deliverys processadas.;Elton;Score forte 150;Categorizado;modelo
+2026-05-07 16:57:11.527532;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 16:57:11.543244;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 16:57:11.561111;ENC: AVARIA NF 580954;Edna;Aprendido por assunto;Categorizado;modelo
