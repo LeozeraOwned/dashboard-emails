@@ -1109,3 +1109,30 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-07 16:57:11.527532;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
 2026-05-07 16:57:11.543244;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
 2026-05-07 16:57:11.561111;ENC: AVARIA NF 580954;Edna;Aprendido por assunto;Categorizado;modelo
+2026-05-07 17:17:54.438001; CRA Devolução de Equipamento Abbott:  NF 20667;Andreani;Sem evidência;Categorizado;modelo
+2026-05-07 17:17:54.471696;RES: INSERIR NFs no SHAREPOINT;Shirley;Score forte 150;Categorizado;modelo
+2026-05-07 17:17:54.507109;RE: Agenda Abbott - deliverys processadas.;Elton;Score forte 150;Categorizado;modelo
+2026-05-07 17:17:54.527414;ENC: Defeito de fabrica - ABBOTT ;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.540415;RES: MALOTE ABBOTT 04/05/2026  Parte 2 - Retorno de interface pendente;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.544491;RE: RES: RECU_eEL20345_CLINICA DR. JOSE BENTO DE SOUZA LTD    [ ref:!00D1U0Db5p.!500Pn019GgDh:ref ];Edna;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.554649;Informação de novo Recebimento;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.560109;MALOTE ABBOTT 07/05/2026  ;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.570996;Concluído_ Devolução LABO - Impressora;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.580429;DEVOLUÇÃO ABBOTT 05.05.26 NFD 295228 295229;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.589354;Devolução Nota Fiscal Referente a Nota 57744;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.597629;Comunicado de Devolução;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.605964;RE: ANOMALIA ADC - PEDIDOS - 0531066297    [ ref:!00D1U0Db5p.!500Pn01Pw4Cn:ref ];Edna;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.615056;RE: RES: RES: NFs 571180 e 571181    [ ref:!00D1U0Db5p.!500Pn01Or1qt:ref ];Edna;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.622705;RES: Comunicado de Devolução;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.638379;RES: MALOTE ABBOTT 04/05/2026  Parte 2 - Retorno de interface pendente;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.646947;RES: ANI - NF 577760 - RAIA DROGASIL S A - AVARIA;Edna;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.654999;RE: CRA RECUSA ADD/AMD NF'S: NF 676478 677199;Shirley;Corrigido de Edna para Shirley;Erro;correcao_humana
+2026-05-07 17:17:54.663956;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 17:17:54.673665;RES: CRA RECUSA ADD/AMD NF'S: NF 676478 677199;Shirley;Corrigido de Edna para Shirley;Erro;correcao_humana
+2026-05-07 17:17:54.681542;ENC: Comunicado de Devolução;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.689310;RE: MALOTE ABBOTT 04/05/2026  Parte 2 - Retorno de interface pendente;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.691308;Nova solicitação no sharepoint;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.705925;"Caso: 00486747 - ""RE: Cobrança 48517932000132 20.04.2026 SANTA CASA DE MISERICORDIA DE GUARA_COB2_eRS88522""";Andreani;Sem intervenção;Correto;modelo
+2026-05-07 17:17:54.708081;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 17:17:54.724563;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 17:17:54.727321;ENC: AVARIA NF 580954;Edna;Sem intervenção;Correto;modelo
