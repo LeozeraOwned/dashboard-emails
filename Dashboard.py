@@ -95,18 +95,8 @@ section[data-testid="stSidebar"] div[role="radiogroup"] > label:hover {
 df = pd.read_csv("log_emails.csv", sep=";")
 df["data"] = pd.to_datetime(df["data"], errors="coerce")
 
-# ✅ SOMENTE ONTEM PRA FRENTE (CORREÇÃO AQUI)
-hoje = pd.Timestamp.now().date()
-ontem = hoje - pd.Timedelta(days=1)
-
-df_hoje = df[df["data"].dt.date >= ontem].copy()
-
-if df_hoje.empty:
-    ultimo_dia = df["data"].dt.date.max()
-    df = df[df["data"].dt.date == ultimo_dia].copy()
-    st.warning(f"Sem dados hoje. Exibindo último dia disponível: {ultimo_dia}")
-else:
-    df = df_hoje
+# ✅ MANTÉM TODAS AS DATAS DISPONÍVEIS NO CSV
+df = df.copy()
 
 # ================= NORMALIZAÇÃO =================
 df["dia"] = df["data"].dt.date
