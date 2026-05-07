@@ -1057,3 +1057,7 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-07 11:36:34.845577;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
 2026-05-07 11:36:34.859561;RE: RES: OC891660 - Previsão de entrega;;Humano removeu categoria;Erro;correcao_humana
 2026-05-07 11:36:34.868622;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 11:49:33.037797;RE: CRA RECUSA/DEVOLUÇÃO ADC NF:183596 - AVARIAS: CAIXAS AMASSADAS.;Edna;Score forte 250;Categorizado;modelo
+2026-05-07 11:49:33.072555;Operações reversa Itajaí - ATA;Elton;Score fraco 150;Categorizado;modelo
+2026-05-07 11:49:33.097514;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 11:49:33.098532;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
