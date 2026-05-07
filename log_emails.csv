@@ -1196,3 +1196,36 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-07 17:45:35.703773;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
 2026-05-07 17:45:35.712931;ENC: AVARIA NF 580954;Edna;Sem intervenção;Correto;modelo
 2026-05-07 17:45:35.712931;Devolução - Avaria / Abbott 579946;;Aprendido: não categorizar;Sem categoria;aprendizado
+2026-05-07 18:10:33.433581;Nota 176530;Edna;Score forte 150;Categorizado;modelo
+2026-05-07 18:10:33.473663;ENC: MALOTE ABBOTT 07/05/2026  - Liberar ordens Planta 1524;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 18:10:33.504452;RE: URGENTE ACTION REQUIRED : RE: Reversa ADC na planta 1524;Elton;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.514788; TRACKING  ABBOTT- COLETA REVERSA E DEVOLUÇÃO   07/05/2026;Cleberson;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.523429;RE: URGENTE ACTION REQUIRED : RE: Reversa ADC na planta 1524;Elton;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.533542; CRA Devolução de Equipamento Abbott:  NF 20667;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.541540;RES: INSERIR NFs no SHAREPOINT;Shirley;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.551121;RE: Agenda Abbott - deliverys processadas.;Elton;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.560387;ENC: Defeito de fabrica - ABBOTT ;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.568808;RES: MALOTE ABBOTT 04/05/2026  Parte 2 - Retorno de interface pendente;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.577808;RE: RES: RECU_eEL20345_CLINICA DR. JOSE BENTO DE SOUZA LTD    [ ref:!00D1U0Db5p.!500Pn019GgDh:ref ];Edna;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.585739;Informação de novo Recebimento;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.593178;MALOTE ABBOTT 07/05/2026  ;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.603145;Concluído_ Devolução LABO - Impressora;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.611274;DEVOLUÇÃO ABBOTT 05.05.26 NFD 295228 295229;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.620752;Devolução Nota Fiscal Referente a Nota 57744;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.624323;Comunicado de Devolução;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.638082;RE: ANOMALIA ADC - PEDIDOS - 0531066297    [ ref:!00D1U0Db5p.!500Pn01Pw4Cn:ref ];Edna;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.638082;RE: RES: RES: NFs 571180 e 571181    [ ref:!00D1U0Db5p.!500Pn01Or1qt:ref ];Edna;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.656184;RES: Comunicado de Devolução;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.664784;RES: MALOTE ABBOTT 04/05/2026  Parte 2 - Retorno de interface pendente;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.674184;RES: ANI - NF 577760 - RAIA DROGASIL S A - AVARIA;Edna;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.681485;RE: CRA RECUSA ADD/AMD NF'S: NF 676478 677199;Shirley;Corrigido de Edna para Shirley;Erro;correcao_humana
+2026-05-07 18:10:33.691917;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 18:10:33.699172;RES: CRA RECUSA ADD/AMD NF'S: NF 676478 677199;Shirley;Corrigido de Edna para Shirley;Erro;correcao_humana
+2026-05-07 18:10:33.706888;ENC: Comunicado de Devolução;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.715845;RE: MALOTE ABBOTT 04/05/2026  Parte 2 - Retorno de interface pendente;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.723516;Nova solicitação no sharepoint;Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.731465;"Caso: 00486747 - ""RE: Cobrança 48517932000132 20.04.2026 SANTA CASA DE MISERICORDIA DE GUARA_COB2_eRS88522""";Andreani;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.740187;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 18:10:33.748780;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 18:10:33.757444;ENC: AVARIA NF 580954;Edna;Sem intervenção;Correto;modelo
+2026-05-07 18:10:33.765811;Devolução - Avaria / Abbott 579946;;Humano removeu categoria;Erro;correcao_humana
