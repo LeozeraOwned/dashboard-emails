@@ -1053,3 +1053,7 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-07 11:31:49.989990;ENC: AVARIA NF 580954;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
 2026-05-07 11:31:50.006593;ENC: OCORRÊNCIA AVARIA  NF: 579991/579990  TRANSP : TRAGETTA ;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
 2026-05-07 11:31:50.019741;Devolução - Avaria / Abbott 579946;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 11:36:34.826040;RE: CRA Devolução/Recusa Abbott Vascular - NF: 678967/ 98564/ 98474/ 186245/ 186246/ 186247/ 184584/ 186624/ 186625/ 184430/ 186441/ 678078;Shirley;Aprendido por assunto;Categorizado;modelo
+2026-05-07 11:36:34.845577;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 11:36:34.859561;RE: RES: OC891660 - Previsão de entrega;;Humano removeu categoria;Erro;correcao_humana
+2026-05-07 11:36:34.868622;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
