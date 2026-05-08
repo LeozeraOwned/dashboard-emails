@@ -1252,3 +1252,11 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-08 08:58:30.447048;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
 2026-05-08 08:58:30.464650;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
 2026-05-08 08:58:30.476715;Devolução - Avaria / Abbott 579946;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 09:00:45.375928;Notas sem informações;Elton;Sem intervenção;Correto;modelo
+2026-05-08 09:00:45.407213;Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 07/MAIO/2026.;Elton;Corrigido de Edna para Elton;Erro;correcao_humana
+2026-05-08 09:00:45.432191;RES: URGENTE ACTION REQUIRED : RE: Reversa ADC na planta 1524;Elton;Sem intervenção;Correto;modelo
+2026-05-08 09:00:45.448972;RES: RE: RES: ABBOTT AF 8821 - SES SC -;Edna;Corrigido de Carolina para Edna;Erro;correcao_humana
+2026-05-08 09:00:45.470798;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 09:00:45.486333;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 09:00:45.508063;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 09:00:45.523491;Devolução - Avaria / Abbott 579946;;Humano removeu categoria;Erro;correcao_humana
