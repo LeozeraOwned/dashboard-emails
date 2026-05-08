@@ -1311,3 +1311,17 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-08 14:58:19.285528;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
 2026-05-08 14:58:19.305424;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
 2026-05-08 14:58:19.355071;Notas AG Delivery 2025;Elton;Score fraco 150;Categorizado;modelo
+2026-05-08 16:07:56.395955;RES: Notas sem informações;Elton;Score fraco 150;Categorizado;modelo
+2026-05-08 16:07:56.525526;RE: URGENTE ACTION REQUIRED : RE: Reversa ADC na planta 1524;Elton;Score fraco 150;Categorizado;modelo
+2026-05-08 16:07:56.663958;Notas Em Aberto - Medical PER - 08/05;Edna;Score forte 150;Categorizado;modelo
+2026-05-08 16:07:56.779889;Notas Medical em Aberto - 08/05/2026;Edna;Score forte 150;Categorizado;modelo
+2026-05-08 16:07:56.927506;RES: MALOTE ABBOTT 07/05/2026  - Deliveries para ingresso;Andreani;Score forte 150;Categorizado;modelo
+2026-05-08 16:07:57.036655;Creditos emitidos em duplicidade;Andreani;Sem evidência;Categorizado;modelo
+2026-05-08 16:07:57.146105;RES: CHAMADO ENTREGOU 027666 NF 647478  / conferencia 46691;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-08 16:07:57.260256;RES: CRÉDITO DE DEVOLUÇÃO - ABBOTT LABORATORIOS DO BRASIL LTDA;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 16:07:57.278264;RES: CRÉDITO DE DEVOLUÇÃO - ABBOTT;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 16:07:57.293903;RE: COLETA 2026/2006554-8;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 16:07:57.325569;ENC: AVARIA NF 581606;Andreani;Sem evidência;Categorizado;modelo
+2026-05-08 16:07:57.413762;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 16:07:57.430550;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 16:07:57.446173;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
