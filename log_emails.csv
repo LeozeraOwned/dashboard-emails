@@ -1241,3 +1241,14 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-07 18:14:17.783950;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
 2026-05-07 18:14:17.790124;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
 2026-05-07 18:14:17.803579;Devolução - Avaria / Abbott 579946;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 08:58:29.774627;RE: 6840 - FUNDACAO SAUDE DO EST. DO RIO DE JANEIRO - NF Série CPT612620 - PER-2025-0044096 - Overdue;Cleberson;Score fraco 60;Categorizado;modelo
+2026-05-08 08:58:29.897561;Notas sem informações;Elton;Score forte 150;Categorizado;modelo
+2026-05-08 08:58:30.021036;RE: Recolhimento e-sales;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-08 08:58:30.122274;Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 07/MAIO/2026.;Edna;Score fraco 100;Categorizado;modelo
+2026-05-08 08:58:30.214815;RES: URGENTE ACTION REQUIRED : RE: Reversa ADC na planta 1524;Elton;Score fraco 150;Categorizado;modelo
+2026-05-08 08:58:30.295773;RES: RE: RES: ABBOTT AF 8821 - SES SC -;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-08 08:58:30.364541;[ABBOTT] DEVOLUÇÕES PENDENTE DE ASN 07/05/2026;Andreani;Sem evidência;Categorizado;modelo
+2026-05-08 08:58:30.432230;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 08:58:30.447048;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 08:58:30.464650;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 08:58:30.476715;Devolução - Avaria / Abbott 579946;;Humano removeu categoria;Erro;correcao_humana
