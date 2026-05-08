@@ -1264,3 +1264,17 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-08 09:07:26.405658;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
 2026-05-08 09:07:26.435943;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
 2026-05-08 09:07:26.467400;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 10:17:39.695384;RES: MATERIAL ENTREGUE INCORRETAMENTE - NF 51694 - ASSOCIACAO EDUCACIONAL CARITATIVA ;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-08 10:17:39.871920;RE: Transferência - Guilherme Luis;Carolina;Score forte 150;Categorizado;modelo
+2026-05-08 10:17:40.042147;RES:  CRA Devolução de Equipamento Abbott:  NF 20667;Elton;Score fraco 150;Categorizado;modelo
+2026-05-08 10:17:40.228269;RE: URGENTE ACTION REQUIRED : RE: Reversa ADC na planta 1524;Elton;Score fraco 150;Categorizado;modelo
+2026-05-08 10:17:40.391006;RES: RES: RES: PEDIDO DE COMPRAS UNIMED - PC 141683    [ ref:!00D1U0Db5p.!500Pn01OPfrS:ref ];Edna;Score forte 150;Categorizado;modelo
+2026-05-08 10:17:40.563349;RE: URGENTE ACTION REQUIRED : RE: Reversa ADC na planta 1524;Elton;Score fraco 150;Categorizado;modelo
+2026-05-08 10:17:40.697706;ENC: Concluído_ Devolução LABO - Impressora;Shirley;Score fraco 150;Categorizado;modelo
+2026-05-08 10:17:40.860942;ENC: Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;Shirley;Score forte 150;Categorizado;modelo
+2026-05-08 10:17:41.001584;RES: URGENTE ACTION REQUIRED : RE: Reversa ADC na planta 1524;Elton;Score fraco 150;Categorizado;modelo
+2026-05-08 10:17:41.139157;"Caso: 00487172 - ""RES: Equipamentos ADC - Criticalmed - 57525/57526""";Andreani;Score forte 200;Categorizado;modelo
+2026-05-08 10:17:41.317764;RES: Equipamentos ADC - Criticalmed - 57525/57526;Elton;Score forte 150;Categorizado;modelo
+2026-05-08 10:17:41.518612;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 10:17:41.540853;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 10:17:41.563202;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
