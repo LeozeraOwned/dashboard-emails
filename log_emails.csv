@@ -1278,3 +1278,7 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-08 10:17:41.518612;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
 2026-05-08 10:17:41.540853;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
 2026-05-08 10:17:41.563202;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 10:38:48.290621;RE:  CRA Devolução de Equipamento Abbott:  NF 20667;Elton;Score fraco 150;Categorizado;modelo
+2026-05-08 10:38:48.347597;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 10:38:48.365378;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 10:38:48.386674;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
