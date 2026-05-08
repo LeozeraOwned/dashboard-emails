@@ -1260,3 +1260,7 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-08 09:00:45.486333;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
 2026-05-08 09:00:45.508063;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
 2026-05-08 09:00:45.523491;Devolução - Avaria / Abbott 579946;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 09:07:26.220517;RES: [ABBOTT] DEVOLUÇÕES PENDENTE DE ASN 07/05/2026;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-08 09:07:26.405658;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 09:07:26.435943;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 09:07:26.467400;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
