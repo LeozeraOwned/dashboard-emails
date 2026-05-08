@@ -1286,3 +1286,28 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-08 10:39:07.000663;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
 2026-05-08 10:39:07.023655;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
 2026-05-08 10:39:07.042720;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 14:58:16.979806;RES: Notas sem informações;Elton;Score fraco 150;Categorizado;modelo
+2026-05-08 14:58:17.119205;"Caso: 00487443 - ""RES: Produto Avariado""";Andreani;Score forte 200;Categorizado;modelo
+2026-05-08 14:58:17.324844;RE: MALOTE ABBOTT 07/05/2026  - Deliveries para ingresso;Andreani;Score forte 150;Categorizado;modelo
+2026-05-08 14:58:17.475777;Respuesta automática: BIOMEGA  GLP - Itens em estoque para ajuste 182480;Andreani;Sem evidência;Categorizado;modelo
+2026-05-08 14:58:17.558378;RES: CRÉDITO DE DEVOLUÇÃO - ABBOTT LABORATORIOS DO BRASIL LTDA;;Aprendido: não categorizar;Sem categoria;aprendizado
+2026-05-08 14:58:17.582511;RES: CRÉDITO DE DEVOLUÇÃO - ABBOTT;;Aprendido: não categorizar;Sem categoria;aprendizado
+2026-05-08 14:58:17.621266;RE: COLETA 2026/2006554-8;Andreani;Sem evidência;Categorizado;modelo
+2026-05-08 14:58:17.733392;RE: ANOMALIA ADC - PEDIDOS - 0531066297    [ ref:!00D1U0Db5p.!500Pn01Pw4Cn:ref ];Edna;Score forte 150;Categorizado;modelo
+2026-05-08 14:58:17.825144;RES: MALOTE ABBOTT 07/05/2026  - Deliveries para ingresso;Andreani;Score forte 150;Categorizado;modelo
+2026-05-08 14:58:17.928854;RES: Equipamentos ADC - Criticalmed - 57525/57526;Elton;Score forte 150;Categorizado;modelo
+2026-05-08 14:58:18.035786;RE: MALOTE ABBOTT 07/05/2026  ;Andreani;Score forte 150;Categorizado;modelo
+2026-05-08 14:58:18.150152;RES: Equipamentos ADC - Criticalmed - 57525/57526;Elton;Score forte 150;Categorizado;modelo
+2026-05-08 14:58:18.266096;RES: AGS que estão paradas na distribuidora Agil em Cuiabá ;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-08 14:58:18.380828;RES: ABBOTT - Reversas em trânsito ;Shirley;Score forte 150;Categorizado;modelo
+2026-05-08 14:58:18.485891;RE: ENC: CRA RECUSA/ DEVOLUÇÃO ADD/AMD NF:185934 - AVARIA: CAIXAS AMASSADAS/RASGADAS E MANCHADAS.;Edna;Score forte 250;Categorizado;modelo
+2026-05-08 14:58:18.606594;FW: RES: NF 679088;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-08 14:58:18.725440;Operações reversa Itajaí - ATA;Elton;Score fraco 150;Categorizado;modelo
+2026-05-08 14:58:18.862831;RE: URGENTE ACTION REQUIRED : RE: Reversa ADC na planta 1524;Elton;Score fraco 150;Categorizado;modelo
+2026-05-08 14:58:18.953499;RES: 6840 - FUNDACAO SAUDE DO EST. DO RIO DE JANEIRO - NF Série CPT612620 - PER-2025-0044096 - Overdue;Cleberson;Aprendido por assunto;Categorizado;modelo
+2026-05-08 14:58:19.048217;ABBOTT - Reversas em trânsito ;Shirley;Score forte 150;Categorizado;modelo
+2026-05-08 14:58:19.181428;RES: URGENTE ACTION REQUIRED : RE: Reversa ADC na planta 1524;Elton;Score fraco 150;Categorizado;modelo
+2026-05-08 14:58:19.266457;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 14:58:19.285528;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 14:58:19.305424;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-08 14:58:19.355071;Notas AG Delivery 2025;Elton;Score fraco 150;Categorizado;modelo
