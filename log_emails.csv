@@ -1429,3 +1429,34 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-11 11:31:49.411011;ENC: Defeito de fabrica - ABBOTT ;Carolina;Corrigido de Andreani para Carolina;Erro;correcao_humana
 2026-05-11 11:31:49.411011;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;Shirley;Corrigido de Andreani para Shirley;Erro;correcao_humana
 2026-05-11 11:31:49.430319;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
+2026-05-11 13:48:39.750060;ABATIMENTO DAS DEVOLUÇÕES NA ORIGEM - 2752 - Abbott Laboratórios do Brasil Ltda. (Farma);Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 13:48:39.812481;RES:   CRA Devolução de Equipamento Abbott:  NF 186274 186275;Elton;Score fraco 150;Categorizado;modelo
+2026-05-11 13:48:39.876754;Re: SOLICITAÇÃO DE EMISSÃO NFD – PMH PRODUTOS MEDICOS HOSPITALARES LTDA;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 13:48:39.943138; CRA Devolução/Recusa Abbott Vascular -NF 186980 196981 312565 186903 186979 169921 187249 187247 187248;Edna;Score fraco 100;Categorizado;modelo
+2026-05-11 13:48:39.994656;"Caso: 00487975 - ""ENC: SOLICITAÇÃO DE EMISSÃO NFD – UNI HOSPITALAR LTDA EPP""";Andreani;Score forte 200;Categorizado;modelo
+2026-05-11 13:48:40.044209;"Caso: 00487974 - ""ENC: SOLICITAÇÃO DE EMISSÃO NFD – UNI HOSPITALAR LTDA EPP""";Andreani;Score forte 200;Categorizado;modelo
+2026-05-11 13:48:40.094321;ENC: SOLICITAÇÃO DE EMISSÃO NFD – UNI HOSPITALAR LTDA EPP;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 13:48:40.148096;"Caso: 00487973 - ""SOLICITAÇÃO DE EMISSÃO NFD – UNI HOSPITALAR LTDA EPP""";Andreani;Score forte 200;Categorizado;modelo
+2026-05-11 13:48:40.194192;SOLICITAÇÃO DE EMISSÃO NFD – UNI HOSPITALAR LTDA EPP;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 13:48:40.231699;Nova solicitação no sharepoint;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 13:48:40.277145;RES: STATUS COLETA NF 678069;Shirley;Score forte 150;Categorizado;modelo
+2026-05-11 13:48:40.311845;"Caso: 00487951 - ""SOLICITAÇÃO DE EMISSÃO NFD – PMH PRODUTOS MEDICOS HOSPITALARES LTDA""";Andreani;Score forte 200;Categorizado;modelo
+2026-05-11 13:48:40.343680;"Caso: 00487950 - ""SOLICITAÇÃO DE EMISSÃO NFD – PMH PRODUTOS MEDICOS HOSPITALARES LTDA""";Andreani;Score forte 200;Categorizado;modelo
+2026-05-11 13:48:40.402691;SOLICITAÇÃO DE EMISSÃO NFD – PMH PRODUTOS MEDICOS HOSPITALARES LTDA;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 13:48:40.427910;Operações reversa Itajaí - ATA;Elton;Score fraco 150;Categorizado;modelo
+2026-05-11 13:48:40.489143;"Caso: 00487943 - ""SOLICITAÇÃO DE EMISSÃO NFD – PANPHARMA DISTRIBUIDORA DE MEDICAMENTOS LTDA""";Andreani;Score forte 200;Categorizado;modelo
+2026-05-11 13:48:40.511412;RES: NFD 57210 - Grupo Pague Menos;Edna;Sem intervenção;Correto;modelo
+2026-05-11 13:48:40.548934;RE: Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 08/MAIO/2026.;Edna;Sem intervenção;Correto;modelo
+2026-05-11 13:48:40.548934;RES: CHAMADO ENTREGOU 027666 NF 647478  / conferencia 46691;Carolina;Sem intervenção;Correto;modelo
+2026-05-11 13:48:40.565801;RES: RES: NF 679088;Carolina;Sem intervenção;Correto;modelo
+2026-05-11 13:48:40.583440;RES: RES: SOLICITAÇÃO DE DEVOLUÇÃO - ANTI HCV - CD BARUERI    [ ref:!00D1U0Db5p.!500Pn01LHwxR:ref ];Carolina;Sem intervenção;Correto;modelo
+2026-05-11 13:48:40.594737;RE: ENC: ocorrencia abbott levantamento1006 - CAJ_FALTA FORNECEDOR_04F064F_131 unidades_570185    [ ref:!00D1U0Db5p.!500Pn0wMEff:ref ];Carolina;Sem intervenção;Correto;modelo
+2026-05-11 13:48:40.601557;RE: Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 08/MAIO/2026.;Edna;Sem intervenção;Correto;modelo
+2026-05-11 13:48:40.618452;DEVOLUÇÃO ABBOTT 08.05.26 NFD 295327 295328;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
+2026-05-11 13:48:40.629713;RES: PEDIDO / SANTA CASA DE MISERICÓRDIA DE GUARAREMA ;Carolina;Sem intervenção;Correto;modelo
+2026-05-11 13:48:40.634772;RE: RES: ANOMALIA PEDIDO 0531284864 - ABBOTT ADD;Edna;Sem intervenção;Correto;modelo
+2026-05-11 13:48:40.646969;RE: ANOMALIA PEDIDO 0531284864 - ABBOTT ADD;Edna;Sem intervenção;Correto;modelo
+2026-05-11 13:48:40.659220;NÃO CONFORMIDADE, DIAGNOCEL NF 188116 ABBOTT;Edna;Sem intervenção;Correto;modelo
+2026-05-11 13:48:40.666960;ENC: AVARIA NF 581606;Edna;Sem intervenção;Correto;modelo
+2026-05-11 13:48:40.666960;ENC: Defeito de fabrica - ABBOTT ;Carolina;Corrigido de Andreani para Carolina;Erro;correcao_humana
+2026-05-11 13:48:40.684145;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
