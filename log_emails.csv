@@ -1384,3 +1384,13 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-11 08:58:24.698431;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
 2026-05-11 08:58:24.708159;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
 2026-05-11 08:58:24.716378;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:59:41.577306;RES: ANOMALIA PEDIDO 0531284864 - ABBOTT ADD;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
+2026-05-11 08:59:41.589239;NÃO CONFORMIDADE, DIAGNOCEL NF 188116 ABBOTT;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
+2026-05-11 08:59:41.598167;Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 08/MAIO/2026.;Elton;Corrigido de Edna para Elton;Erro;correcao_humana
+2026-05-11 08:59:41.610322;RE: PEDIDO DE AJUDA (ABBOTT );;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:59:41.619514;RE: COLETA 2026/2006554-8;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:59:41.626607;ENC: AVARIA NF 581606;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
+2026-05-11 08:59:41.637912;ENC: Defeito de fabrica - ABBOTT ;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:59:41.642457;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:59:41.657806;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:59:41.659154;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
