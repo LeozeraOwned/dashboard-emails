@@ -1366,3 +1366,11 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-11 08:18:15.739683;ENC: Comunicado de Devolução;Andreani;Sem evidência;Categorizado;modelo
 2026-05-11 08:18:15.821885;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
 2026-05-11 08:18:15.851018;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:30:30.302884;RE: PEDIDO DE AJUDA (ABBOTT );;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:30:30.327214;RE: CRA RECUSA ADD/AMD NF'S: NF 679270 679220 679221;Shirley;Corrigido de Edna para Shirley;Erro;correcao_humana
+2026-05-11 08:30:30.343380;RE: CRA RECUSA ADD/AMD NF'S: NF 660527 662361 658224;Shirley;Corrigido de Edna para Shirley;Erro;correcao_humana
+2026-05-11 08:30:30.368792;RE: COLETA 2026/2006554-8;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:30:30.392011;ENC: Defeito de fabrica - ABBOTT ;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:30:30.424780;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:30:30.474489;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:30:30.489646;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
