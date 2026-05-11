@@ -1325,3 +1325,44 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-08 16:07:57.413762;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
 2026-05-08 16:07:57.430550;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
 2026-05-08 16:07:57.446173;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:18:10.925384;RE: CRÉDITO DE DEVOLUÇÃO - ABBOTT;Edna;Score forte 150;Categorizado;modelo
+2026-05-11 08:18:11.066543;[TICKET#1054706] Olá, Devolucao Adm seu chamado foi recebido e logo será atendido!;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 08:18:11.205351;[TICKET#1054714] Olá, Devolucao Adm seu chamado foi recebido e logo será atendido!;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 08:18:11.343178;[TICKET#1054707] Olá, Devolucao Adm seu chamado foi recebido e logo será atendido!;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 08:18:11.485922;[TICKET#1054705] Olá, Devolucao Adm seu chamado foi recebido e logo será atendido!;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 08:18:11.599249;Nova solicitação no sharepoint;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 08:18:11.740970;Re: SH: Devoluções pendentes;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-11 08:18:11.863844;SANTA CRUZ – ABATIMENTO NO ATO – ABBOTT 10/05/2026;Edna;Score forte 120;Categorizado;modelo
+2026-05-11 08:18:12.035270;PANPHARMA – ABATIMENTO NO ATO – ABBOTT 10/05/2026;Edna;Score forte 120;Categorizado;modelo
+2026-05-11 08:18:12.398364;SANTA CRUZ – ABATIMENTO NO ATO – ABBOTT 09/05/2026;Edna;Score forte 120;Categorizado;modelo
+2026-05-11 08:18:12.522638;PANPHARMA – ABATIMENTO NO ATO – ABBOTT 09/05/2026;Edna;Score forte 120;Categorizado;modelo
+2026-05-11 08:18:12.650793;Informação de novo Recebimento;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 08:18:12.792199;Informação de novo Recebimento;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 08:18:12.968943;RE: NOTAS DE DEVOLUÇÃO PENDENTES DE COLETA - ABBOTT - DIAGNOCEL 09/04;Carolina;Score forte 150;Categorizado;modelo
+2026-05-11 08:18:13.089577;"Caso: 00487626 - ""RES: NOTAS DE DEVOLUÇÃO PENDENTES DE COLETA - ABBOTT - DIAGNOCEL 09/04""";Andreani;Score forte 200;Categorizado;modelo
+2026-05-11 08:18:13.197716;Resposta automática: Fwd: Empenho 2025NE000833 HU-HUMAP/UFMS [ ref:!00D1U0Db5p.!500Pn01MT6GF:ref ];Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 08:18:13.317036;Férias Re: RES: RES: Recebimento de CK com validade curta sem autorização [ ref:!00D1U0Db5p.!500Pn01OOEEr:ref ];Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 08:18:13.454112;RE: PEDIDO DE AJUDA (ABBOTT );Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 08:18:13.574649;Não é possível entregar: AVARIA ABBOTT NF 580504-1 ;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 08:18:13.722303;Não é possível entregar: RES: AVARIA ABBOTT NF 580504-1 ;Leonardo;Score forte 150;Categorizado;modelo
+2026-05-11 08:18:13.891318;RE: CRA RECUSA ADD/AMD NF'S: NF 679270 679220 679221;Edna;Score forte 250;Categorizado;modelo
+2026-05-11 08:18:13.998616;Resposta automática: PUCRS Devolução NF 171406, ABBOTT;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 08:18:14.130845;RES: RES: ENC: OC 555758/555494 ABBOTT - HPj - FATURAR EM ABRIL;Edna;Score forte 150;Categorizado;modelo
+2026-05-11 08:18:14.243374;"Caso: 00487573 - ""ENC:  CRA Devolução de Equipamento Abbott:  NF 184159 184164""";Andreani;Score forte 200;Categorizado;modelo
+2026-05-11 08:18:14.359068;DASHBOARD 08/05/2026;Elton;Score forte 200;Categorizado;modelo
+2026-05-11 08:18:14.496292;RE: Aplicação Crédito  45453214001808   APDR_eRS84297 05/11/2025 PROFARMA DISTR PROD FARM SA_CANC_eRS84297_eEL22706_CANC_eEL22706;Carolina;Score forte 150;Categorizado;modelo
+2026-05-11 08:18:14.633557;RE: [TICKET#1054685] Cadastro.;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 08:18:14.759148;[TICKET#1054685] Olá, Devolucao Adm seu chamado foi recebido e logo será atendido!;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 08:18:14.866642;RE: Cobrança 75055772003064 29.04.2026 UNIMED CURITIBA SOC COOP DE MEDICOS_COB1_eRS88923;Edna;Score forte 150;Categorizado;modelo
+2026-05-11 08:18:14.995393;RE: CRA RECUSA ADD/AMD NF'S: NF 660527 662361 658224;Edna;Score forte 250;Categorizado;modelo
+2026-05-11 08:18:15.103665;"Caso: 00487523 - ""RES: [TICKET#1035316] Sobra e Falta de produtos Goyaz Service""";Andreani;Score forte 200;Categorizado;modelo
+2026-05-11 08:18:15.255798;ENC: MALOTE ABBOTT 07/05/2026  - Gerar Fatura planta 1524;Andreani;Score forte 150;Categorizado;modelo
+2026-05-11 08:18:15.385971;RE: URGENTE ACTION REQUIRED : RE: Reversa ADC na planta 1524;Elton;Score fraco 150;Categorizado;modelo
+2026-05-11 08:18:15.465123;RES: CRÉDITO DE DEVOLUÇÃO - ABBOTT LABORATORIOS DO BRASIL LTDA;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:18:15.496536;RES: CRÉDITO DE DEVOLUÇÃO - ABBOTT;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:18:15.518481;RE: COLETA 2026/2006554-8;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:18:15.556108;ENC: Defeito de fabrica - ABBOTT ;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 08:18:15.651346;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:18:15.739683;ENC: Comunicado de Devolução;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 08:18:15.821885;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 08:18:15.851018;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
