@@ -1565,3 +1565,12 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-11 15:41:41.563545;RE: NFD 169945 aberta - Vitória Hospitalar;Andreani;Sem evidência;Categorizado;modelo
 2026-05-11 15:41:41.694657;RE: SH: Reversa 000840 HC São Paulo IDs 1283 1284 1285;Cleberson;Score forte 230;Categorizado;modelo
 2026-05-11 15:41:41.747466;ENC: AVARIA NF 581606;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 16:07:34.175503;RES: SOLICITAÇÃO DE EMISSÃO NFD – S3 MED DISTRIBUIDORA DE MEDICAMENTOS LTDA;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-11 16:07:34.286325;RES: Mercadoria avariada – procedimento de devolução - NF 549372 - ABBOTT;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-11 16:07:34.376400;Informação de novo Recebimento;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 16:07:34.460006;RE: NFD 169945 aberta - Vitória Hospitalar;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 16:07:34.506043;RE: SH: Devoluções pendentes;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-11 16:07:34.551776;RE: Experiência de Produto - Albert Einstein Goiania;Leonardo;Score forte 150;Categorizado;modelo
+2026-05-11 16:07:34.592645;RE:   CRA Devolução de Equipamento Abbott:  NF 186274 186275;Elton;Score fraco 150;Categorizado;modelo
+2026-05-11 16:07:34.627422;RES: NFD 169945 aberta - Vitória Hospitalar;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 16:07:34.652409;ENC: AVARIA NF 581606;;Humano removeu categoria;Erro;correcao_humana
