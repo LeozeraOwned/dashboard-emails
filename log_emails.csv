@@ -1400,3 +1400,10 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-11 09:16:26.385215;ENC: Defeito de fabrica - ABBOTT ;;Humano removeu categoria;Erro;correcao_humana
 2026-05-11 09:16:26.406278;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
 2026-05-11 09:16:26.431452;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 09:36:11.573058;RE: [TICKET#1054714] cadastro cliente;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 09:36:11.709718;RE: PUCRS Devolução NF 171406, ABBOTT;Carolina;Score forte 150;Categorizado;modelo
+2026-05-11 09:36:11.859721;NÃO CONFORMIDADE, DIAGNOCEL NF 188116 ABBOTT;Edna;Aprendido por assunto;Categorizado;modelo
+2026-05-11 09:36:12.092714;ENC: AVARIA NF 581606;Edna;Aprendido por assunto;Categorizado;modelo
+2026-05-11 09:36:12.186249;ENC: Defeito de fabrica - ABBOTT ;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 09:36:12.209845;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 09:36:12.232329;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
