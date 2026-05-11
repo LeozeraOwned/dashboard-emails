@@ -1407,3 +1407,25 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-11 09:36:12.186249;ENC: Defeito de fabrica - ABBOTT ;;Humano removeu categoria;Erro;correcao_humana
 2026-05-11 09:36:12.209845;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
 2026-05-11 09:36:12.232329;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 11:31:48.597312;RES: SH: Reversa 000840 HC São Paulo IDs 1283 1284 1285;Cleberson;Score forte 230;Categorizado;modelo
+2026-05-11 11:31:48.657209;  CRA Devolução de Equipamento Abbott:  NF 186274 186275;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 11:31:48.710608;RES: NFD 57210 - Grupo Pague Menos;Edna;Score forte 150;Categorizado;modelo
+2026-05-11 11:31:48.759222;RE: STATUS COLETA NF 678069;Shirley;Score forte 150;Categorizado;modelo
+2026-05-11 11:31:48.826647;Notas AG. D.U 11/05/2026;Andreani;Score forte 150;Categorizado;modelo
+2026-05-11 11:31:48.876999;RE: Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 08/MAIO/2026.;Edna;Score forte 250;Categorizado;modelo
+2026-05-11 11:31:48.926679;RES: CHAMADO ENTREGOU 027666 NF 647478  / conferencia 46691;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-11 11:31:48.976483;RES: RES: NF 679088;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-11 11:31:49.025983;RES: RES: SOLICITAÇÃO DE DEVOLUÇÃO - ANTI HCV - CD BARUERI    [ ref:!00D1U0Db5p.!500Pn01LHwxR:ref ];Carolina;Score forte 150;Categorizado;modelo
+2026-05-11 11:31:49.090945;RE: ENC: ocorrencia abbott levantamento1006 - CAJ_FALTA FORNECEDOR_04F064F_131 unidades_570185    [ ref:!00D1U0Db5p.!500Pn0wMEff:ref ];Carolina;Score fraco 150;Categorizado;modelo
+2026-05-11 11:31:49.125357;STATUS COLETA NF 678069;Shirley;Score forte 150;Categorizado;modelo
+2026-05-11 11:31:49.161808;RE: Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 08/MAIO/2026.;Edna;Score forte 250;Categorizado;modelo
+2026-05-11 11:31:49.194747;DEVOLUÇÃO ABBOTT 08.05.26 NFD 295327 295328;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 11:31:49.241467;RES: PEDIDO / SANTA CASA DE MISERICÓRDIA DE GUARAREMA ;Carolina;Score forte 150;Categorizado;modelo
+2026-05-11 11:31:49.275177;RE: RES: ANOMALIA PEDIDO 0531284864 - ABBOTT ADD;Edna;Score fraco 60;Categorizado;modelo
+2026-05-11 11:31:49.297058;RE: [TICKET#1054707] cadastro de cliente;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 11:31:49.329563;RE: ANOMALIA PEDIDO 0531284864 - ABBOTT ADD;Edna;Score forte 210;Categorizado;modelo
+2026-05-11 11:31:49.360249;NÃO CONFORMIDADE, DIAGNOCEL NF 188116 ABBOTT;Edna;Aprendido por assunto;Categorizado;modelo
+2026-05-11 11:31:49.381764;ENC: AVARIA NF 581606;Edna;Aprendido por assunto;Categorizado;modelo
+2026-05-11 11:31:49.411011;ENC: Defeito de fabrica - ABBOTT ;Carolina;Corrigido de Andreani para Carolina;Erro;correcao_humana
+2026-05-11 11:31:49.411011;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;Shirley;Corrigido de Andreani para Shirley;Erro;correcao_humana
+2026-05-11 11:31:49.430319;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
