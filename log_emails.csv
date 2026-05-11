@@ -1557,3 +1557,8 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-11 15:06:38.930617;RES: PEDIDO / SANTA CASA DE MISERICÓRDIA DE GUARAREMA ;Carolina;Sem intervenção;Correto;modelo
 2026-05-11 15:06:38.944772;NÃO CONFORMIDADE, DIAGNOCEL NF 188116 ABBOTT;Carolina;Corrigido de Edna para Carolina;Erro;correcao_humana
 2026-05-11 15:06:38.970490;ENC: Defeito de fabrica - ABBOTT ;Carolina;Corrigido de Andreani para Carolina;Erro;correcao_humana
+2026-05-11 15:21:19.784942;RES: NFD 169945 aberta - Vitória Hospitalar;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 15:21:19.910029;RES: RES: RES: PEDIDO DE COMPRAS UNIMED - PC 141683    [ ref:!00D1U0Db5p.!500Pn01OPfrS:ref ];Edna;Score forte 150;Categorizado;modelo
+2026-05-11 15:21:20.058523;RES: NF 186467 ABBOTT FATURADA CNPJ DIVERGENTE;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-11 15:21:20.136858;ENC: AVARIA NF 581606;Edna;Aprendido por assunto;Categorizado;modelo
+2026-05-11 15:21:20.250181;RES: RES: RES: PEDIDO DE COMPRAS UNIMED - PC 141683    [ ref:!00D1U0Db5p.!500Pn01OPfrS:ref ];Edna;Score forte 150;Categorizado;modelo
