@@ -1532,3 +1532,28 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-11 15:03:53.313606;ENC: AVARIA NF 581606;Edna;Sem intervenção;Correto;modelo
 2026-05-11 15:03:53.337329;ENC: Defeito de fabrica - ABBOTT ;Carolina;Corrigido de Andreani para Carolina;Erro;correcao_humana
 2026-05-11 15:03:53.358809;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;Edna;Corrigido de Andreani para Edna;Erro;correcao_humana
+2026-05-11 15:06:38.251660;RE: SH: Devoluções pendentes;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-11 15:06:38.309388;"Caso: 00488139 - ""SOLICITAÇÃO DE EMISSÃO NFD – INGOH - INSTITUTO GOIANO DE ONCOLOGIA E HEMATOLOGIA""";Andreani;Score forte 200;Categorizado;modelo
+2026-05-11 15:06:38.369969;"Caso: 00488138 - ""SOLICITAÇÃO DE EMISSÃO NFD – INGOH - INSTITUTO GOIANO DE ONCOLOGIA E HEMATOLOGIA""";Andreani;Score forte 200;Categorizado;modelo
+2026-05-11 15:06:38.437103;SOLICITAÇÃO DE EMISSÃO NFD – INGOH - INSTITUTO GOIANO DE ONCOLOGIA E HEMATOLOGIA;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 15:06:38.543777;RES: Ajuda - NF 678706 remessa para conserto Airzap;Shirley;Sem intervenção;Correto;modelo
+2026-05-11 15:06:38.568167;RE: SOLICITAÇÃO DE EMISSÃO NFD – S3 MED DISTRIBUIDORA DE MEDICAMENTOS LTDA;Carolina;Sem intervenção;Correto;modelo
+2026-05-11 15:06:38.585384;RES: INSERIR NF 676478 NO sharepoint;Shirley;Sem intervenção;Correto;modelo
+2026-05-11 15:06:38.606170;RES: SOLICITAÇÃO DE EMISSÃO NFD – LOGGEN PRODUTOS PARA SAUDE EIRELI;Carolina;Sem intervenção;Correto;modelo
+2026-05-11 15:06:38.618460;RES: Ajuda - NF 678706 remessa para conserto Airzap;Shirley;Sem intervenção;Correto;modelo
+2026-05-11 15:06:38.644084;SOLICITAÇÃO DE EMISSÃO NFD – LOGGEN PRODUTOS PARA SAUDE EIRELI;Carolina;Corrigido de Andreani para Carolina;Erro;correcao_humana
+2026-05-11 15:06:38.663248;Re: SOLICITAÇÃO DE EMISSÃO NFD – PMH PRODUTOS MEDICOS HOSPITALARES LTDA;Carolina;Corrigido de Andreani para Carolina;Erro;correcao_humana
+2026-05-11 15:06:38.694634; CRA Devolução/Recusa Abbott Vascular -NF 186980 196981 312565 186903 186979 169921 187249 187247 187248;Shirley;Corrigido de Edna para Shirley;Erro;correcao_humana
+2026-05-11 15:06:38.712872;ENC: SOLICITAÇÃO DE EMISSÃO NFD – UNI HOSPITALAR LTDA EPP;Carolina;Corrigido de Andreani para Carolina;Erro;correcao_humana
+2026-05-11 15:06:38.728468;SOLICITAÇÃO DE EMISSÃO NFD – UNI HOSPITALAR LTDA EPP;Carolina;Corrigido de Andreani para Carolina;Erro;correcao_humana
+2026-05-11 15:06:38.752169;SOLICITAÇÃO DE EMISSÃO NFD – PMH PRODUTOS MEDICOS HOSPITALARES LTDA;Carolina;Corrigido de Andreani para Carolina;Erro;correcao_humana
+2026-05-11 15:06:38.768662;RES: NF 186467 ABBOTT FATURADA CNPJ DIVERGENTE;Carolina;Sem intervenção;Correto;modelo
+2026-05-11 15:06:38.804515;RE: Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 08/MAIO/2026.;Elton;Corrigido de Edna para Elton;Erro;correcao_humana
+2026-05-11 15:06:38.825952;RES: CHAMADO ENTREGOU 027666 NF 647478  / conferencia 46691;Carolina;Sem intervenção;Correto;modelo
+2026-05-11 15:06:38.835327;RES: RES: NF 679088;Carolina;Sem intervenção;Correto;modelo
+2026-05-11 15:06:38.868525;RES: RES: SOLICITAÇÃO DE DEVOLUÇÃO - ANTI HCV - CD BARUERI    [ ref:!00D1U0Db5p.!500Pn01LHwxR:ref ];Carolina;Sem intervenção;Correto;modelo
+2026-05-11 15:06:38.885616;RE: ENC: ocorrencia abbott levantamento1006 - CAJ_FALTA FORNECEDOR_04F064F_131 unidades_570185    [ ref:!00D1U0Db5p.!500Pn0wMEff:ref ];Carolina;Sem intervenção;Correto;modelo
+2026-05-11 15:06:38.901974;RE: Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 08/MAIO/2026.;Elton;Corrigido de Edna para Elton;Erro;correcao_humana
+2026-05-11 15:06:38.930617;RES: PEDIDO / SANTA CASA DE MISERICÓRDIA DE GUARAREMA ;Carolina;Sem intervenção;Correto;modelo
+2026-05-11 15:06:38.944772;NÃO CONFORMIDADE, DIAGNOCEL NF 188116 ABBOTT;Carolina;Corrigido de Edna para Carolina;Erro;correcao_humana
+2026-05-11 15:06:38.970490;ENC: Defeito de fabrica - ABBOTT ;Carolina;Corrigido de Andreani para Carolina;Erro;correcao_humana
