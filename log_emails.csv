@@ -1394,3 +1394,9 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-11 08:59:41.642457;RES: BLOQUEIO ESTOQUE LIVANEL - Divergência de leitura de código de barras;;Humano removeu categoria;Erro;correcao_humana
 2026-05-11 08:59:41.657806;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
 2026-05-11 08:59:41.659154;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 09:16:26.165469;RE: [TICKET#1054705] Recebimento de CK com validade curta sem autorização [ ref:!00D1U0Db5p.!500Pn01OOEEr:ref ];Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 09:16:26.318602;RE: PEDIDO DE AJUDA (ABBOTT );Carolina;Corrigido de Andreani para Carolina;Erro;correcao_humana
+2026-05-11 09:16:26.349861;RE: COLETA 2026/2006554-8;Cleberson;Corrigido de Andreani para Cleberson;Erro;correcao_humana
+2026-05-11 09:16:26.385215;ENC: Defeito de fabrica - ABBOTT ;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 09:16:26.406278;Retirada Impressora - Troca de Periférico  FLEURY  INLAB Ticket 021021RL2194737 e Ticket 021021RL2194739;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 09:16:26.431452;RES: DPSP - NF 189494 / 189508 - Barrar entrega - URGENTE;;Humano removeu categoria;Erro;correcao_humana
