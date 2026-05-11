@@ -1574,3 +1574,6 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-11 16:07:34.592645;RE:   CRA Devolução de Equipamento Abbott:  NF 186274 186275;Elton;Score fraco 150;Categorizado;modelo
 2026-05-11 16:07:34.627422;RES: NFD 169945 aberta - Vitória Hospitalar;Andreani;Sem evidência;Categorizado;modelo
 2026-05-11 16:07:34.652409;ENC: AVARIA NF 581606;;Humano removeu categoria;Erro;correcao_humana
+2026-05-11 16:15:25.124203;RE: [TICKET#1054685] Cadastro.;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 16:15:25.228162;RE: DEVOLUÇÃO CARTA DE GARANTIA - ATERECTOMIA/VITORIA HOSPITALAR;Andreani;Sem evidência;Categorizado;modelo
+2026-05-11 16:15:25.296988;ENC: AVARIA NF 581606;;Humano removeu categoria;Erro;correcao_humana
