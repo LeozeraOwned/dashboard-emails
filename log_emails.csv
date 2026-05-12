@@ -1586,3 +1586,24 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-11 16:41:05.546235;RES: Cobrança 75055772003064 29.04.2026 UNIMED CURITIBA SOC COOP DE MEDICOS_COB1_eRS88923;Edna;Score forte 150;Categorizado;modelo
 2026-05-11 16:41:05.655960;RE: RES: RES: PEDIDO DE COMPRAS UNIMED - PC 141683    [ ref:!00D1U0Db5p.!500Pn01OPfrS:ref ];Edna;Score forte 150;Categorizado;modelo
 2026-05-11 16:41:05.725010;ENC: AVARIA NF 581606;;Humano removeu categoria;Erro;correcao_humana
+2026-05-12 08:04:58.895550;SDPF Portal do Fornecedor PM [ Fornecedor 62355 - ABBOTT NUTRICAO Coleta 72486 ]  fev.2026;Carolina;Aprendido por assunto;Categorizado;modelo
+2026-05-12 08:04:58.958612;RES: Ajuda - NF 678706 remessa para conserto Airzap;Shirley;Score forte 150;Categorizado;modelo
+2026-05-12 08:04:59.012269;Notas Fiscais de Devolução com ressarcimento pendente - ABBOTT;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 08:04:59.050492;Sua opinião é importante Devolucao Adm! Avalie nosso atendimento!;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 08:04:59.113112;RE: SH: Devoluções pendentes;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-12 08:04:59.173884;Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 11/MAIO/2026.;Edna;Score fraco 100;Categorizado;modelo
+2026-05-12 08:04:59.229627;Sua opinião é importante Devolucao Adm! Avalie nosso atendimento!;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 08:04:59.281809;Sua opinião é importante Devolucao Adm! Avalie nosso atendimento!;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 08:04:59.334774;Sua opinião é importante Devolucao Adm! Avalie nosso atendimento!;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 08:04:59.380964;RE: RES: OCORRÊNCIA NF 191740  FUND SAUDE DO ESTADO DO RIO DE JANE RIO DE JANEIRO - RJ;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 08:04:59.436656;RES: MALOTE ABBOTT 07/05/2026  - Gerar Fatura planta 1524;Edna;Score fraco 150;Categorizado;modelo
+2026-05-12 08:04:59.479879;RES: Devolução DPSP - Maio 2026 - ABBOTT TRD - Libre - ADC;Edna;Score forte 150;Categorizado;modelo
+2026-05-12 08:04:59.537714;RES: MALOTE ABBOTT 07/05/2026  - Gerar Fatura planta 1524;Edna;Score fraco 150;Categorizado;modelo
+2026-05-12 08:04:59.580285;RES: Devolução DPSP - Maio 2026 - ABBOTT TRD - EPD ;Edna;Score forte 150;Categorizado;modelo
+2026-05-12 08:04:59.619149;DASHBOARD 11/05/2026;Elton;Score forte 200;Categorizado;modelo
+2026-05-12 08:04:59.664474;Re: RECU_eEL23027_Aplicação Crédito  61940292007069   APDR_eRS88601 22/04/2026 DIST DE MEDICAMENTOS SANTA CRUZ;Edna;Score forte 150;Categorizado;modelo
+2026-05-12 08:04:59.700074;RE: RES: OCORRÊNCIA NF 191740  FUND SAUDE DO ESTADO DO RIO DE JANE RIO DE JANEIRO - RJ;;Humano removeu categoria;Erro;correcao_humana
+2026-05-12 08:04:59.700074;RE: RES: OCORRÊNCIA NF 191740  FUND SAUDE DO ESTADO DO RIO DE JANE RIO DE JANEIRO - RJ;;Humano removeu categoria;Erro;correcao_humana
+2026-05-12 08:04:59.731159;RE: RES: RES: PEDIDO DE COMPRAS UNIMED - PC 141683    [ ref:!00D1U0Db5p.!500Pn01OPfrS:ref ];Edna;Score forte 150;Categorizado;modelo
+2026-05-12 08:04:59.764159;RE: DEVOLUÇÃO CARTA DE GARANTIA - ATERECTOMIA/VITORIA HOSPITALAR;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 08:04:59.797616;ENC: AVARIA NF 581606;;Humano removeu categoria;Erro;correcao_humana
