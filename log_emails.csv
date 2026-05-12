@@ -1607,3 +1607,42 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-12 08:04:59.731159;RE: RES: RES: PEDIDO DE COMPRAS UNIMED - PC 141683    [ ref:!00D1U0Db5p.!500Pn01OPfrS:ref ];Edna;Score forte 150;Categorizado;modelo
 2026-05-12 08:04:59.764159;RE: DEVOLUÇÃO CARTA DE GARANTIA - ATERECTOMIA/VITORIA HOSPITALAR;Andreani;Sem evidência;Categorizado;modelo
 2026-05-12 08:04:59.797616;ENC: AVARIA NF 581606;;Humano removeu categoria;Erro;correcao_humana
+2026-05-12 12:55:58.612485;RE: Validação KPI Reversa -Performance Abril;Elton;Score forte 150;Categorizado;modelo
+2026-05-12 12:55:58.715139;RES: Solicitação de devolução - ABBOTT 08/05 - Alterar bloqueio;Edna;Score fraco 150;Categorizado;modelo
+2026-05-12 12:55:58.820396;RES: Re: RES: 56959314 - CONS INTER DE SAUDE DA AMREC CISAMR;Carolina;Score forte 150;Categorizado;modelo
+2026-05-12 12:55:58.932059;RE: URGENTE ACTION REQUIRED : RE: Reversa ADC na planta 1524;Elton;Score fraco 150;Categorizado;modelo
+2026-05-12 12:55:59.000158;RES: RECU_eEL23027_Aplicação Crédito  61940292007069   APDR_eRS88601 22/04/2026 DIST DE MEDICAMENTOS SANTA CRUZ;Edna;Score forte 150;Categorizado;modelo
+2026-05-12 12:55:59.069090;RES: Operações reversa Itajaí - ATA;Elton;Score fraco 150;Categorizado;modelo
+2026-05-12 12:55:59.132615;RE: GRUPO SC - COBRANÇA DEVOLUÇÃO - ABBOTT - 12/05/2026;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 12:55:59.209498;RES: Re: RES: 56959314 - CONS INTER DE SAUDE DA AMREC CISAMR;Carolina;Score forte 150;Categorizado;modelo
+2026-05-12 12:55:59.288637;RES: Análise Reclamações [PRODUTOS NÃO LOCALIZADOS PARA EMISSÃO DE LAUDO/DU - QUALIDADE ABBOTT];Elton;Score fraco 150;Categorizado;modelo
+2026-05-12 12:55:59.377047;RES: RELATO DE EXPERIÊNCIA DE PRODUTO - OCLUSOR DE PFO AMPLATZER 30MM - LOTE 8718939;Edna;Score forte 150;Categorizado;modelo
+2026-05-12 12:55:59.498092;RES: RES: Solicitação de devolução - Synthroid 200 mcg ;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-12 12:55:59.569876;RES: MALOTE ABBOTT 12/05/2026 - Deliveries p/ ingresso;Andreani;Score forte 150;Categorizado;modelo
+2026-05-12 12:55:59.639342;Operações reversa Itajaí - ATA;Elton;Score fraco 150;Categorizado;modelo
+2026-05-12 12:55:59.713136;Fwd: Re: RES: 56959314 - CONS INTER DE SAUDE DA AMREC CISAMR;Carolina;Score forte 150;Categorizado;modelo
+2026-05-12 12:55:59.775557;Análise Reclamações [PRODUTOS NÃO LOCALIZADOS PARA EMISSÃO DE LAUDO/DU - QUALIDADE ABBOTT];Elton;Score fraco 150;Categorizado;modelo
+2026-05-12 12:55:59.861174;ENC: RES: Solicitação de devolução - Synthroid 200 mcg;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-12 12:55:59.951151;RES: MALOTE ABBOTT 12/05/2026 - Liberar ordens Planta 1524;Andreani;Score forte 150;Categorizado;modelo
+2026-05-12 12:56:00.029176;CRA Devolução/Recusa Abbott Vascular - NF: 187535;Edna;Score fraco 100;Categorizado;modelo
+2026-05-12 12:56:00.115677;Confirmação de tratativa NC Inquiry;Edna;Score forte 150;Categorizado;modelo
+2026-05-12 12:56:00.180739;Danfe referente a NF: 43260505782733000149550010002196181012355179;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 12:56:00.259247;ENC: MALOTE ABBOTT 12/05/2026 - Liberar ordens Planta 1524;Andreani;Score forte 150;Categorizado;modelo
+2026-05-12 12:56:00.324859;Informação de novo Recebimento;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 12:56:00.401931;RES:  RES: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Score forte 150;Categorizado;modelo
+2026-05-12 12:56:00.469097;ENC: Devolução DPSP - Maio 2026 - ABBOTT TRD - Libre - ADC;Edna;Score forte 150;Categorizado;modelo
+2026-05-12 12:56:00.537134;RES: Validação KPI Reversa -Performance Abril;Elton;Score forte 150;Categorizado;modelo
+2026-05-12 12:56:00.632331;RE: BIOMEGA  GLP - Itens em estoque para ajuste 182480;Shirley;Score fraco 150;Categorizado;modelo
+2026-05-12 12:56:00.714146;ENC: CRA Devolução/Recusa Abbott Vascular - NF: 186905;Shirley;Aprendido por assunto;Categorizado;modelo
+2026-05-12 12:56:00.785905;RES: Devolução DPSP - Maio 2026 - ABBOTT TRD - Libre - ADC;Edna;Score forte 150;Categorizado;modelo
+2026-05-12 12:56:00.853627;RE: Notas sem informações;Elton;Score fraco 150;Categorizado;modelo
+2026-05-12 12:56:00.919149;GRUPO SC - COBRANÇA DEVOLUÇÃO - ABBOTT - 12/05/2026;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 12:56:00.995792;RE: Pré-alerta de Cargas Abbott - 11.05.2026 - Alterar bloqueio;Elton;Score fraco 150;Categorizado;modelo
+2026-05-12 12:56:01.062653;RE: ENC: TIRAS FREESTYLE - NF 184445 ABBOTT    [ ref:!00D1U0Db5p.!500Pn01NMt54:ref ];Carolina;Score fraco 150;Categorizado;modelo
+2026-05-12 12:56:01.125548;RES: RES: RES: PEDIDO DE COMPRAS UNIMED - PC 141683    [ ref:!00D1U0Db5p.!500Pn01OPfrS:ref ];Edna;Score forte 150;Categorizado;modelo
+2026-05-12 12:56:01.187315;RES: CHAMADO ENTREGOU 027666 NF 647478  / conferencia 46691;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-12 12:56:01.245179;RES: CHAMADO ENTREGOU 027666 NF 647478  / conferencia 46691;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-12 12:56:01.296294;Re: SH: Devoluções pendentes;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-12 12:56:01.352042;RE: SH: Devoluções pendentes;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-12 12:56:01.397263;RES: Pré-alerta de Cargas Abbott - 11.05.2026 - Alterar bloqueio;Elton;Score fraco 150;Categorizado;modelo
+2026-05-12 12:56:01.433924;ENC: AVARIA NF 581606;;Humano removeu categoria;Erro;correcao_humana
