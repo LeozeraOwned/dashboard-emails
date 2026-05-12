@@ -1713,3 +1713,24 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-12 14:38:26.884961;RES: CHAMADO ENTREGOU 027666 NF 647478  / conferencia 46691;Carolina;Sem intervenção;Correto;modelo
 2026-05-12 14:38:26.895582;RES: CHAMADO ENTREGOU 027666 NF 647478  / conferencia 46691;Carolina;Sem intervenção;Correto;modelo
 2026-05-12 14:38:26.905111;ENC: AVARIA NF 581606;;Humano removeu categoria;Erro;correcao_humana
+2026-05-12 16:00:50.562793;RE: Notas AG. D.U 11/05/2026;Edna;Score fraco 150;Categorizado;modelo
+2026-05-12 16:00:50.608223;RE: NF 2545564 – Lote não localizado no SAP;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 16:00:50.644837;RES: NF 2545564 – Lote não localizado no SAP;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 16:00:50.679918;RES: RES: Solicitação de devolução - Synthroid 200 mcg ;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-12 16:00:50.715445;KIT DEVOLUÇÃO ABBOTT NFD 44643 – DEV. VENCIDOS - MAIO DE 2026 - PROFARMA/RJ;Andreani;Score forte 150;Categorizado;modelo
+2026-05-12 16:00:50.746071;Envio da NF-e - N.Doc 000172615 - Série 6;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 16:00:50.790194;RES: NF 2545564 – Lote não localizado no SAP;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 16:00:50.824362;RE: MALOTE ABBOTT 12/05/2026;Andreani;Score forte 150;Categorizado;modelo
+2026-05-12 16:00:50.862355;RE: Validação KPI Reversa -Performance Abril;Elton;Score forte 150;Categorizado;modelo
+2026-05-12 16:00:50.894642;Envio da NF-e - N.Doc 000172610 - Série 6;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 16:00:50.929709;DEVOLUÇÃO ABBOTT 11.05.26 NFD 295431;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 16:00:50.961660;ENC: MALOTE ABBOTT 12/05/2026 - Gerar fatura Planta 1524;Edna;Score fraco 150;Categorizado;modelo
+2026-05-12 16:00:50.996872;Danfe referente a NF: 43260505782733000149550010002196441012355640;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 16:00:51.040036;RES: Notas AG. D.U 11/05/2026;Edna;Score fraco 150;Categorizado;modelo
+2026-05-12 16:00:51.073290;RES: Pré-alerta de Cargas Abbott - 12.05.2026 - Alterar bloqueio;Elton;Score fraco 150;Categorizado;modelo
+2026-05-12 16:00:51.107385;RES: RES: OC891660 - Previsão de entrega;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 16:00:51.140763;NF 2545564 – Lote não localizado no SAP;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 16:00:51.172781;Inquirys abertas no SAP;Elton;Score forte 150;Categorizado;modelo
+2026-05-12 16:00:51.204681;Notas AG. D.U 12/05/2026;Andreani;Score forte 150;Categorizado;modelo
+2026-05-12 16:00:51.245242;RE: MALOTE ABBOTT 12/05/2026 - Deliveries p/ ingresso;Andreani;Score forte 150;Categorizado;modelo
+2026-05-12 16:00:51.280106;EMISSÃO DEVOLUÇÃO - ABBOTT LABORATORIOS DO BRASIL;Andreani;Sem evidência;Categorizado;modelo
