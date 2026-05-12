@@ -1685,3 +1685,31 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-12 12:56:43.122582;RE: SH: Devoluções pendentes;Cleberson;Sem intervenção;Correto;modelo
 2026-05-12 12:56:43.130841;RES: Pré-alerta de Cargas Abbott - 11.05.2026 - Alterar bloqueio;Elton;Sem intervenção;Correto;modelo
 2026-05-12 12:56:43.139350;ENC: AVARIA NF 581606;;Humano removeu categoria;Erro;correcao_humana
+2026-05-12 14:38:26.304597;Agenda Abbott - deliverys processadas.;Elton;Score forte 150;Categorizado;modelo
+2026-05-12 14:38:26.326666;: ANOMALIA PEDIDO 0530732664 - ABBOTT ADD;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 14:38:26.364905;RE: URGENTE ACTION REQUIRED : RE: Reversa ADC na planta 1524;Elton;Score fraco 150;Categorizado;modelo
+2026-05-12 14:38:26.415328;RES: Solicitação de devolução - ABBOTT 08/05 - Alterar bloqueio;Edna;Score fraco 150;Categorizado;modelo
+2026-05-12 14:38:26.458386;EMISSÃO DEVOLUÇÃO - ABBOTT LABORATORIOS DO BRASIL;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 14:38:26.515311;Cancelamento da NFe 43260505782733000149550010002196181012355179;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 14:38:26.565121;RES: Solicitação de devolução - ABBOTT 08/05 - Alterar bloqueio;Edna;Sem intervenção;Correto;modelo
+2026-05-12 14:38:26.575131;RES: Re: RES: 56959314 - CONS INTER DE SAUDE DA AMREC CISAMR;Carolina;Sem intervenção;Correto;modelo
+2026-05-12 14:38:26.588937;RES: RECU_eEL23027_Aplicação Crédito  61940292007069   APDR_eRS88601 22/04/2026 DIST DE MEDICAMENTOS SANTA CRUZ;Edna;Sem intervenção;Correto;modelo
+2026-05-12 14:38:26.599544;RE: GRUPO SC - COBRANÇA DEVOLUÇÃO - ABBOTT - 12/05/2026;;Humano removeu categoria;Erro;correcao_humana
+2026-05-12 14:38:26.607886;RES: Re: RES: 56959314 - CONS INTER DE SAUDE DA AMREC CISAMR;Carolina;Sem intervenção;Correto;modelo
+2026-05-12 14:38:26.625043;RES: RELATO DE EXPERIÊNCIA DE PRODUTO - OCLUSOR DE PFO AMPLATZER 30MM - LOTE 8718939;Edna;Sem intervenção;Correto;modelo
+2026-05-12 14:38:26.664199;RES: RES: Solicitação de devolução - Synthroid 200 mcg ;Carolina;Sem intervenção;Correto;modelo
+2026-05-12 14:38:26.675169;Fwd: Re: RES: 56959314 - CONS INTER DE SAUDE DA AMREC CISAMR;Carolina;Sem intervenção;Correto;modelo
+2026-05-12 14:38:26.708171;ENC: RES: Solicitação de devolução - Synthroid 200 mcg;Carolina;Sem intervenção;Correto;modelo
+2026-05-12 14:38:26.734967;CRA Devolução/Recusa Abbott Vascular - NF: 187535;Edna;Sem intervenção;Correto;modelo
+2026-05-12 14:38:26.757951;Confirmação de tratativa NC Inquiry;Edna;Sem intervenção;Correto;modelo
+2026-05-12 14:38:26.769921;RES:  RES: RES: NF 185733 WISDOM    [ ref:!00D1U0Db5p.!500Pn01OqgzN:ref ];Carolina;Sem intervenção;Correto;modelo
+2026-05-12 14:38:26.780837;ENC: Devolução DPSP - Maio 2026 - ABBOTT TRD - Libre - ADC;Edna;Sem intervenção;Correto;modelo
+2026-05-12 14:38:26.790174;RES: Devolução DPSP - Maio 2026 - ABBOTT TRD - Libre - ADC;Edna;Sem intervenção;Correto;modelo
+2026-05-12 14:38:26.806224;Re: RELATO DE EXPERIÊNCIA DE PRODUTO - OCLUSOR DE PFO AMPLATZER 30MM - LOTE 8718939;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 14:38:26.825221;GRUPO SC - COBRANÇA DEVOLUÇÃO - ABBOTT - 12/05/2026;;Humano removeu categoria;Erro;correcao_humana
+2026-05-12 14:38:26.845693;RE: RELATO DE EXPERIÊNCIA DE PRODUTO - OCLUSOR DE PFO AMPLATZER 30MM - LOTE 8718939;Andreani;Sem evidência;Categorizado;modelo
+2026-05-12 14:38:26.865073;RE: ENC: TIRAS FREESTYLE - NF 184445 ABBOTT    [ ref:!00D1U0Db5p.!500Pn01NMt54:ref ];Carolina;Sem intervenção;Correto;modelo
+2026-05-12 14:38:26.875027;RES: RES: RES: PEDIDO DE COMPRAS UNIMED - PC 141683    [ ref:!00D1U0Db5p.!500Pn01OPfrS:ref ];Edna;Sem intervenção;Correto;modelo
+2026-05-12 14:38:26.884961;RES: CHAMADO ENTREGOU 027666 NF 647478  / conferencia 46691;Carolina;Sem intervenção;Correto;modelo
+2026-05-12 14:38:26.895582;RES: CHAMADO ENTREGOU 027666 NF 647478  / conferencia 46691;Carolina;Sem intervenção;Correto;modelo
+2026-05-12 14:38:26.905111;ENC: AVARIA NF 581606;;Humano removeu categoria;Erro;correcao_humana
