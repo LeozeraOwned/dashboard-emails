@@ -2,101 +2,16 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+import time
 
 st.set_page_config(layout="wide")
 
-# ================= CSS ULTRA (INALTERADO) =================
-st.markdown("""
-<style>
+# ================= LOAD (ATUALIZADO VIA GITHUB) =================
+url = f"https://raw.githubusercontent.com/LeozeraOwned/dashboard-emails/main/log_emails.csv?nocache={time.time()}"
 
-/* FUNDO */
-body { background-color: #0e1117; }
+df = pd.read_csv(url, sep=";", on_bad_lines="skip")
 
-/* SIDEBAR */
-section[data-testid="stSidebar"] {
-    background: linear-gradient(180deg, #0e1117, #111827);
-    box-shadow: 0 0 20px #00ffe0;
-    animation: glowMenu 2s infinite alternate;
-}
-
-@keyframes glowMenu {
-    from { box-shadow: 0 0 5px #00ffe0; }
-    to { box-shadow: 0 0 25px #00ffe0; }
-}
-
-/* MENU */
-section[data-testid="stSidebar"] div[role="radiogroup"] > label {
-    position: relative;
-    padding: 10px 14px;
-    border-radius: 14px;
-    transition: all .3s ease;
-}
-
-section[data-testid="stSidebar"] div[role="radiogroup"] > label:hover {
-    transform: translateX(6px);
-    background: rgba(0,255,224,.08);
-}
-
-/* CARD */
-.card {
-    position: relative;
-    background: #1a1f2b;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    overflow: hidden;
-}
-
-.card::before {
-    content: "";
-    position: absolute;
-    inset: -2px;
-    background: linear-gradient(90deg,#00ffe0,#007cf0,#00ffe0);
-    animation: borderMove 4s linear infinite;
-    z-index: 0;
-}
-
-.card::after {
-    content: "";
-    position: absolute;
-    inset: 2px;
-    background: #1a1f2b;
-    border-radius: 15px;
-    z-index: 1;
-}
-
-@keyframes borderMove {
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
-}
-
-.content { position: relative; z-index: 2; }
-.big { font-size: 32px; font-weight: bold; }
-.small { color: #aaa; }
-
-.animate-once { animation: popOnce .8s ease-out 1; }
-
-@keyframes popOnce {
-    from { opacity:0; transform: translateY(12px) scale(.96); }
-    to { opacity:1; transform:none; }
-}
-
-.pulse-green { color:#00ff9f; }
-.pulse-red { color:#ff4d4d; }
-
-.plotly .bars path {
-    transition: all .8s ease-in-out !important;
-}
-
-</style>
-""", unsafe_allow_html=True)
-
-# ================= LOAD =================
-df = pd.read_csv("log_emails.csv", sep=";")
 df["data"] = pd.to_datetime(df["data"], errors="coerce")
-
-# ✅ MANTÉM TODAS AS DATAS DISPONÍVEIS NO CSV
-df = df.copy()
 
 # ================= NORMALIZAÇÃO =================
 df["dia"] = df["data"].dt.date
@@ -107,7 +22,7 @@ df["analista"] = df["analista"].fillna("").astype(str).str.strip()
 df["assunto"] = df["assunto"].fillna("").astype(str).str.strip()
 df["analista_exibicao"] = df["analista"].replace("", "Sem analista")
 
-# ================= DATAFRAME DE PERFORMANCE (INALTERADO) =================
+# ================= DATAFRAME DE PERFORMANCE =================
 df_perf = df[
     ~(
         (df["status"] == "Sem categoria") &
@@ -145,12 +60,10 @@ if dia_sel != "Todos":
 # ================= FUNÇÕES =================
 def card(icon, valor, label, extra=""):
     return f"""
-    <div class="card">
-        <div class="content">
-            {icon}
-            <div class="big {extra} animate-once">{valor}</div>
-            <div class="small">{label}</div>
-        </div>
+    <div style="background:#1a1f2b;padding:20px;border-radius:15px;text-align:center;">
+        <div style="font-size:22px">{icon}</div>
+        <div style="font-size:28px;font-weight:bold">{valor}</div>
+        <div style="color:#aaa">{label}</div>
     </div>
     """
 
@@ -171,15 +84,15 @@ if pagina=="📊 Dashboard":
 
     c1.markdown(card("📩",total,"Total"),unsafe_allow_html=True)
     c2.markdown(card("📌",total_categ,"Total categorizados"),unsafe_allow_html=True)
-    c3.markdown(card("✅",certos,"Categorizados certos","pulse-green"),unsafe_allow_html=True)
-    c4.markdown(card("❌",errados,"Categorizados errados","pulse-red"),unsafe_allow_html=True)
+    c3.markdown(card("✅",certos,"Categorizados certos"),unsafe_allow_html=True)
+    c4.markdown(card("❌",errados,"Categorizados errados"),unsafe_allow_html=True)
     c5.markdown(card("🚫",sem_cat,"Sem categoria"),unsafe_allow_html=True)
 
     st.divider()
     st.subheader("📊 Volume por Analista")
 
     dist = (
-        df_perf_f[df_perf_f["tipo_evento"] == "modelo"]
+        df_perf_f
         .groupby("analista_exibicao")
         .size()
         .reset_index(name="Qtd")
@@ -194,7 +107,6 @@ if pagina=="📊 Dashboard":
         template="plotly_dark"
     )
 
-    fig.update_layout(transition_duration=800)
     st.plotly_chart(fig, use_container_width=True)
 
 # ================= ANÁLISES =================
@@ -208,7 +120,7 @@ elif pagina=="📈 Análises":
         data=[go.Pie(
             labels=["Categorizados certos","Categorizados errados"],
             values=[certos,errados],
-            hole=.72,
+            hole=.7,
             marker=dict(colors=["#00ff9f","#ff4d4d"]),
             textinfo="percent"
         )]
@@ -218,9 +130,8 @@ elif pagina=="📈 Análises":
         template="plotly_dark",
         annotations=[dict(
             text=f"<b>{qualidade:.1f}%</b><br>Qualidade",
-            x=.5,y=.5,showarrow=False,font=dict(size=26)
-        )],
-        transition_duration=800
+            x=.5,y=.5,showarrow=False,font=dict(size=24)
+        )]
     )
 
     st.plotly_chart(fig, use_container_width=True)
@@ -247,19 +158,7 @@ elif pagina=="📅 Por Dia":
         template="plotly_dark"
     )
 
-    fig.update_traces(line=dict(width=3), marker=dict(size=8))
-    fig.update_layout(
-        transition_duration=800,
-        xaxis_title="Dia",
-        yaxis_title="Qtd de erros"
-    )
 
-    st.plotly_chart(fig, use_container_width=True)
-
-# ================= DADOS =================
-elif pagina=="📄 Dados":
-    st.title("📄 Logs")
-    st.dataframe(df_f,use_container_width=True)
 
 
 
