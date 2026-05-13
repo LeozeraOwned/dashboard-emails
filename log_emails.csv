@@ -1682,3 +1682,7 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-13T15:13:10.064137;tracking abbott- coleta reversa e devolucao / /;;Baixa confiança;Sem categoria
 2026-05-13T15:13:11.638831;res: confirmacao de tratativa nc inquiry;Carolina;Memória 92;Categorizado
 2026-05-13T15:13:11.683288;cra devolucao/recusa abbott vascular - nf:;Carolina;Qualidade PER;Categorizado
+2026-05-13T15:13:51.087672;mercadorias com avarias e falta ( abbott );;Baixa confiança;Sem categoria
+2026-05-13T15:13:51.238609;devolucao nota fiscal referente a nota;;Baixa confiança;Sem categoria
+2026-05-13T15:13:51.455116;tracking abbott- coleta reversa e devolucao / /;;Baixa confiança;Sem categoria
+2026-05-13T15:13:51.484762;res: confirmacao de tratativa nc inquiry;Edna;Corrigido de Carolina;Correção Humana
