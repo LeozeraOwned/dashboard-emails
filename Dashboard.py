@@ -2,17 +2,33 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+import requests
+from io import StringIO
 
 st.set_page_config(layout="wide")
 
-# ================= LOAD (DIRETO DO GITHUB) =================
-url = "https://raw.githubusercontent.com/LeozeraOwned/dashboard-emails/main/log_emails.csv"
+# ================= LOAD (ROBUSTO DO GITHUB) =================
+@st.cache_data
+def load_data():
+    url = "https://raw.githubusercontent.com/LeozeraOwned/dashboard-emails/main/log_emails.csv"
+    
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        return pd.read_csv(StringIO(response.text), sep=";", on_bad_lines="skip")
+    except Exception as e:
+        st.error("❌ Erro ao carregar o CSV do GitHub.")
+        st.exception(e)
+        return pd.DataFrame()
 
-df = pd.read_csv(url, sep=";", on_bad_lines="skip")
+df = load_data()
 
-df["data"] = pd.to_datetime(df["data"], errors="coerce")
+if df.empty:
+    st.stop()
 
 # ================= TRATAMENTO =================
+df["data"] = pd.to_datetime(df["data"], errors="coerce")
+
 df["dia"] = df["data"].dt.date
 df["mes"] = df["data"].dt.month
 df["status"] = df["status"].fillna("").astype(str).str.strip()
@@ -168,6 +184,7 @@ elif pagina == "📄 Dados":
     st.title("📄 Logs")
 
     st.dataframe(df_f, use_container_width=True)
+
 
 
 
