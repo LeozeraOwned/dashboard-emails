@@ -20,7 +20,7 @@ def load_data():
     linhas_invalidas = 0
 
     for linha in content.split("\n"):
-        if linha.count(";") == 5:  # correto (6 colunas)
+        if linha.count(";") == 5:
             linhas_validas.append(linha)
         else:
             linhas_invalidas += 1
@@ -36,24 +36,36 @@ def load_data():
 df = load_data()
 
 # ================= TRATAMENTO =================
+
+# 🔥 REMOVE O "T" AUTOMATICAMENTE
+df["data"] = df["data"].astype(str).str.replace("T", " ")
+
 df["data"] = pd.to_datetime(df["data"], errors="coerce")
+
+df = df.dropna(subset=["data"])
 
 df["dia"] = df["data"].dt.date
 df["mes"] = df["data"].dt.month
-df["status"] = df["status"].fillna("").astype(str).str.strip()
+
+# 🔥 CORREÇÃO CRÍTICA DO STATUS (resolve seus "certos = 0")
+df["status"] = (
+    df["status"]
+    .fillna("")
+    .astype(str)
+    .str.strip()
+    .str.lower()
+)
+
 df["motivo"] = df["motivo"].fillna("").astype(str).str.strip()
 df["analista"] = df["analista"].fillna("").astype(str).str.strip()
 df["assunto"] = df["assunto"].fillna("").astype(str).str.strip()
 
 df["analista_exibicao"] = df["analista"].replace("", "Sem analista")
 
-# remover linhas sem data válida
-df = df.dropna(subset=["data"])
-
 # ================= FILTRO PERFORMANCE =================
 df_perf = df[
     ~(
-        (df["status"] == "Sem categoria") &
+        (df["status"] == "sem categoria") &
         (df["motivo"].str.lower() == "aprendido: não categorizar")
     )
 ].copy()
@@ -97,10 +109,10 @@ def card(icon, valor, label):
 
 def resumo(df):
     total = len(df)
-    total_categ = df["status"].isin(["Categorizado","Erro","Correto"]).sum()
-    errados = (df["status"] == "Erro").sum()
+    total_categ = df["status"].isin(["categorizado","erro","correto"]).sum()
+    errados = (df["status"] == "erro").sum()
     certos = total_categ - errados
-    sem_cat = (df["status"] == "Sem categoria").sum()
+    sem_cat = (df["status"] == "sem categoria").sum()
     return total, total_categ, certos, errados, sem_cat
 
 # ================= DASHBOARD =================
@@ -129,6 +141,7 @@ if pagina == "📊 Dashboard":
         .reset_index(name="Qtd")
     )
 
+    # ✅ ANIMAÇÃO ORIGINAL (SEM QUEBRAR)
     fig = px.bar(
         dist,
         x="analista_exibicao",
@@ -138,7 +151,7 @@ if pagina == "📊 Dashboard":
         template="plotly_dark"
     )
 
-    fig.update_layout(transition_duration=500)
+    fig.update_traces(textposition="outside")
 
     st.plotly_chart(fig, use_container_width=True)
 
@@ -162,7 +175,6 @@ elif pagina == "📈 Análises":
 
     fig.update_layout(
         template="plotly_dark",
-        transition_duration=500,
         annotations=[dict(
             text=f"<b>{qualidade:.1f}%</b><br>Qualidade",
             x=.5, y=.5,
@@ -178,7 +190,7 @@ elif pagina == "📅 Por Dia":
     st.title("📅 Erros por Dia")
 
     erros_por_dia = (
-        df_perf_f[df_perf_f["status"] == "Erro"]
+        df_perf_f[df_perf_f["status"] == "erro"]
         .groupby("dia")
         .size()
         .reset_index(name="Qtd")
@@ -192,8 +204,6 @@ elif pagina == "📅 Por Dia":
         markers=True,
         template="plotly_dark"
     )
-
-    fig.update_layout(transition_duration=500)
 
     st.plotly_chart(fig, use_container_width=True)
 
