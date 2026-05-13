@@ -7,24 +7,33 @@ from io import StringIO
 
 st.set_page_config(layout="wide")
 
-# ================= LOAD (ROBUSTO DO GITHUB) =================
-@st.cache_data
+# ================= LOAD ROBUSTO =================
+@st.cache_data(ttl=60)
 def load_data():
     url = "https://raw.githubusercontent.com/LeozeraOwned/dashboard-emails/main/log_emails.csv"
     
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        return pd.read_csv(StringIO(response.text), sep=";", on_bad_lines="skip")
-    except Exception as e:
-        st.error("❌ Erro ao carregar o CSV do GitHub.")
-        st.exception(e)
-        return pd.DataFrame()
+    response = requests.get(url)
+    response.raise_for_status()
+    content = response.text
+
+    linhas_validas = []
+    linhas_invalidas = 0
+
+    for linha in content.split("\n"):
+        if linha.count(";") == 5:  # correto (6 colunas)
+            linhas_validas.append(linha)
+        else:
+            linhas_invalidas += 1
+
+    if linhas_invalidas > 0:
+        st.warning(f"⚠️ {linhas_invalidas} linhas ignoradas (erro de formatação no CSV)")
+
+    texto_limpo = "\n".join(linhas_validas)
+
+    df = pd.read_csv(StringIO(texto_limpo), sep=";")
+    return df
 
 df = load_data()
-
-if df.empty:
-    st.stop()
 
 # ================= TRATAMENTO =================
 df["data"] = pd.to_datetime(df["data"], errors="coerce")
@@ -35,9 +44,13 @@ df["status"] = df["status"].fillna("").astype(str).str.strip()
 df["motivo"] = df["motivo"].fillna("").astype(str).str.strip()
 df["analista"] = df["analista"].fillna("").astype(str).str.strip()
 df["assunto"] = df["assunto"].fillna("").astype(str).str.strip()
+
 df["analista_exibicao"] = df["analista"].replace("", "Sem analista")
 
-# ================= FILTRO DE PERFORMANCE =================
+# remover linhas sem data válida
+df = df.dropna(subset=["data"])
+
+# ================= FILTRO PERFORMANCE =================
 df_perf = df[
     ~(
         (df["status"] == "Sem categoria") &
@@ -94,6 +107,7 @@ def resumo(df):
 if pagina == "📊 Dashboard":
 
     st.title("🚀 Painel Inteligente")
+    st.caption(f"📅 Último dado carregado: {df['data'].max()}")
 
     total, total_categ, certos, errados, sem_cat = resumo(df_perf_f)
 
@@ -124,6 +138,8 @@ if pagina == "📊 Dashboard":
         template="plotly_dark"
     )
 
+    fig.update_layout(transition_duration=500)
+
     st.plotly_chart(fig, use_container_width=True)
 
 # ================= ANÁLISES =================
@@ -146,6 +162,7 @@ elif pagina == "📈 Análises":
 
     fig.update_layout(
         template="plotly_dark",
+        transition_duration=500,
         annotations=[dict(
             text=f"<b>{qualidade:.1f}%</b><br>Qualidade",
             x=.5, y=.5,
@@ -158,7 +175,7 @@ elif pagina == "📈 Análises":
 # ================= POR DIA =================
 elif pagina == "📅 Por Dia":
 
-    st.title("📅 Por Dia")
+    st.title("📅 Erros por Dia")
 
     erros_por_dia = (
         df_perf_f[df_perf_f["status"] == "Erro"]
@@ -175,6 +192,8 @@ elif pagina == "📅 Por Dia":
         markers=True,
         template="plotly_dark"
     )
+
+    fig.update_layout(transition_duration=500)
 
     st.plotly_chart(fig, use_container_width=True)
 
