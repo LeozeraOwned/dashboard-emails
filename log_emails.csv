@@ -1677,3 +1677,8 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-13T15:12:00.769588;res: pendencia de coleta - cd aquiraz ( abbott );Edna;Corrigido de Carolina;Correção Humana
 2026-05-13T15:12:00.797928;res: cra devolucao/recusa abbott vascular -nf;Shirley;Corrigido de Carolina;Correção Humana
 2026-05-13T15:12:00.828177;res: nfd - grupo pague menos;Edna;Corrigido de Carolina;Correção Humana
+2026-05-13T15:13:09.641001;mercadorias com avarias e falta ( abbott );;Baixa confiança;Sem categoria
+2026-05-13T15:13:09.813882;devolucao nota fiscal referente a nota;;Baixa confiança;Sem categoria
+2026-05-13T15:13:10.064137;tracking abbott- coleta reversa e devolucao / /;;Baixa confiança;Sem categoria
+2026-05-13T15:13:11.638831;res: confirmacao de tratativa nc inquiry;Carolina;Memória 92;Categorizado
+2026-05-13T15:13:11.683288;cra devolucao/recusa abbott vascular - nf:;Carolina;Qualidade PER;Categorizado
