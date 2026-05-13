@@ -2,58 +2,35 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-import requests
-from io import StringIO
 
 st.set_page_config(layout="wide")
 
-# ================= LOAD ROBUSTO =================
-@st.cache_data(ttl=60)
-def load_data():
-    url = "https://raw.githubusercontent.com/LeozeraOwned/dashboard-emails/main/log_emails.csv"
-    
-    response = requests.get(url)
-    response.raise_for_status()
-    content = response.text
+# ================= LOAD =================
+url = "https://raw.githubusercontent.com/LeozeraOwned/dashboard-emails/main/log_emails.csv"
 
-    linhas_validas = []
-    linhas_invalidas = 0
-
-    for linha in content.split("\n"):
-        if linha.count(";") == 5:
-            linhas_validas.append(linha)
-        else:
-            linhas_invalidas += 1
-
-    if linhas_invalidas > 0:
-        st.warning(f"⚠️ {linhas_invalidas} linhas ignoradas (erro de formatação no CSV)")
-
-    texto_limpo = "\n".join(linhas_validas)
-
-    df = pd.read_csv(StringIO(texto_limpo), sep=";")
-    return df
-
-df = load_data()
+df = pd.read_csv(url, sep=";", on_bad_lines="skip")
 
 # ================= TRATAMENTO =================
 
-# 🔥 REMOVE O "T" AUTOMATICAMENTE
+# ✅ Corrige o T da data
 df["data"] = df["data"].astype(str).str.replace("T", " ")
 
 df["data"] = pd.to_datetime(df["data"], errors="coerce")
 
+# remove linhas inválidas
 df = df.dropna(subset=["data"])
 
 df["dia"] = df["data"].dt.date
 df["mes"] = df["data"].dt.month
 
-# 🔥 CORREÇÃO CRÍTICA DO STATUS (resolve seus "certos = 0")
+# ✅ CORREÇÃO PRINCIPAL (STATUS)
 df["status"] = (
     df["status"]
     .fillna("")
     .astype(str)
     .str.strip()
     .str.lower()
+    .str.replace(";", "")
 )
 
 df["motivo"] = df["motivo"].fillna("").astype(str).str.strip()
@@ -62,7 +39,7 @@ df["assunto"] = df["assunto"].fillna("").astype(str).str.strip()
 
 df["analista_exibicao"] = df["analista"].replace("", "Sem analista")
 
-# ================= FILTRO PERFORMANCE =================
+# ================= FILTRO =================
 df_perf = df[
     ~(
         (df["status"] == "sem categoria") &
@@ -141,7 +118,6 @@ if pagina == "📊 Dashboard":
         .reset_index(name="Qtd")
     )
 
-    # ✅ ANIMAÇÃO ORIGINAL (SEM QUEBRAR)
     fig = px.bar(
         dist,
         x="analista_exibicao",
@@ -213,6 +189,7 @@ elif pagina == "📄 Dados":
     st.title("📄 Logs")
 
     st.dataframe(df_f, use_container_width=True)
+
 
 
 
