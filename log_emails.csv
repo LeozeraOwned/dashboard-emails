@@ -1607,3 +1607,46 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-12 08:04:59.731159;RE: RES: RES: PEDIDO DE COMPRAS UNIMED - PC 141683    [ ref:!00D1U0Db5p.!500Pn01OPfrS:ref ];Edna;Score forte 150;Categorizado;modelo
 2026-05-12 08:04:59.764159;RE: DEVOLUÇÃO CARTA DE GARANTIA - ATERECTOMIA/VITORIA HOSPITALAR;Andreani;Sem evidência;Categorizado;modelo
 2026-05-12 08:04:59.797616;ENC: AVARIA NF 581606;;Humano removeu categoria;Erro;correcao_humana
+2026-05-13T14:37:51.656638;processamento em l - divisao adc | nf | falta na entrega | dev. ato;Edna;Score forte 200;Categorizado
+2026-05-13T14:37:51.712795;res: confirmacao de tratativa nc inquiry;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:51.788612;res: devolucoes sobra abbott;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:51.901408;devolucao nota fiscal referente a nota;;Baixa confiança;Sem categoria
+2026-05-13T14:37:52.536025;res: confirmacao de tratativa nc inquiry;Edna;Score moderado 200;Categorizado
+2026-05-13T14:37:53.169926;res: confirmacao de tratativa nc inquiry;Edna;Score moderado 200;Categorizado
+2026-05-13T14:37:53.256159;res: devolucoes sobra abbott;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:53.319974;res: validacao kpi reversa -performance abril;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:53.403295;re: notas fiscais de devolucao com ressarcimento pendente - abbott_apdr_eel;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:53.496563;res: devolucoes sobra abbott;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:53.634822;tracking abbott- coleta reversa e devolucao / /;;Baixa confiança;Sem categoria
+2026-05-13T14:37:53.686197;res: nf - urgente;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:53.753699;res: res: res: pedido de compras unimed - pc [ ref:! d u db p.! pn opfrs:ref ];Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:53.820761;re: pedido de ajuda (abbott );Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:53.881033;res: nf - urgente;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:53.935260;enc: pendencia de coleta - cd aquiraz ( abbott );Carolina;Devolução no ato;Categorizado
+2026-05-13T14:37:53.981021;res: nfs hf;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:54.028871;operacoes reversa itajai - ata;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:54.081276;res: nfs hf;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:54.123830;resposta automatica: notas fiscais de devolucao com ressarcimento pendente - abbott_apdr_eel;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:54.174256;res: cra devolucao/recusa abbott vascular -nf;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:54.236141;res: chamado entregou nf / conferencia;Carolina;Portal eSales;Categorizado
+2026-05-13T14:37:54.287157;nao e possivel entregar: re: pendencia do credito no r$ . ,;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:54.328281;nf - urgente;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:54.363814;nao e possivel entregar: panpharma abatimento no ato abbott / /;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:55.430174;re: res: recebimento de ck com validade curta sem autorizacao [ ref:! d u db p.! pn ooeer:ref ];Carolina;Score forte 240;Categorizado
+2026-05-13T14:37:56.598982;res: nfs hf;Carolina;Memória 93;Categorizado
+2026-05-13T14:37:56.651695;re: cra devolucao/recusa abbott vascular -nf;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:56.696173;resposta automatica: panpharma abatimento no ato abbott / /;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:56.754520;agenda abbott -;Edna;Recusa;Categorizado
+2026-05-13T14:37:56.806467;res: malote abbott / / - liberar ordens planta;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:56.870307;fw: pendencia de coleta - cd aquiraz ( abbott );Carolina;Devolução no ato;Categorizado
+2026-05-13T14:37:57.169182;nfs hf;Carolina;Memória 93;Categorizado
+2026-05-13T14:37:57.235074;res: cra recusa/devolucao adc nf: - avarias: caixas amassadas.;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:57.289139;re: res: faturamento da nf;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:57.386507;res: devolucoes sobra abbott;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:57.442449;re: malote abbott / / - deliveries p/ ingresso;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:37:58.835677;res: equipamentos adc - criticalmed - /;Elton;Score forte 200;Categorizado
+2026-05-13T14:38:00.132052;enc: equipamentos adc - criticalmed - /;Elton;Score forte 200;Categorizado
+2026-05-13T14:38:01.402414;res: equipamentos adc - criticalmed - /;Elton;Memória 96;Categorizado
+2026-05-13T14:38:01.472223;res: pendencia de coleta - cd aquiraz ( abbott );Carolina;Devolução no ato;Categorizado
+2026-05-13T14:38:01.521872;res: cra devolucao/recusa abbott vascular -nf;Carolina;Qualidade PER;Categorizado
+2026-05-13T14:38:01.587463;res: nfd - grupo pague menos;Carolina;Qualidade PER;Categorizado
