@@ -1650,3 +1650,30 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-13T14:38:01.472223;res: pendencia de coleta - cd aquiraz ( abbott );Carolina;Devolução no ato;Categorizado
 2026-05-13T14:38:01.521872;res: cra devolucao/recusa abbott vascular -nf;Carolina;Qualidade PER;Categorizado
 2026-05-13T14:38:01.587463;res: nfd - grupo pague menos;Carolina;Qualidade PER;Categorizado
+2026-05-13T15:11:59.022018;res: nf - urgente;Carolina;Qualidade PER;Categorizado
+2026-05-13T15:11:59.634711;mercadorias com avarias e falta ( abbott );;Baixa confiança;Sem categoria
+2026-05-13T15:11:59.665597;res: confirmacao de tratativa nc inquiry;Edna;Corrigido de Carolina;Correção Humana
+2026-05-13T15:11:59.712341;res: devolucoes sobra abbott;Edna;Corrigido de Carolina;Correção Humana
+2026-05-13T15:11:59.862681;devolucao nota fiscal referente a nota;;Baixa confiança;Sem categoria
+2026-05-13T15:11:59.905512;res: devolucoes sobra abbott;Edna;Corrigido de Carolina;Correção Humana
+2026-05-13T15:11:59.948355;res: validacao kpi reversa -performance abril;Elton;Corrigido de Carolina;Correção Humana
+2026-05-13T15:11:59.990628;re: notas fiscais de devolucao com ressarcimento pendente - abbott_apdr_eel;Edna;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.047086;res: devolucoes sobra abbott;Edna;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.264797;tracking abbott- coleta reversa e devolucao / /;;Baixa confiança;Sem categoria
+2026-05-13T15:12:00.300647;res: res: res: pedido de compras unimed - pc [ ref:! d u db p.! pn opfrs:ref ];Edna;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.334999;enc: pendencia de coleta - cd aquiraz ( abbott );Edna;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.370611;res: nfs hf;Cleberson;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.403481;operacoes reversa itajai - ata;Elton;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.436274;res: nfs hf;Cleberson;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.469518;res: cra devolucao/recusa abbott vascular -nf;Shirley;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.499848;res: nfs hf;Cleberson;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.530254;re: cra devolucao/recusa abbott vascular -nf;Shirley;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.559423;res: malote abbott / / - liberar ordens planta;Edna;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.591225;fw: pendencia de coleta - cd aquiraz ( abbott );Edna;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.619061;nfs hf;Cleberson;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.646137;res: cra recusa/devolucao adc nf: - avarias: caixas amassadas.;Elton;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.676363;re: res: faturamento da nf;Edna;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.729478;res: devolucoes sobra abbott;Edna;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.769588;res: pendencia de coleta - cd aquiraz ( abbott );Edna;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.797928;res: cra devolucao/recusa abbott vascular -nf;Shirley;Corrigido de Carolina;Correção Humana
+2026-05-13T15:12:00.828177;res: nfd - grupo pague menos;Edna;Corrigido de Carolina;Correção Humana
