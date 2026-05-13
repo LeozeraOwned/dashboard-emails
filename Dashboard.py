@@ -2,27 +2,17 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-import time
 
 st.set_page_config(layout="wide")
 
-# ================= LOAD COM FALLBACK =================
-url = f"https://raw.githubusercontent.com/LeozeraOwned/dashboard-emails/main/log_emails.csv?nocache={time.time()}"
+# ================= LOAD (DIRETO DO GITHUB) =================
+url = "https://raw.githubusercontent.com/LeozeraOwned/dashboard-emails/main/log_emails.csv"
 
-try:
-    df = pd.read_csv(url, sep=";", on_bad_lines="skip")
-    fonte = "GitHub ✅"
-except Exception as e:
-    df = pd.read_csv("log_emails.csv", sep=";", on_bad_lines="skip")
-    fonte = "Local ⚠️"
-    st.warning("⚠️ Falha ao carregar do GitHub — usando arquivo local")
+df = pd.read_csv(url, sep=";", on_bad_lines="skip")
 
-# DEBUG opcional
-st.sidebar.caption(f"Fonte dos dados: {fonte}")
-
-# ================= TRATAMENTO =================
 df["data"] = pd.to_datetime(df["data"], errors="coerce")
 
+# ================= TRATAMENTO =================
 df["dia"] = df["data"].dt.date
 df["mes"] = df["data"].dt.month
 df["status"] = df["status"].fillna("").astype(str).str.strip()
@@ -31,7 +21,7 @@ df["analista"] = df["analista"].fillna("").astype(str).str.strip()
 df["assunto"] = df["assunto"].fillna("").astype(str).str.strip()
 df["analista_exibicao"] = df["analista"].replace("", "Sem analista")
 
-# ================= PERFORMANCE =================
+# ================= FILTRO DE PERFORMANCE =================
 df_perf = df[
     ~(
         (df["status"] == "Sem categoria") &
@@ -70,8 +60,8 @@ if dia_sel != "Todos":
 def card(icon, valor, label):
     return f"""
     <div style="background:#1a1f2b;padding:20px;border-radius:15px;text-align:center;">
-        <div style="font-size:22px">{icon}</div>
-        <div style="font-size:28px;font-weight:bold">{valor}</div>
+        <div style="font-size:24px">{icon}</div>
+        <div style="font-size:30px;font-weight:bold">{valor}</div>
         <div style="color:#aaa">{label}</div>
     </div>
     """
@@ -79,9 +69,9 @@ def card(icon, valor, label):
 def resumo(df):
     total = len(df)
     total_categ = df["status"].isin(["Categorizado","Erro","Correto"]).sum()
-    errados = (df["status"]=="Erro").sum()
+    errados = (df["status"] == "Erro").sum()
     certos = total_categ - errados
-    sem_cat = (df["status"]=="Sem categoria").sum()
+    sem_cat = (df["status"] == "Sem categoria").sum()
     return total, total_categ, certos, errados, sem_cat
 
 # ================= DASHBOARD =================
@@ -131,10 +121,10 @@ elif pagina == "📈 Análises":
 
     fig = go.Figure(
         data=[go.Pie(
-            labels=["Categorizados certos", "Categorizados errados"],
+            labels=["Certos", "Errados"],
             values=[certos, errados],
             hole=.7,
-            marker=dict(colors=["#00ff9f","#ff4d4d"])
+            marker=dict(colors=["#00ff9f", "#ff4d4d"])
         )]
     )
 
@@ -178,6 +168,7 @@ elif pagina == "📄 Dados":
     st.title("📄 Logs")
 
     st.dataframe(df_f, use_container_width=True)
+
 
 
 
