@@ -1734,3 +1734,44 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-12 16:00:51.204681;Notas AG. D.U 12/05/2026;Andreani;Score forte 150;Categorizado;modelo
 2026-05-12 16:00:51.245242;RE: MALOTE ABBOTT 12/05/2026 - Deliveries p/ ingresso;Andreani;Score forte 150;Categorizado;modelo
 2026-05-12 16:00:51.280106;EMISSÃO DEVOLUÇÃO - ABBOTT LABORATORIOS DO BRASIL;Andreani;Sem evidência;Categorizado;modelo
+2026-05-13 09:01:45.675265;PANPHARMA – ABATIMENTO NO ATO – ABBOTT 13/05/2026;Edna;Score forte 120;Categorizado;modelo
+2026-05-13 09:01:45.706593;Status Devolução / Recusa ABBOTT (ADD/AMD/ADC) - 12/MAIO/2026.;Edna;Score fraco 100;Categorizado;modelo
+2026-05-13 09:01:45.739326;RES: Agenda Abbott - deliverys processadas.;Elton;Score forte 150;Categorizado;modelo
+2026-05-13 09:01:45.758231;RES: CRÉDITO DE DEVOLUÇÃO - ABBOTT;;Aprendido: não categorizar;Sem categoria;aprendizado
+2026-05-13 09:01:45.785008;RE: MALOTE ABBOTT 12/05/2026 - Deliveries p/ ingresso ;Andreani;Score forte 150;Categorizado;modelo
+2026-05-13 09:01:45.806841;Nova solicitação no sharepoint;Andreani;Sem evidência;Categorizado;modelo
+2026-05-13 09:01:45.837719;CRA RECUSA/DEVOLUÇÃO ADC NF:181117.;Edna;Score fraco 100;Categorizado;modelo
+2026-05-13 09:01:45.866969;CRA RECUSA/DEVOLUÇÃO ADC NF:184417 - AVARIAS: CAIXAS AMASSADAS.;Edna;Score fraco 100;Categorizado;modelo
+2026-05-13 09:01:45.889665;CRA RECUSA/DEVOLUÇÃO ADC NF:62 - AVARIAS: CAIXAS AMASSADAS.;Edna;Score fraco 100;Categorizado;modelo
+2026-05-13 09:01:45.922035;Envio da NF-e - N.Doc 000172666 - Série 6;Andreani;Sem evidência;Categorizado;modelo
+2026-05-13 09:01:45.956011;Re: AVARIA NF 72139 (72817);Andreani;Sem evidência;Categorizado;modelo
+2026-05-13 09:01:45.988810;RES: MALOTE ABBOTT 12/05/2026 - Deliveries p/ ingresso ;Andreani;Score forte 150;Categorizado;modelo
+2026-05-13 09:01:46.003987;Re: Creditos emitidos em duplicidade;Edna;Score forte 150;Categorizado;modelo
+2026-05-13 09:01:46.049308;RE: RES: FATURAMENTO DA NF 582565;Andreani;Sem evidência;Categorizado;modelo
+2026-05-13 09:01:46.072999;Danfe referente a NF: 43260505782733000149550010002196741012356204;Andreani;Sem evidência;Categorizado;modelo
+2026-05-13 09:01:46.102304;Nova solicitação no sharepoint;Andreani;Sem evidência;Categorizado;modelo
+2026-05-13 09:01:46.135053;ENC: MALOTE ABBOTT 12/05/2026 - Liberar ordens Planta 1524;Andreani;Score forte 150;Categorizado;modelo
+2026-05-13 09:01:46.156266;DASHBOARD 12/05/2026;Elton;Score forte 200;Categorizado;modelo
+2026-05-13 09:01:46.200354;RE: ABBOTT - Reversas em trânsito ;Shirley;Score forte 150;Categorizado;modelo
+2026-05-13 09:01:46.223912;RES: ABBOTT - Reversas em trânsito ;Shirley;Score forte 150;Categorizado;modelo
+2026-05-13 09:01:46.269667;RE: RES: Solicitação de devolução - Synthroid 200 mcg;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-13 09:01:46.301431;RES: Ajuda - NF 678706 remessa para conserto Airzap;Shirley;Score forte 150;Categorizado;modelo
+2026-05-13 09:01:46.335073;RE: ORDEM: 124705556 PEDIDO 1026   - COMERCIAL 3 ALBE - GLUCERNA SR BAUNILHA 400G  [ ref:!00D1U0Db5p.!500Pn01N8sLh:ref ];Edna;Score forte 150;Categorizado;modelo
+2026-05-13 09:01:46.366474;"Caso: 00489008 - ""RES: Equipamentos ADC - Criticalmed - 57525/57526""";Andreani;Score forte 200;Categorizado;modelo
+2026-05-13 09:01:46.402907;RES: Equipamentos ADC - Criticalmed - 57525/57526;Elton;Score forte 150;Categorizado;modelo
+2026-05-13 09:01:46.434956;RES: RES: Solicitação de devolução - Synthroid 200 mcg ;Carolina;Score fraco 150;Categorizado;modelo
+2026-05-13 09:01:46.469803;RES: SH: Devoluções pendentes;Cleberson;Score forte 150;Categorizado;modelo
+2026-05-13 09:01:46.502326;RE: NF 2545564 – Lote não localizado no SAP;;Humano removeu categoria;Erro;correcao_humana
+2026-05-13 09:01:46.504675;RES: NF 2545564 – Lote não localizado no SAP;;Humano removeu categoria;Erro;correcao_humana
+2026-05-13 09:01:46.523217;KIT DEVOLUÇÃO ABBOTT NFD 44643 – DEV. VENCIDOS - MAIO DE 2026 - PROFARMA/RJ;;Humano removeu categoria;Erro;correcao_humana
+2026-05-13 09:01:46.539929;Re: PENDÊNCIA DO CRÉDITO NO R$7.650,00;Andreani;Sem evidência;Categorizado;modelo
+2026-05-13 09:01:46.570292;RE: Notas Fiscais de Devolução com ressarcimento pendente - ABBOTT_APDR_eEL22706;Edna;Score forte 150;Categorizado;modelo
+2026-05-13 09:01:46.591199;RES: NF 2545564 – Lote não localizado no SAP;;Humano removeu categoria;Erro;correcao_humana
+2026-05-13 09:01:46.606332;RE: MALOTE ABBOTT 12/05/2026;;Humano removeu categoria;Erro;correcao_humana
+2026-05-13 09:01:46.620419;RES: PENDÊNCIA DO CRÉDITO NO R$7.650,00;Andreani;Sem evidência;Categorizado;modelo
+2026-05-13 09:01:46.637774;DEVOLUÇÃO ABBOTT 11.05.26 NFD 295431;;Humano removeu categoria;Erro;correcao_humana
+2026-05-13 09:01:46.653321;RES: RES: OC891660 - Previsão de entrega;;Humano removeu categoria;Erro;correcao_humana
+2026-05-13 09:01:46.657936;NF 2545564 – Lote não localizado no SAP;;Humano removeu categoria;Erro;correcao_humana
+2026-05-13 09:01:46.683753;Notas AG. D.U 12/05/2026;;Humano removeu categoria;Erro;correcao_humana
+2026-05-13 09:01:46.720224;RE: MALOTE ABBOTT 12/05/2026 - Deliveries p/ ingresso;;Humano removeu categoria;Erro;correcao_humana
+2026-05-13 09:01:46.742011;EMISSÃO DEVOLUÇÃO - ABBOTT LABORATORIOS DO BRASIL;;Humano removeu categoria;Erro;correcao_humana
