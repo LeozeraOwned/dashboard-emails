@@ -7,23 +7,20 @@ st.set_page_config(layout="wide")
 
 # ================= LOAD =================
 url = "https://raw.githubusercontent.com/LeozeraOwned/dashboard-emails/main/log_emails.csv"
-
 df = pd.read_csv(url, sep=";", on_bad_lines="skip")
 
 # ================= TRATAMENTO =================
 
-# ✅ Corrige o T da data
+# ✅ Corrige formato de data (remove T)
 df["data"] = df["data"].astype(str).str.replace("T", " ")
-
 df["data"] = pd.to_datetime(df["data"], errors="coerce")
 
-# remove linhas inválidas
 df = df.dropna(subset=["data"])
 
 df["dia"] = df["data"].dt.date
 df["mes"] = df["data"].dt.month
 
-# ✅ CORREÇÃO PRINCIPAL (STATUS)
+# ✅ CORREÇÃO DEFINITIVA DO STATUS
 df["status"] = (
     df["status"]
     .fillna("")
@@ -33,6 +30,19 @@ df["status"] = (
     .str.replace(";", "")
 )
 
+# ✅ PADRONIZA STATUS (ESSA PARTE RESOLVE TUDO)
+def ajustar_status(x):
+    if "error" in x or "erro" in x or "correcao" in x:
+        return "erro"
+    if "correto" in x or "categorizado" in x:
+        return "correto"
+    if "sem categoria" in x:
+        return "sem categoria"
+    return x
+
+df["status"] = df["status"].apply(ajustar_status)
+
+# ================= OUTROS CAMPOS =================
 df["motivo"] = df["motivo"].fillna("").astype(str).str.strip()
 df["analista"] = df["analista"].fillna("").astype(str).str.strip()
 df["assunto"] = df["assunto"].fillna("").astype(str).str.strip()
@@ -40,12 +50,7 @@ df["assunto"] = df["assunto"].fillna("").astype(str).str.strip()
 df["analista_exibicao"] = df["analista"].replace("", "Sem analista")
 
 # ================= FILTRO =================
-df_perf = df[
-    ~(
-        (df["status"] == "sem categoria") &
-        (df["motivo"].str.lower() == "aprendido: não categorizar")
-    )
-].copy()
+df_perf = df.copy()
 
 # ================= SIDEBAR =================
 st.sidebar.title("📊 MENU")
@@ -86,9 +91,9 @@ def card(icon, valor, label):
 
 def resumo(df):
     total = len(df)
-    total_categ = df["status"].isin(["categorizado","erro","correto"]).sum()
+    total_categ = df["status"].isin(["correto", "erro"]).sum()
     errados = (df["status"] == "erro").sum()
-    certos = total_categ - errados
+    certos = (df["status"] == "correto").sum()
     sem_cat = (df["status"] == "sem categoria").sum()
     return total, total_categ, certos, errados, sem_cat
 
@@ -189,6 +194,7 @@ elif pagina == "📄 Dados":
     st.title("📄 Logs")
 
     st.dataframe(df_f, use_container_width=True)
+
 
 
 
