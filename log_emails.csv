@@ -1768,3 +1768,10 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-14 10:51:23;res: devolucoes sobra abbott;Carolina;Qualidade PER;Categorizado
 2026-05-14 10:51:23;agenda abbott -;Edna;Recusa;Categorizado
 2026-05-14 10:52:16;mercadoria invertida - nf - vitoria hospitalar;;Sem evidência;Sem categoria
+2026-05-14 10:56:43;res: enc: ocorrencia nf aimara comercio e representacoes lt campinas - sp;Edna;Recusa;Categorizado
+2026-05-14 10:56:43;res: solicitacao de emissao nfd panpharma distribuidora de medicamentos ltda;Edna;Corrigido de Carolina;Correção Humana
+2026-05-14 10:56:43;res: solicitacao de emissao de nfd cia latino americana de medicamento;Edna;Corrigido de Carolina;Correção Humana
+2026-05-14 10:56:44;mercadoria invertida - nf - vitoria hospitalar;;Sem evidência;Sem categoria
+2026-05-14 10:56:44;enc: malote abbott / / - liberar ordens planta;Edna;Corrigido de Carolina;Correção Humana
+2026-05-14 10:56:44;res: [abbott] devolucoes pendente de asn / /;Cleberson;Corrigido de Carolina;Correção Humana
+2026-05-14 10:56:44;res: [abbott] devolucoes pendente de asn / /;Cleberson;Corrigido de Carolina;Correção Humana
