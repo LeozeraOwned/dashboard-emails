@@ -1751,3 +1751,19 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-14 08:38:21;re: [ticket# ] cadastro.;;Sem evidência;Sem categoria
 2026-05-14 08:38:22;mercadorias com avarias e falta ( abbott );;Baixa confiança;Sem categoria
 2026-05-14 08:39:27;res: revisao procedimento + it | medical;Cleberson;Corrigido de Leonardo;Correção Humana
+2026-05-14 10:51:11;res: cobranca . . santa casa de misericordia de guara_cob _ers;Carolina;Score moderado 240;Categorizado
+2026-05-14 10:51:11;re: - df_avaria fornecedor_a _ un_;Carolina;Qualidade PER;Categorizado
+2026-05-14 10:51:13;res: solicitacao de emissao nfd panpharma distribuidora de medicamentos ltda;Carolina;Score moderado 240;Categorizado
+2026-05-14 10:51:16;agenda abbott;Edna;Memória 88;Categorizado
+2026-05-14 10:51:19;res: solicitacao de emissao de nfd cia latino americana de medicamento;Carolina;Score forte 240;Categorizado
+2026-05-14 10:51:22;re: mercadoria invertida - nf - vitoria hospitalar;Carolina;Score forte 240;Categorizado
+2026-05-14 10:51:23;mercadoria invertida - nf - vitoria hospitalar;;Sem evidência;Sem categoria
+2026-05-14 10:51:23;enc: malote abbott / / - liberar ordens planta;Carolina;Qualidade PER;Categorizado
+2026-05-14 10:51:23;res: [abbott] devolucoes pendente de asn / /;Carolina;Qualidade PER;Categorizado
+2026-05-14 10:51:23;res: [abbott] devolucoes pendente de asn / /;Carolina;Qualidade PER;Categorizado
+2026-05-14 10:51:23;status devolucao / recusa abbott (add/amd/adc) - /maio/ .;Edna;Recusa;Categorizado
+2026-05-14 10:51:23;res: nf - urgente;Carolina;Qualidade PER;Categorizado
+2026-05-14 10:51:23;re: nf - drog sao paulo sa - sobra;Carolina;Qualidade PER;Categorizado
+2026-05-14 10:51:23;re: devolucoes sobra abbott;Carolina;Qualidade PER;Categorizado
+2026-05-14 10:51:23;res: devolucoes sobra abbott;Carolina;Qualidade PER;Categorizado
+2026-05-14 10:51:23;agenda abbott -;Edna;Recusa;Categorizado
