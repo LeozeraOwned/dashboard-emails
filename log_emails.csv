@@ -1743,3 +1743,10 @@ data;assunto;analista;motivo;status;tipo_evento
 2026-05-14 08:21:17;res: pedido nf;Carolina;Qualidade PER;Categorizado
 2026-05-14 08:21:19;re: res: inserir nf no sharepoint;Shirley;Score forte 200;Categorizado
 2026-05-14 08:21:20;mercadorias com avarias e falta ( abbott );;Baixa confiança;Sem categoria
+2026-05-14 08:38:14;notas ag. d.u / /;Carolina;Qualidade PER;Categorizado
+2026-05-14 08:38:17;re: [ticket# ] cadastro.;;Sem evidência;Sem categoria
+2026-05-14 08:38:19;cobranca devolucoes - abbott laboratorios do brasi;;Baixa confiança;Sem categoria
+2026-05-14 08:38:20;re: [ticket# ] cadastro cliente;;Sem evidência;Sem categoria
+2026-05-14 08:38:20;re: [ticket# ] recebimento de ck com validade curta sem autorizacao [ ref:! d u db p.! pn ooeer:ref ];;Sem evidência;Sem categoria
+2026-05-14 08:38:21;re: [ticket# ] cadastro.;;Sem evidência;Sem categoria
+2026-05-14 08:38:22;mercadorias com avarias e falta ( abbott );;Baixa confiança;Sem categoria
